@@ -82,6 +82,10 @@ Menjadi penghubung langsung antara panitia dan warga. Menjawab pertanyaan warga 
 
 ## 🔹 🧭 Tim Eksekutif
 
+### 👀 Pengawas (Advisor) – Danang Saputro
+
+Sebagai Ketua Paguyuban Warga, bertugas memberikan arahan umum, memastikan panitia bekerja sesuai nilai kebersamaan dan semangat gotong royong warga, serta memberi masukan strategis jika diperlukan.
+
 ### 👤 Ketua Panitia (Event Director) – Deden Bangkit
 
 Memimpin seluruh panitia, menyusun struktur organisasi, menentukan jadwal rapat, memantau progres masing-masing seksi, serta mengambil keputusan strategis yang mendukung kelancaran acara.
