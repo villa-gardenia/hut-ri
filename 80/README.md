@@ -50,7 +50,7 @@ Menjaga keamanan selama acara berlangsung, mengatur arus keluar-masuk pengunjung
 
 Mencari dana dari sponsor, donatur, atau warga. Menyusun proposal dukungan, melakukan pendekatan ke mitra, mendata pemasukan dan pengeluaran dari sponsor, serta membuat laporan tertulis yang transparan.
 
-### 🙋‍♂️ Koordinator Relawan & Pemuda (Volunteer Coordinator) – Muhammad Wildan A. S. & Janita Zahran
+### 🙋‍♂️ Koordinator Relawan & Pemuda (Volunteer Coordinator) – Muhammad Wildan A. S. & Janitra Zahran
 
 Mengajak dan membagi tugas relawan dan pemuda. Menyusun daftar tugas dan jadwal shift, membuat briefing teknis, membimbing relawan saat acara berlangsung, dan mengevaluasi kinerja mereka sebagai bagian dari dokumentasi.
 
