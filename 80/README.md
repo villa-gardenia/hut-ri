@@ -38,7 +38,7 @@ Menyiapkan konsumsi untuk panitia, peserta lomba, dan tamu undangan. Memastikan 
 
 Menyiapkan dan mengatur semua kebutuhan teknis acara seperti tenda, kursi, meja, sound system, alat lomba, alat tulis, dan listrik cadangan. Memastikan semua alat dalam kondisi baik sebelum, selama, dan setelah acara.
 
-### 🎈 Koordinator Tempat & Dekorasi (Venue & Decoration Coordinator) – Reza Ziaudin
+### 🎈 Koordinator Tempat & Dekorasi (Venue & Decoration Coordinator) – Reza Ziaudin & Aulia Ariani
 
 Merancang layout tempat acara, membuat dan memasang dekorasi yang sesuai dengan tema kemerdekaan, menjaga estetika, kebersihan dan kenyamanan lokasi, serta menyiapkan penanda lokasi jika acara tersebar di beberapa titik.
 
