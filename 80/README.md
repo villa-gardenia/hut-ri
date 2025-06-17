@@ -6,7 +6,7 @@
 
 ## 🔹 💼 Tim Program & Operasional
 
-### 🎤 Koordinator Acara (Program Director) – Fahrul Wredha Kumara
+### 🎤 Koordinator Acara (Program Director) – Fahrul Wredha Kumara & Ega Praja Rimata
 
 Bertanggung jawab menyusun alur dan susunan acara dari awal hingga akhir. Mengatur waktu dan susunan kegiatan agar berjalan lancar dan sesuai tema. Berkoordinasi erat dengan semua seksi untuk memastikan transisi acara berjalan mulus.
 
