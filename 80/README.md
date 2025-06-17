@@ -74,7 +74,7 @@ Mendokumentasikan seluruh kegiatan dengan foto dan video. Membagi tim sesuai tit
 
 Membuat materi informasi, mengelola penyebaran konten sebelum, saat, dan setelah acara di media sosial, grup WA, serta kanal lain. Menjadwalkan posting, membuat caption, dan menjaga komunikasi dua arah dengan warga secara daring.
 
-### 📞 Koordinator Humas & Informasi Warga (Public Relations Coordinator) – \[Nama Humas]
+### 📞 Koordinator Humas & Informasi Warga (Public Relations Coordinator) – Muhammad Taqi Ardabilli
 
 Menjadi penghubung langsung antara panitia dan warga. Menjawab pertanyaan warga seputar acara, menyampaikan undangan secara lisan atau tertulis, serta menyambut dan mendampingi tamu undangan selama acara.
 
