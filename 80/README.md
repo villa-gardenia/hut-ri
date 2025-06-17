@@ -34,7 +34,7 @@ Mengelola daftar hadiah dan doorprize, melakukan pengadaan, mendata nilai hadiah
 
 Menyiapkan konsumsi untuk panitia, peserta lomba, dan tamu undangan. Memastikan makanan/minuman cukup, bergizi, dan dibagikan tepat waktu. Berkoordinasi dengan vendor atau warga penyedia konsumsi dan membuat sistem distribusi.
 
-### 🛠️ Koordinator Logistik & Peralatan (Logistics & Equipment Coordinator) – Bayu Puasa Putra
+### 🛠️ Koordinator Logistik & Peralatan (Logistics & Equipment Coordinator) – Bayu Puasa Putra & Febrian Dwi Valentino
 
 Menyiapkan dan mengatur semua kebutuhan teknis acara seperti tenda, kursi, meja, sound system, alat lomba, alat tulis, dan listrik cadangan. Memastikan semua alat dalam kondisi baik sebelum, selama, dan setelah acara.
 
