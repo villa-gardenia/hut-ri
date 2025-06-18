@@ -3,6 +3,8 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 
+const basepath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+
 export default function HomePage() {
 	return (
 		<main className="w-full">
@@ -11,7 +13,7 @@ export default function HomePage() {
 			<section className="h-screen relative overflow-hidden flex items-center justify-center">
 				<motion.div initial={{ y: 0 }} className="absolute inset-0">
 					<Image
-						src="/assets/bg-hero.jpg"
+						src={`${basepath}/assets/bg-hero.jpg`}
 						alt="HUT RI ke-80"
 						fill
 						className="object-cover"
