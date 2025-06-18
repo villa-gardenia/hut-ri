@@ -1,14 +1,16 @@
-version: '3.8'
+version: "3.8"
 
 services:
   web:
     build:
-      context: .
-      dockerfile: Dockerfile
+      context: ./src
+      dockerfile: Dockerfile.dev
     ports:
-      - '3000:3000'
+      - "3000:3000"
+    working_dir: /app
     volumes:
       - ./src:/app
-      - /app/node_modules
-    working_dir: /app
-    command: sh -c "npm install && npm run dev"
+      - /app/node_modules # Ini adalah target path dalam container (absolut)
+    environment:
+      - NODE_ENV=development
+    command: npm run dev

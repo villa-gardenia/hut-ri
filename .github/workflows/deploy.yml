@@ -26,18 +26,13 @@ jobs:
           cd src
           docker build -t hut-ri .
 
-      - name: Debug - Check standalone folder
-        run: |
-          cd src
-          docker run --rm hut-ri ls /app/.next/standalone/server/pages
-
       - name: Create dist folder
         run: |
           mkdir -p dist
           cd src
           docker create --name hut-ri-container hut-ri
-          docker cp hut-ri-container:/app/public dist/
-          docker cp hut-ri-container:/app/.next/standalone/. dist/
+          docker cp hut-ri-container:/app/public ../dist/
+          docker cp hut-ri-container:/app/.next/standalone/. ../dist/
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
