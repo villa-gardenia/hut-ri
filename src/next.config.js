@@ -6,5 +6,5 @@ module.exports = {
   swcMinify: true,
 
   basePath: isProd ? "/hut-ri" : "",
-  output: "standalone",
+  output: "export",
 };
