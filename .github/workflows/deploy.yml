@@ -26,10 +26,10 @@ jobs:
           cd src
           docker build -t hut-ri .
 
-      - name: Debug - Check .next folder inside image
+      - name: Debug - Check standalone folder
         run: |
           cd src
-          docker run --rm hut-ri ls /app/.next || echo "❌ Folder .next tidak ditemukan!"
+          docker run --rm hut-ri ls /app/.next/standalone/server/pages
 
       - name: Create dist folder
         run: |
