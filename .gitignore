@@ -29,7 +29,6 @@ logs/
 *.sw?
 
 # Docker
-Dockerfile
 docker-compose.override.yml
 .env.docker
 
