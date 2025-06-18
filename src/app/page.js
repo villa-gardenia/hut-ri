@@ -10,7 +10,7 @@ const basepath = process.env.NEXT_PUBLIC_BASE_PATH || "";
 export default function HomePage() {
 	return (
 		<main className="w-full">
-			<NavBar basepath={basepath} />
+			<NavBar />
 			{/* Hero Section */}
 			<section className="h-screen relative overflow-hidden flex items-center justify-center">
 				<motion.div initial={{ y: 0 }} className="absolute inset-0">
@@ -65,7 +65,7 @@ export default function HomePage() {
 				</div>
 			</section>
 			{/* Panitia Section */}
-			<CommiteeSection />
+			<CommiteeSection basepath={basepath} />
 			{/* Perayaan Section */}
 			<section id="perayaan" className="min-h-screen py-20 px-4">
 				<div className="container mx-auto">
