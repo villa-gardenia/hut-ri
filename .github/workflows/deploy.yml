@@ -17,18 +17,20 @@ jobs:
           node-version: 18
 
       - name: Install dependencies
-        run: npm install --prefix src
+        run: |
+          cd src
+          npm install
 
-      - name: Build with Docker
+      - name: Build Docker image
         run: |
           cd src
           docker build -t hut-ri .
 
-      - name: Debug - Show files inside container
+      - name: Debug - Check .next folder inside container
         run: |
           cd src
           docker create --name hut-ri-container hut-ri
-          docker cp hut-ri-container:/app/.next/ .next-output || echo "Folder .next tidak ditemukan"
+          docker exec hut-ri-container ls /app/.next || echo "❌ Folder .next tidak ditemukan!"
 
       - name: Create dist folder
         run: |
