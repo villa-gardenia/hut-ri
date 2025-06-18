@@ -23,7 +23,7 @@ html {
 }
 /* Navigation Bar */
 .navbar {
-  @apply fixed top-0 left-0 w-full z-50 backdrop-blur-md bg-white/30 border-b border-white/20 shadow-lg;
+  @apply fixed top-0 left-0 w-full z-50 backdrop-blur-md bg-white/30 border-b border-white/20 shadow-lg hidden sm:block;
 }
 .navbar .nav-container {
   @apply flex justify-center items-center px-4 py-3;
