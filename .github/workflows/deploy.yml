@@ -16,33 +16,16 @@ jobs:
         with:
           node-version: 18
 
-      - name: Install dependencies
+      - name: Install dependencies and build static site
         run: |
           cd src
           npm install
+          npm run build
 
-      - name: Build Docker image
-        run: |
-          cd src
-          docker build -t hut-ri .
-
-      - name: Create dist folder
+      - name: Move exported site to dist
         run: |
           mkdir -p dist
-          cd src
-          docker create --name hut-ri-container hut-ri
-          docker start hut-ri-container
-          docker exec hut-ri-container ls /app
-          docker exec hut-ri-container ls /app/public
-          docker exec hut-ri-container ls /app/.next
-          docker cp hut-ri-container:/app/public ../dist/
-          docker cp hut-ri-container:/app/.next/standalone/. ../dist/
-
-      - name: Debug - Show dist folder structure
-        run: |
-          cd dist
-          sudo apt-get install -y tree
-          tree -a -L 3 -I "node_modules|.git"
+          cp -r src/out/* dist/
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
