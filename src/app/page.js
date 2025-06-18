@@ -35,7 +35,7 @@ export default function HomePage() {
 					<p className="mt-4 text-lg md:text-xl max-w-2xl mx-auto">
 						Merdeka dan Maju Bersama di Bumi Pertiwi
 					</p>
-					<a href="#sejarah" className="btn-primary mt-8">
+					<a href="#tentang" className="btn-primary mt-8">
 						Mulai Jelajah
 					</a>
 				</motion.div>
