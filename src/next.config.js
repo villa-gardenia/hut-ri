@@ -6,6 +6,7 @@ module.exports = {
   swcMinify: true,
 
   basePath: isProd ? "/hut-ri" : "",
+  assetPrefix: isProd ? "/hut-ri/" : "",
   output: "export",
   images: { unoptimized: true },
 };
