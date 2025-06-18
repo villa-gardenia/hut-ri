@@ -3,15 +3,15 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
 
-const navItems = [
-	{ name: "Beranda", href: "" },
-	{ name: "Tentang", href: "#tentang" },
-	{ name: "Panitia", href: "#panitia" },
-	{ name: "Perayaan", href: "#perayaan" },
-	{ name: "Kontak", href: "#kontak" },
-];
-
 export default function NavBar({ basepath }) {
+	const navItems = [
+		{ name: "Beranda", href: basepath },
+		{ name: "Tentang", href: "#tentang" },
+		{ name: "Panitia", href: "#panitia" },
+		{ name: "Perayaan", href: "#perayaan" },
+		{ name: "Kontak", href: "#kontak" },
+	];
+
 	return (
 		<motion.header
 			initial={{ y: -100 }}
@@ -29,10 +29,7 @@ export default function NavBar({ basepath }) {
 								whileHover={{ color: "#e63946" }}
 								className="group"
 							>
-								<Link
-									href={`${basepath}/${item.href}`}
-									className="nav-link-item"
-								>
+								<Link href={`/${item.href}`} className="nav-link-item">
 									{item.name}
 								</Link>
 							</motion.li>
