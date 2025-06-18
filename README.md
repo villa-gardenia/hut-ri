@@ -28,7 +28,7 @@ Dibangun dengan:
 │   └── ...
 ├── 80/                           ← Dokumen internal panitia HUT RI ke-80
 │   ├── notulensi/                ← Notulensi rapat dan diskusi
-│   └── susunan-panitia.md        ← Susunan panitia dan tugasnya
+│   └── README.md                 ← Susunan panitia dan tugasnya
 
 ```
 
