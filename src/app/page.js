@@ -9,7 +9,6 @@ export default function HomePage() {
 	return (
 		<main className="w-full">
 			{/* Hero Section */}
-			{/* Hero Section */}
 			<section className="h-screen relative overflow-hidden flex items-center justify-center">
 				<motion.div initial={{ y: 0 }} className="absolute inset-0">
 					<Image
@@ -21,7 +20,6 @@ export default function HomePage() {
 					/>
 					<div className="hero-overlay" />
 				</motion.div>
-
 				<motion.div
 					initial={{ opacity: 0, y: 20 }}
 					animate={{ opacity: 1, y: 0 }}
