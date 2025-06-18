@@ -7,4 +7,5 @@ module.exports = {
 
   basePath: isProd ? "/hut-ri" : "",
   output: "export",
+  images: { unoptimized: true },
 };
