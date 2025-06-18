@@ -31,8 +31,16 @@ jobs:
           mkdir -p dist
           cd src
           docker create --name hut-ri-container hut-ri
+          docker exec hut-ri-container ls /app/public
+          docker exec hut-ri-container ls /app/.next
           docker cp hut-ri-container:/app/public ../dist/
           docker cp hut-ri-container:/app/.next/standalone/. ../dist/
+
+      - name: Debug - Show dist folder structure
+        run: |
+          cd dist
+          sudo apt-get install -y tree
+          tree -a -L 3 -I "node_modules|.git"
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
