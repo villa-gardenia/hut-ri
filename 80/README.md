@@ -10,7 +10,7 @@
 
 Bertanggung jawab menyusun alur dan susunan acara dari awal hingga akhir. Mengatur waktu dan susunan kegiatan agar berjalan lancar dan sesuai tema. Berkoordinasi erat dengan semua seksi untuk memastikan transisi acara berjalan mulus.
 
-### 🌟 Koordinator Pengisi Acara (Talent Coordinator) – Puput Pramuditya
+### 🌟 Koordinator Pengisi Acara (Talent Coordinator) – Puput Pramuditya & Ebta Valentino
 
 Menentukan, menghubungi, dan mengatur jadwal pengisi acara seperti MC, penampil seni, grup musik, dan tokoh masyarakat. Bertanggung jawab memastikan kesiapan mereka sebelum tampil, termasuk gladi resik jika diperlukan.
 
