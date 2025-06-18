@@ -65,7 +65,7 @@ export default function HomePage() {
 				</div>
 			</section>
 			{/* Panitia Section */}
-			<CommiteeSection basepath={basepath} />
+			<CommiteeSection />
 			{/* Perayaan Section */}
 			<section id="perayaan" className="min-h-screen py-20 px-4">
 				<div className="container mx-auto">

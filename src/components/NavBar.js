@@ -3,13 +3,13 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
 
-export default function NavBar({ basepath }) {
+export default function NavBar() {
 	const navItems = [
-		{ name: "Beranda", href: basepath },
-		{ name: "Tentang", href: "#tentang" },
-		{ name: "Panitia", href: "#panitia" },
-		{ name: "Perayaan", href: "#perayaan" },
-		{ name: "Kontak", href: "#kontak" },
+		{ name: "Beranda", href: "" },
+		{ name: "Tentang", href: "/#tentang" },
+		{ name: "Panitia", href: "/#panitia" },
+		{ name: "Perayaan", href: "/#perayaan" },
+		{ name: "Kontak", href: "/#kontak" },
 	];
 
 	return (
