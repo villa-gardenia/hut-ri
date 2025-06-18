@@ -11,7 +11,7 @@ export default function CommiteeSection({ basepath }) {
 	const [data, setData] = useState(null);
 
 	useEffect(() => {
-		fetch(`${basepath}data/committee.json`)
+		fetch(`${basepath}/data/committee.json`)
 			.then((res) => res.json())
 			.then(setData);
 	}, []);

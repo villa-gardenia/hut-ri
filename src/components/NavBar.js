@@ -4,11 +4,11 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 
 const navItems = [
-	{ name: "Beranda", href: "/" },
-	{ name: "Tentang", href: "/#tentang" },
-	{ name: "Panitia", href: "/#panitia" },
-	{ name: "Perayaan", href: "/#perayaan" },
-	{ name: "Kontak", href: "/#kontak" },
+	{ name: "Beranda", href: "" },
+	{ name: "Tentang", href: "#tentang" },
+	{ name: "Panitia", href: "#panitia" },
+	{ name: "Perayaan", href: "#perayaan" },
+	{ name: "Kontak", href: "#kontak" },
 ];
 
 export default function NavBar({ basepath }) {
@@ -30,7 +30,7 @@ export default function NavBar({ basepath }) {
 								className="group"
 							>
 								<Link
-									href={`${basepath}${item.href}`}
+									href={`${basepath}/${item.href}`}
 									className="nav-link-item"
 								>
 									{item.name}
