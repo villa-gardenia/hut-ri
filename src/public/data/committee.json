@@ -1,0 +1,177 @@
+{
+  "title": "🇮🇩 Struktur Panitia Acara 17 Agustus",
+  "description": "📌 Struktur ini disusun untuk mengapresiasi kerja keras seluruh tim pelaksana lapangan, dengan tetap menempatkan Tim Eksekutif sebagai penanggung jawab utama koordinasi dan pengambilan keputusan.",
+  "teams": [
+    {
+      "name": "🔹 💼 Tim Program & Operasional",
+      "roles": [
+        {
+          "title": "Program Director",
+          "names": [
+            "Fahrul Wredha Kumara",
+            "Ega Praja Rimata"
+          ],
+          "description": "Bertanggung jawab menyusun alur dan susunan acara dari awal hingga akhir. Mengatur waktu dan susunan kegiatan agar berjalan lancar dan sesuai tema. Berkoordinasi erat dengan semua seksi untuk memastikan transisi acara berjalan mulus."
+        },
+        {
+          "title": "Talent Coordinator",
+          "names": [
+            "Puput Pramuditya",
+            "Ebta Valentino"
+          ],
+          "description": "Menentukan, menghubungi, dan mengatur jadwal pengisi acara seperti MC, penampil seni, grup musik, dan tokoh masyarakat. Bertanggung jawab memastikan kesiapan mereka sebelum tampil, termasuk gladi resik jika diperlukan."
+        },
+        {
+          "title": "Stage Manager",
+          "names": [
+            "Helena Bella"
+          ],
+          "description": "Mengatur urutan tampil, memberi aba-aba waktu, menjaga ketepatan jadwal acara di panggung, memastikan ketersediaan mic/speaker, serta menjadi penghubung antara panggung dan tim teknis lainnya. Menjamin suasana panggung tertib dan terkontrol."
+        }
+      ]
+    },
+    {
+      "name": "🔹 🔧 Tim Logistik",
+      "roles": [
+        {
+          "title": "Games, Competitions, Prize & Giveaway Lead",
+          "names": [
+            "Diana",
+            "Diana Wulandari"
+          ],
+          "description": "Menyusun konsep lomba yang kreatif, aman, dan menyenangkan untuk semua kalangan. Menerima masukan dari warga, menyusun jadwal lomba, menentukan lokasi tiap lomba, mengatur juri, dan mengoordinasi pelaksanaan lomba di lapangan. Mengelola daftar hadiah dan doorprize, melakukan pengadaan, mendata nilai hadiah, menyusun penataan hadiah di lokasi, dan memastikan pembagian hadiah berlangsung tertib sesuai hasil perlombaan dan sistem undian. ---"
+        },
+        {
+          "title": "F\\&B Coordinator",
+          "names": [
+            "Irpan Sudrajat",
+            "Eka Sulistyowati"
+          ],
+          "description": "Menyiapkan konsumsi untuk panitia, peserta lomba, dan tamu undangan. Memastikan makanan/minuman cukup, bergizi, dan dibagikan tepat waktu. Berkoordinasi dengan vendor atau warga penyedia konsumsi dan membuat sistem distribusi."
+        },
+        {
+          "title": "Logistics & Equipment Coordinator",
+          "names": [
+            "Bayu Puasa Putra",
+            "Febrian Dwi Valentino"
+          ],
+          "description": "Menyiapkan dan mengatur semua kebutuhan teknis acara seperti tenda, kursi, meja, sound system, alat lomba, alat tulis, dan listrik cadangan. Memastikan semua alat dalam kondisi baik sebelum, selama, dan setelah acara."
+        },
+        {
+          "title": "Venue & Decoration Coordinator",
+          "names": [
+            "Reza Ziaudin",
+            "Aulia Ariani"
+          ],
+          "description": "Merancang layout tempat acara, membuat dan memasang dekorasi yang sesuai dengan tema kemerdekaan, menjaga estetika, kebersihan dan kenyamanan lokasi, serta menyiapkan penanda lokasi jika acara tersebar di beberapa titik."
+        },
+        {
+          "title": "Safety & Crowd Control Officer",
+          "names": [
+            "Edel Habibullahalufa",
+            "Aldi Agus"
+          ],
+          "description": "Menjaga keamanan selama acara berlangsung, mengatur arus keluar-masuk pengunjung, menjaga lokasi tetap kondusif, dan berkoordinasi jika ada situasi darurat. Juga bertugas menjaga perlombaan agar berjalan adil dan aman."
+        },
+        {
+          "title": "Fundraising & Sponsorship Coordinator",
+          "names": [
+            "Adriansyah Wicaksono, Sri Bulan",
+            "Arie Kustanto"
+          ],
+          "description": "Mencari dana dari sponsor, donatur, atau warga. Menyusun proposal dukungan, melakukan pendekatan ke mitra, mendata pemasukan dan pengeluaran dari sponsor, serta membuat laporan tertulis yang transparan."
+        },
+        {
+          "title": "Volunteer Coordinator",
+          "names": [
+            "Muhammad Wildan A. S.",
+            "Janitra Zahran"
+          ],
+          "description": "Mengajak dan membagi tugas relawan dan pemuda. Menyusun daftar tugas dan jadwal shift, membuat briefing teknis, membimbing relawan saat acara berlangsung, dan mengevaluasi kinerja mereka sebagai bagian dari dokumentasi."
+        }
+      ]
+    },
+    {
+      "name": "🔹 🎨 Tim Kreatif, Media & Humas",
+      "roles": [
+        {
+          "title": "Master of Ceremony",
+          "names": [
+            "Shinta Sari Interpreter",
+            "Diana"
+          ],
+          "description": "Membawakan acara secara komunikatif, menjaga suasana tetap hidup, memberi transisi antar segmen, menyampaikan informasi penting, serta mampu berimprovisasi jika terjadi perubahan rundown. ---"
+        },
+        {
+          "title": "Creative Director",
+          "names": [
+            "Breni Putra"
+          ],
+          "description": "Merancang identitas visual acara (tema warna, font, grafis, layout). Menyusun desain untuk banner, backdrop, undangan, dan konten publikasi. Berkoordinasi dengan tim dekorasi dan publikasi, serta mengawasi output desain."
+        },
+        {
+          "title": "Documentation Team",
+          "names": [
+            "Taufik Trilaksono, N. Amir Fauzi",
+            "Julius Phutut"
+          ],
+          "description": "Mendokumentasikan seluruh kegiatan dengan foto dan video. Membagi tim sesuai titik acara, memastikan kualitas hasil dokumentasi, serta menyiapkan album digital dan video highlight sebagai arsip kegiatan."
+        },
+        {
+          "title": "Promotion Lead",
+          "names": [
+            "Taufik Trilaksono"
+          ],
+          "description": "Membuat materi informasi, mengelola penyebaran konten sebelum, saat, dan setelah acara di media sosial, grup WA, serta kanal lain. Menjadwalkan posting, membuat caption, dan menjaga komunikasi dua arah dengan warga secara daring."
+        }
+      ]
+    },
+    {
+      "name": "🔹 🧭 Tim Eksekutif",
+      "roles": [
+        {
+          "title": "Public Relations Coordinator",
+          "names": [
+            "Muhammad Taqi Ardabilli"
+          ],
+          "description": "Menjadi penghubung langsung antara panitia dan warga. Menjawab pertanyaan warga seputar acara, menyampaikan undangan secara lisan atau tertulis, serta menyambut dan mendampingi tamu undangan selama acara. ---"
+        },
+        {
+          "title": "Advisor",
+          "names": [
+            "Danang Saputro"
+          ],
+          "description": "Sebagai Ketua Paguyuban Warga, bertugas memberikan arahan umum, memastikan panitia bekerja sesuai nilai kebersamaan dan semangat gotong royong warga, serta memberi masukan strategis jika diperlukan."
+        },
+        {
+          "title": "Event Director",
+          "names": [
+            "Deden Bangkit"
+          ],
+          "description": "Memimpin seluruh panitia, menyusun struktur organisasi, menentukan jadwal rapat, memantau progres masing-masing seksi, serta mengambil keputusan strategis yang mendukung kelancaran acara."
+        },
+        {
+          "title": "Deputy Director",
+          "names": [
+            "Robertus Bellarmino Dhany"
+          ],
+          "description": "Membantu tugas ketua, memediasi antar tim jika terjadi kendala, menyusun agenda teknis, serta bertindak sebagai pengganti ketua bila berhalangan."
+        },
+        {
+          "title": "Finance Director",
+          "names": [
+            "Helmy Nurcahyo Wibowo"
+          ],
+          "description": "Mencatat dan mengelola semua transaksi keuangan acara. Menyusun laporan anggaran, menyimpan bukti pengeluaran, memastikan semua transaksi transparan, dan menyampaikan laporan akhir ke semua pihak."
+        },
+        {
+          "title": "Secretary",
+          "names": [
+            "Nanang Makfi Mubarok"
+          ],
+          "description": "Menyusun notulen rapat, menyimpan dokumen penting, membuat surat-menyurat, menyebarkan informasi resmi kepada panitia, serta mengelola seluruh kebutuhan administratif secara tertib dan akurat."
+        }
+      ]
+    }
+  ]
+}

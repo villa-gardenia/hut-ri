@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@tailwind typography;
 
 /* Smooth Scroll */
 html {
@@ -14,7 +15,26 @@ html {
 
 /* Gradient Overlay for Hero */
 .hero-overlay {
-  background: linear-gradient(180deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.7) 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.3) 0%,
+    rgba(0, 0, 0, 0.7) 100%
+  );
+}
+/* Navigation Bar */
+.navbar {
+  @apply fixed top-0 left-0 w-full z-50 backdrop-blur-md bg-white/30 border-b border-white/20 shadow-lg;
+}
+.navbar .nav-container {
+  @apply flex justify-center items-center px-4 py-3;
+}
+.navbar ul.nav-link {
+  color: #fff;
+  @apply flex items-center space-x-4 px-4 py-2;
+}
+.navbar .nav-link-item {
+  @apply px-4 py-2 font-normal hover:text-red-600 transition-colors duration-300;
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.8);
 }
 
 /* Section Heading */
@@ -23,12 +43,31 @@ html {
 }
 
 .section-title::after {
-  content: '';
+  content: "";
   display: block;
   width: 60px;
   height: 4px;
   margin: 1rem auto;
   background: linear-gradient(to right, #d9232e, #ff4b5c);
+}
+
+.section-subtitle {
+  @apply text-lg text-gray-500 text-center font-semibold mt-2;
+  color: #4a5568;
+}
+
+.section-subtitle-black {
+  @apply text-black text-center font-semibold mt-2;
+  font-size: 22px;
+}
+.section-subtitle-black::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  margin: 2rem auto;
+  /* Gradient line gray to white */
+  background: linear-gradient(to right, #a0aec0, #edf2f7);
 }
 
 /* Paragraph styling */

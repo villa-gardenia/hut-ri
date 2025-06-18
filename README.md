@@ -8,6 +8,8 @@ Dibangun dengan:
 - [Tailwind CSS](https://tailwindcss.com/) untuk styling responsif
 - [Framer Motion](https://www.framer.com/motion/)  untuk animasi parallax
 - [Docker Compose](https://docs.docker.com/compose/)  untuk development
+- [Markdown](https://www.markdownguide.org/) untuk dokumentasi dan struktur data
+- [Python](https://www.python.org/) untuk konversi Markdown ke JSON
 - [GitHub Pages](https://pages.github.com/)  deployment yang mudah untuk website
 
 ---
@@ -74,6 +76,50 @@ Seluruh dokumen terkait penyelenggaraan HUT RI ke-80 oleh warga Villa Gardenia  
      
 > 📝 Dokumen-dokumen ini hanya untuk keperluan internal dan tidak termasuk dalam website production.
 
+## 🛠️ Konversi Markdown ke JSON Struktur Panitia
+
+Repo ini menyertakan script untuk mengubah file Markdown berisi struktur panitia acara menjadi file JSON terstruktur yang bisa dipakai untuk frontend dinamis (misalnya di Next.js).
+📄 Format Markdown
+
+Markdown harus mengikuti struktur:
+```markdown
+## Nama Tim
+
+### Nama Posisi – Nama Anggota (Contoh: Nama Anggota 1 & Nama Anggota 2)
+
+Deskripsi tugas dan tanggung jawab posisi ini.
+```
+
+Cara menggunakan:
+1. Pastikan Anda sudah menginstall python dan pip.
+2. Update Markdown di `80/README.md` sesuai format di atas.
+3. Jalankan perintah berikut:
+```bash
+./update.sh
+```
+> Script ini akan membaca file `80/README.md`, mengonversinya menjadi JSON, dan menyimpannya di `src/data/committee.json`.
+4. Hasil JSON akan terlihat seperti ini:
+```json
+{
+  "teams": [
+    {
+      "name": "Tim Program & Operasional",
+      "roles": [
+        {
+          "title": "Koordinator Acara (Program Director)",
+          "names": ["Fahrul Wredha Kumara", "Ega Praja Rimata"],
+          "description": "Bertanggung jawab menyusun alur dan susunan acara dari awal hingga akhir."
+        },
+        ...
+      ]
+    },
+    ...
+  ]
+}
+```
+5. Commit dan push perubahan ke repository untuk memperbarui data di frontend.
+
+
 ## 🛠 Teknologi yang Digunakan
 
 | Teknologi | Deskripsi |
@@ -83,6 +129,8 @@ Seluruh dokumen terkait penyelenggaraan HUT RI ke-80 oleh warga Villa Gardenia  
 | Framer Motion | Animasi parallax dan interaksi |
 | Docker Compose | Development environment yang konsisten |
 | GitHub Pages | Deployment gratis dan mudah |
+| Markdown | Format dokumentasi yang mudah dibaca |
+| Python | Script konversi Markdown ke JSON |
 
 ## 🙌 Terima Kasih 
 

@@ -2,12 +2,15 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
+import CommiteeSection from "../components/Commitee";
+import NavBar from "../components/NavBar";
 
 const basepath = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
 export default function HomePage() {
 	return (
 		<main className="w-full">
+			<NavBar basepath={basepath} />
 			{/* Hero Section */}
 			<section className="h-screen relative overflow-hidden flex items-center justify-center">
 				<motion.div initial={{ y: 0 }} className="absolute inset-0">
@@ -37,8 +40,8 @@ export default function HomePage() {
 					</a>
 				</motion.div>
 			</section>
-			{/* Sejarah Section */}
-			<section id="sejarah" className="min-h-screen py-20 px-4 bg-gray-100">
+			{/* Tentang Section */}
+			<section id="tentang" className="min-h-screen py-20 px-4 bg-gray-100">
 				<div className="container mx-auto">
 					<motion.h2
 						initial={{ opacity: 0, y: 20 }}
@@ -61,7 +64,8 @@ export default function HomePage() {
 					</motion.p>
 				</div>
 			</section>
-
+			{/* Panitia Section */}
+			<CommiteeSection basepath={basepath} />
 			{/* Perayaan Section */}
 			<section id="perayaan" className="min-h-screen py-20 px-4">
 				<div className="container mx-auto">
@@ -86,57 +90,6 @@ export default function HomePage() {
 					</motion.p>
 				</div>
 			</section>
-
-			{/* Budaya Section */}
-			<section id="budaya" className="min-h-screen py-20 px-4 bg-gray-100">
-				<div className="container mx-auto">
-					<motion.h2
-						initial={{ opacity: 0, y: 20 }}
-						whileInView={{ opacity: 1, y: 0 }}
-						viewport={{ once: true }}
-						className="section-title"
-					>
-						Budaya Nusantara
-					</motion.h2>
-					<motion.p
-						initial={{ opacity: 0, y: 20 }}
-						whileInView={{ opacity: 1, y: 0 }}
-						viewport={{ once: true }}
-						transition={{ delay: 0.2 }}
-						className="section-text"
-					>
-						Dengan lebih dari 17.000 pulau dan ribuan suku bangsa, Indonesia
-						kaya akan budaya, adat, dan tradisi yang menjadi bagian dari
-						identitas bangsa yang merdeka.
-					</motion.p>
-				</div>
-			</section>
-
-			{/* Kemerdekaan Kini Section */}
-			<section id="kemerdekaan-kini" className="min-h-screen py-20 px-4">
-				<div className="container mx-auto">
-					<motion.h2
-						initial={{ opacity: 0, y: 20 }}
-						whileInView={{ opacity: 1, y: 0 }}
-						viewport={{ once: true }}
-						className="section-title"
-					>
-						Kemerdekaan Kini
-					</motion.h2>
-					<motion.p
-						initial={{ opacity: 0, y: 20 }}
-						whileInView={{ opacity: 1, y: 0 }}
-						viewport={{ once: true }}
-						transition={{ delay: 0.2 }}
-						className="section-text"
-					>
-						Hari ini, makna kemerdekaan terus berkembang. Kita tidak hanya
-						merdeka secara politik, tetapi juga dalam pendidikan, teknologi,
-						ekonomi, dan seni budaya.
-					</motion.p>
-				</div>
-			</section>
-
 			{/* Kontak Section */}
 			<section id="kontak" className="min-h-screen py-20 px-4 bg-gray-100">
 				<div className="container mx-auto">
