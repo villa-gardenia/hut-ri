@@ -17,16 +17,20 @@ jobs:
           node-version: 18
 
       - name: Install dependencies
-        run: cd src && npm install
+        run: npm install --prefix src
 
       - name: Build with Docker
         run: |
           cd src
           docker build -t hut-ri .
+
+      - name: Create dist folder
+        run: |
+          mkdir -p dist
+          cd src
           docker create --name hut-ri-container hut-ri
-          mkdir -p ../dist
-          cp -r public ../dist/
           docker cp hut-ri-container:/app/.next/standalone/. ../dist/
+          docker cp hut-ri-container:/app/public/. ../dist/
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
