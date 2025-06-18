@@ -18,13 +18,9 @@ Menentukan, menghubungi, dan mengatur jadwal pengisi acara seperti MC, penampil 
 
 Mengatur urutan tampil, memberi aba-aba waktu, menjaga ketepatan jadwal acara di panggung, memastikan ketersediaan mic/speaker, serta menjadi penghubung antara panggung dan tim teknis lainnya. Menjamin suasana panggung tertib dan terkontrol.
 
-### 🏃 Koordinator Lomba & Permainan (Games & Competitions Lead) – Diana
+### 🏃 Koordinator Lomba, Permainan, Hadiah & Doorprize (Games, Competitions, Prize & Giveaway Lead) – Diana & Diana Wulandari
 
-Menyusun konsep lomba yang kreatif, aman, dan menyenangkan untuk semua kalangan. Menerima masukan dari warga, menyusun jadwal lomba, menentukan lokasi tiap lomba, mengatur juri, dan mengoordinasi pelaksanaan lomba di lapangan.
-
-### 🎁 Koordinator Hadiah & Doorprize (Prize & Giveaway Coordinator) – Arie Kustanto
-
-Mengelola daftar hadiah dan doorprize, melakukan pengadaan, mendata nilai hadiah, menyusun penataan hadiah di lokasi, dan memastikan pembagian hadiah berlangsung tertib sesuai hasil perlombaan dan sistem undian.
+Menyusun konsep lomba yang kreatif, aman, dan menyenangkan untuk semua kalangan. Menerima masukan dari warga, menyusun jadwal lomba, menentukan lokasi tiap lomba, mengatur juri, dan mengoordinasi pelaksanaan lomba di lapangan. Mengelola daftar hadiah dan doorprize, melakukan pengadaan, mendata nilai hadiah, menyusun penataan hadiah di lokasi, dan memastikan pembagian hadiah berlangsung tertib sesuai hasil perlombaan dan sistem undian.
 
 ---
 
@@ -46,7 +42,7 @@ Merancang layout tempat acara, membuat dan memasang dekorasi yang sesuai dengan 
 
 Menjaga keamanan selama acara berlangsung, mengatur arus keluar-masuk pengunjung, menjaga lokasi tetap kondusif, dan berkoordinasi jika ada situasi darurat. Juga bertugas menjaga perlombaan agar berjalan adil dan aman.
 
-### 💰 Koordinator Dana & Sponsorship (Fundraising & Sponsorship Coordinator) – Adriansyah Wicaksono & Sri Bulan
+### 💰 Koordinator Dana & Sponsorship (Fundraising & Sponsorship Coordinator) – Adriansyah Wicaksono, Sri Bulan & Arie Kustanto 
 
 Mencari dana dari sponsor, donatur, atau warga. Menyusun proposal dukungan, melakukan pendekatan ke mitra, mendata pemasukan dan pengeluaran dari sponsor, serta membuat laporan tertulis yang transparan.
 
