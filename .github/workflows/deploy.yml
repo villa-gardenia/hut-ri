@@ -31,6 +31,8 @@ jobs:
           mkdir -p dist
           cd src
           docker create --name hut-ri-container hut-ri
+          docker start hut-ri-container
+          docker exec hut-ri-container ls /app
           docker exec hut-ri-container ls /app/public
           docker exec hut-ri-container ls /app/.next
           docker cp hut-ri-container:/app/public ../dist/
