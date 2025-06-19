@@ -38,8 +38,14 @@ jobs:
         working-directory: ./src
         run: npm ci
 
-      - name: Update Data
+      - name: Update Committee
         run: ./update.sh
+
+      - name: Update Donation
+        env:
+          WEBHOOK_URL: ${{ secrets.FINANCE_WEBHOOK }}
+        run: |
+          curl -s "$WEBHOOK_URL" > ./src/public/data/donation.json
 
       - name: Build with Next.js
         working-directory: ./src
