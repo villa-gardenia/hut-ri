@@ -1,1 +1,8 @@
-{"sd":null,"max":null,"min":null,"mean":null,"sum":0,"count":0}
+{
+	"sd": 450000,
+	"max": 1500000,
+	"min": 50000,
+	"mean": 100000,
+	"sum": 1800000,
+	"count": 20
+}
