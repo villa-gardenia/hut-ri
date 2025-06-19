@@ -43,7 +43,7 @@ jobs:
 
       - name: Update Donation
         env:
-          WEBHOOK_URL: ${{ secrets.FINANCE_WEBHOOK }}
+          WEBHOOK_URL: ${{ secrets.FINANCE_WEBHOOK_URL }}
         run: |
           curl -S "$WEBHOOK_URL" > ./src/public/data/donation.json
 
