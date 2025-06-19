@@ -204,8 +204,8 @@ export default function HomePage() {
 							<br />
 							Contoh: <span className="font-bold text-red-500">100.178</span>
 							<br />
-							Setelah transfer, harap konfirmasi langsung ke Bendahara atau
-							Ketua Panitia.
+							Setelah transfer, harap konfirmasi langsung ke Finance Director
+							(Helmy) atau Event Director (Deden).
 						</div>
 					</motion.div>
 					<motion.div

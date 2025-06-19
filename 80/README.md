@@ -26,7 +26,7 @@ Menyusun konsep lomba yang kreatif, aman, dan menyenangkan untuk semua kalangan.
 
 ## 🔹 🔧 Tim Logistik
 
-### 🍱 Koordinator Konsumsi (F\&B Coordinator) – Irpan Sudrajat, Putri, Eka Sulistyowati
+### 🍱 Koordinator Konsumsi (F\&B Coordinator) – Irpan Sudrajat, Eka Sulistyowati
 
 Menyiapkan konsumsi untuk panitia, peserta lomba, dan tamu undangan. Memastikan makanan/minuman cukup, bergizi, dan dibagikan tepat waktu. Berkoordinasi dengan vendor atau warga penyedia konsumsi dan membuat sistem distribusi.
 
