@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import CommiteeSection from "../components/Commitee";
 import NavBar from "../components/NavBar";
+import Donation from "../components/Donation";
 
 const basepath = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
@@ -180,15 +181,46 @@ export default function HomePage() {
 					>
 						Total Donasi Hari Ini
 					</motion.h2>
-					<motion.p
+					<Donation basepath={basepath} />
+					<motion.div
 						initial={{ opacity: 0, y: 20 }}
 						whileInView={{ opacity: 1, y: 0 }}
 						viewport={{ once: true }}
 						transition={{ delay: 0.2 }}
 						className="section-text"
 					>
-						Coming Soon
-					</motion.p>
+						Dukung perayaan HUT RI ke-80 di Villa Gardenia dengan berdonasi
+						melalui:
+						<div className="donation-text">
+							<br />
+							<span className="text-bold text-red-500">BCA 1221282898</span>
+							<br />
+							a.n. <span className="text-red-500">Helmy Nurcahyo Wibowo</span>
+							<br />
+							Mohon sertakan kode unik <span className="text-red-500">
+								178
+							</span>{" "}
+							di tiga digit terakhir nominal
+							<br />
+							Contoh: <span className="font-bold text-red-500">100.178</span>
+							<br />
+							Setelah transfer, harap konfirmasi langsung ke Bendahara atau
+							Ketua Panitia.
+						</div>
+					</motion.div>
+					<motion.div
+						initial={{ opacity: 0, y: 20 }}
+						whileInView={{ opacity: 1, y: 0 }}
+						viewport={{ once: true }}
+						transition={{ delay: 0.2 }}
+						className="section-text mt-4 text-red-500"
+					>
+						Donasi Anda sangat berarti untuk kesuksesan perayaan{" "}
+						<b className="text-red-500">HUT RI ke-80</b>
+						di Villa Gardenia. Setiap kontribusi, besar atau kecil, akan
+						membantu mewujudkan acara yang meriah dan berkesan bagi seluruh
+						warga.
+					</motion.div>
 				</div>
 			</section>
 			{/* Kontak Section */}
