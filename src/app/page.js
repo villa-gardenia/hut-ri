@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import CommiteeSection from "../components/Commitee";
@@ -8,6 +9,32 @@ import NavBar from "../components/NavBar";
 const basepath = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
 export default function HomePage() {
+	useEffect(() => {
+		// Countdown logic
+		const targetDate = new Date("2025-08-17T00:00:00").getTime();
+
+		const countdownInterval = setInterval(() => {
+			const now = new Date().getTime();
+			const timeRemaining = targetDate - now;
+
+			// Calculate days remaining
+			const days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
+
+			// Display the countdown in the DOM
+			document.getElementById("days").textContent = String(days);
+
+			// Stop the countdown when the target date is reached
+			if (timeRemaining < 0) {
+				clearInterval(countdownInterval);
+				document.getElementById("countdown").innerHTML =
+					"<span class='text-white-500'>SELAMAT HARI KEMERDEKAAN!</span>";
+			}
+		}, 1000);
+
+		// Cleanup interval on component unmount
+		return () => clearInterval(countdownInterval);
+	}, []);
+
 	return (
 		<main className="w-full">
 			<NavBar />
@@ -29,15 +56,42 @@ export default function HomePage() {
 					transition={{ delay: 0.5 }}
 					className="relative z-10 text-center text-white px-4"
 				>
-					<h1 className="text-4xl md:text-6xl font-extrabold leading-tight tracking-wide">
-						Selamat Hari Ulang Tahun <br /> Republik Indonesia Ke-80
-					</h1>
-					<p className="mt-4 text-lg md:text-xl max-w-2xl mx-auto">
+					<Image
+						src={`${basepath}/assets/logo.jpg`}
+						alt="logo-villa-gardenia"
+						priority
+						className="mx-auto rounded-full hero-logo"
+						width={400}
+						height={400}
+					/>
+					<motion.div
+						initial={{ opacity: 0, y: 20 }}
+						animate={{ opacity: 1, y: 0 }}
+						transition={{ delay: 1 }}
+						id="countdown"
+						className="mt-8 text-2xl md:text-3xl font-bold text-white-500"
+					>
+						<span id="days"></span> Hari Menuju Kemerdekaan
+						<br /> Republik Indonesia Ke-80
+					</motion.div>
+					<motion.p
+						initial={{ opacity: 0, y: 20 }}
+						animate={{ opacity: 1, y: 0 }}
+						transition={{ delay: 1.5 }}
+						id="countdown"
+						className="mt-4 text-lg md:text-xl max-w-2xl mx-auto"
+					>
 						Merdeka dan Maju Bersama di Bumi Pertiwi
-					</p>
-					<a href="#tentang" className="btn-primary mt-8">
+					</motion.p>
+					<motion.a
+						initial={{ opacity: 0 }}
+						animate={{ opacity: 1 }}
+						transition={{ delay: 2.5 }}
+						href="#tentang"
+						className="btn-primary mt-8"
+					>
 						Mulai Jelajah
-					</a>
+					</motion.a>
 				</motion.div>
 			</section>
 			{/* Tentang Section */}
