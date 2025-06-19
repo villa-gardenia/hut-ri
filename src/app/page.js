@@ -165,7 +165,7 @@ export default function HomePage() {
 						transition={{ delay: 0.2 }}
 						className="section-text"
 					>
-						Comming Soon
+						Coming Soon
 					</motion.p>
 				</div>
 			</section>
@@ -187,7 +187,7 @@ export default function HomePage() {
 						transition={{ delay: 0.2 }}
 						className="section-text"
 					>
-						Comming Soon
+						Coming Soon
 					</motion.p>
 				</div>
 			</section>
