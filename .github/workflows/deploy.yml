@@ -21,12 +21,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Update Data
-      - uses: actions/setup-python@v5
-        with:
-          python-version: "3.13"
-      - run: ./update.sh
-
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
