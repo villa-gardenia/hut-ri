@@ -8,7 +8,8 @@ export default function NavBar() {
 		{ name: "Beranda", href: "" },
 		{ name: "Tentang", href: "/#tentang" },
 		{ name: "Panitia", href: "/#panitia" },
-		{ name: "Perayaan", href: "/#perayaan" },
+		{ name: "Event", href: "/#event" },
+		{ name: "Donasi", href: "/#donasi" },
 		{ name: "Kontak", href: "/#kontak" },
 	];
 
