@@ -6,11 +6,11 @@
 
 ## 🔹 💼 Tim Program & Operasional
 
-### 🎤 Koordinator Acara (Program Director) – Fahrul Wredha Kumara & Ega Praja Rimata
+### 🎤 Koordinator Acara (Program Director) – Fahrul Wredha Kumara, Putri Ratri Kusuma Dewi, Ega Praja Rimata
 
 Bertanggung jawab menyusun alur dan susunan acara dari awal hingga akhir. Mengatur waktu dan susunan kegiatan agar berjalan lancar dan sesuai tema. Berkoordinasi erat dengan semua seksi untuk memastikan transisi acara berjalan mulus.
 
-### 🌟 Koordinator Pengisi Acara (Talent Coordinator) – Puput Pramuditya & Ebta Valentino
+### 🌟 Koordinator Pengisi Acara (Talent Coordinator) – Puput Pramuditya, Ebta Valentino
 
 Menentukan, menghubungi, dan mengatur jadwal pengisi acara seperti MC, penampil seni, grup musik, dan tokoh masyarakat. Bertanggung jawab memastikan kesiapan mereka sebelum tampil, termasuk gladi resik jika diperlukan.
 
@@ -18,7 +18,7 @@ Menentukan, menghubungi, dan mengatur jadwal pengisi acara seperti MC, penampil 
 
 Mengatur urutan tampil, memberi aba-aba waktu, menjaga ketepatan jadwal acara di panggung, memastikan ketersediaan mic/speaker, serta menjadi penghubung antara panggung dan tim teknis lainnya. Menjamin suasana panggung tertib dan terkontrol.
 
-### 🏃 Koordinator Lomba, Permainan, Hadiah & Doorprize (Games, Competitions, Prize & Giveaway Lead) – Diana & Diana Wulandari
+### 🏃 Koordinator Lomba, Permainan, Hadiah & Doorprize (Games, Competitions, Prize & Giveaway Lead) – Diana, Diana Wulandari
 
 Menyusun konsep lomba yang kreatif, aman, dan menyenangkan untuk semua kalangan. Menerima masukan dari warga, menyusun jadwal lomba, menentukan lokasi tiap lomba, mengatur juri, dan mengoordinasi pelaksanaan lomba di lapangan. Mengelola daftar hadiah dan doorprize, melakukan pengadaan, mendata nilai hadiah, menyusun penataan hadiah di lokasi, dan memastikan pembagian hadiah berlangsung tertib sesuai hasil perlombaan dan sistem undian.
 
@@ -26,11 +26,11 @@ Menyusun konsep lomba yang kreatif, aman, dan menyenangkan untuk semua kalangan.
 
 ## 🔹 🔧 Tim Logistik
 
-### 🍱 Koordinator Konsumsi (F\&B Coordinator) – Irpan Sudrajat & Eka Sulistyowati
+### 🍱 Koordinator Konsumsi (F\&B Coordinator) – Irpan Sudrajat, Putri, Eka Sulistyowati
 
 Menyiapkan konsumsi untuk panitia, peserta lomba, dan tamu undangan. Memastikan makanan/minuman cukup, bergizi, dan dibagikan tepat waktu. Berkoordinasi dengan vendor atau warga penyedia konsumsi dan membuat sistem distribusi.
 
-### 🛠️ Koordinator Logistik & Peralatan (Logistics & Equipment Coordinator) – Bayu Puasa Putra & Febrian Dwi Valentino
+### 🛠️ Koordinator Logistik & Peralatan (Logistics & Equipment Coordinator) – Bayu Puasa Putra, Febrian Dwi Valentino
 
 Menyiapkan dan mengatur semua kebutuhan teknis acara seperti tenda, kursi, meja, sound system, alat lomba, alat tulis, dan listrik cadangan. Memastikan semua alat dalam kondisi baik sebelum, selama, dan setelah acara.
 
@@ -38,19 +38,19 @@ Menyiapkan dan mengatur semua kebutuhan teknis acara seperti tenda, kursi, meja,
 
 Merancang layout tempat acara, membuat dan memasang dekorasi yang sesuai dengan tema kemerdekaan, menjaga estetika, kebersihan dan kenyamanan lokasi, serta menyiapkan penanda lokasi jika acara tersebar di beberapa titik.
 
-### 🛡️ Koordinator Keamanan & Ketertiban (Safety & Crowd Control Officer) – Edel Habibullahalufa & Aldi Agus
+### 🛡️ Koordinator Keamanan & Ketertiban (Safety & Crowd Control Officer) – Edel Habibullahalufa, Aldi Agus
 
 Menjaga keamanan selama acara berlangsung, mengatur arus keluar-masuk pengunjung, menjaga lokasi tetap kondusif, dan berkoordinasi jika ada situasi darurat. Juga bertugas menjaga perlombaan agar berjalan adil dan aman.
 
-### 💰 Koordinator Dana & Sponsorship (Fundraising & Sponsorship Coordinator) – Adriansyah Wicaksono, Sri Bulan & Arie Kustanto 
+### 💰 Koordinator Dana & Sponsorship (Fundraising & Sponsorship Coordinator) – Adriansyah Wicaksono, Sri Bulan, Arie Kustanto
 
 Mencari dana dari sponsor, donatur, atau warga. Menyusun proposal dukungan, melakukan pendekatan ke mitra, mendata pemasukan dan pengeluaran dari sponsor, serta membuat laporan tertulis yang transparan.
 
-### 🙋‍♂️ Koordinator Relawan & Pemuda (Volunteer Coordinator) – Muhammad Wildan A. S. & Janitra Zahran
+### 🙋‍♂️ Koordinator Relawan & Pemuda (Volunteer Coordinator) – Muhammad Wildan A. S., Naufal Daffa Musyaffa, Janitra Zahran
 
 Mengajak dan membagi tugas relawan dan pemuda. Menyusun daftar tugas dan jadwal shift, membuat briefing teknis, membimbing relawan saat acara berlangsung, dan mengevaluasi kinerja mereka sebagai bagian dari dokumentasi.
 
-### 🎙️ MC (Master of Ceremony) – Shinta Sari Interpreter & Diana
+### 🎙️ MC (Master of Ceremony) – Shinta Sari Interpreter, Diana
 
 Membawakan acara secara komunikatif, menjaga suasana tetap hidup, memberi transisi antar segmen, menyampaikan informasi penting, serta mampu berimprovisasi jika terjadi perubahan rundown.
 
@@ -62,7 +62,7 @@ Membawakan acara secara komunikatif, menjaga suasana tetap hidup, memberi transi
 
 Merancang identitas visual acara (tema warna, font, grafis, layout). Menyusun desain untuk banner, backdrop, undangan, dan konten publikasi. Berkoordinasi dengan tim dekorasi dan publikasi, serta mengawasi output desain.
 
-### 📸 Tim Dokumentasi (Documentation Team) – Taufik Trilaksono, N. Amir Fauzi & Julius Phutut
+### 📸 Tim Dokumentasi (Documentation Team) – Taufik Trilaksono, N. Amir Fauzi, Julius Phutut
 
 Mendokumentasikan seluruh kegiatan dengan foto dan video. Membagi tim sesuai titik acara, memastikan kualitas hasil dokumentasi, serta menyiapkan album digital dan video highlight sebagai arsip kegiatan.
 
