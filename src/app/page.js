@@ -156,7 +156,29 @@ export default function HomePage() {
 						viewport={{ once: true }}
 						className="section-title"
 					>
-						Perayaan Hari Ini
+						Event Hari Ini
+					</motion.h2>
+					<motion.p
+						initial={{ opacity: 0, y: 20 }}
+						whileInView={{ opacity: 1, y: 0 }}
+						viewport={{ once: true }}
+						transition={{ delay: 0.2 }}
+						className="section-text"
+					>
+						Comming Soon
+					</motion.p>
+				</div>
+			</section>
+			{/* Total Donasi Section */}
+			<section id="donasi" className="min-h-screen py-20 px-4">
+				<div className="container mx-auto">
+					<motion.h2
+						initial={{ opacity: 0, y: 20 }}
+						whileInView={{ opacity: 1, y: 0 }}
+						viewport={{ once: true }}
+						className="section-title"
+					>
+						Total Donasi Hari Ini
 					</motion.h2>
 					<motion.p
 						initial={{ opacity: 0, y: 20 }}
@@ -170,7 +192,7 @@ export default function HomePage() {
 				</div>
 			</section>
 			{/* Kontak Section */}
-			<section id="kontak" className="min-h-screen py-20 px-4">
+			<section id="kontak" className="min-h-screen py-20 px-4 bg-gray-100">
 				<div className="container mx-auto">
 					<motion.h2
 						initial={{ opacity: 0, y: 20 }}
