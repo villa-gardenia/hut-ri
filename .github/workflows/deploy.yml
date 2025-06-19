@@ -38,6 +38,9 @@ jobs:
         working-directory: ./src
         run: npm ci
 
+      - name: Update Data
+        run: ./update.sh
+
       - name: Build with Next.js
         working-directory: ./src
         run: npm run build
