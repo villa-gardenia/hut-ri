@@ -27,12 +27,7 @@
             "Helena Bella"
           ],
           "description": "Mengatur urutan tampil, memberi aba-aba waktu, menjaga ketepatan jadwal acara di panggung, memastikan ketersediaan mic/speaker, serta menjadi penghubung antara panggung dan tim teknis lainnya. Menjamin suasana panggung tertib dan terkontrol."
-        }
-      ]
-    },
-    {
-      "name": "🔹 🔧 Tim Logistik",
-      "roles": [
+        },
         {
           "title": "Games, Competitions, Prize & Giveaway Lead",
           "names": [
@@ -40,7 +35,12 @@
             "Diana Wulandari"
           ],
           "description": "Menyusun konsep lomba yang kreatif, aman, dan menyenangkan untuk semua kalangan. Menerima masukan dari warga, menyusun jadwal lomba, menentukan lokasi tiap lomba, mengatur juri, dan mengoordinasi pelaksanaan lomba di lapangan. Mengelola daftar hadiah dan doorprize, melakukan pengadaan, mendata nilai hadiah, menyusun penataan hadiah di lokasi, dan memastikan pembagian hadiah berlangsung tertib sesuai hasil perlombaan dan sistem undian. ---"
-        },
+        }
+      ]
+    },
+    {
+      "name": "🔹 🔧 Tim Logistik",
+      "roles": [
         {
           "title": "F\\&B Coordinator",
           "names": [
@@ -88,12 +88,7 @@
             "Janitra Zahran"
           ],
           "description": "Mengajak dan membagi tugas relawan dan pemuda. Menyusun daftar tugas dan jadwal shift, membuat briefing teknis, membimbing relawan saat acara berlangsung, dan mengevaluasi kinerja mereka sebagai bagian dari dokumentasi."
-        }
-      ]
-    },
-    {
-      "name": "🔹 🎨 Tim Kreatif, Media & Humas",
-      "roles": [
+        },
         {
           "title": "Master of Ceremony",
           "names": [
@@ -101,7 +96,12 @@
             "Diana"
           ],
           "description": "Membawakan acara secara komunikatif, menjaga suasana tetap hidup, memberi transisi antar segmen, menyampaikan informasi penting, serta mampu berimprovisasi jika terjadi perubahan rundown. ---"
-        },
+        }
+      ]
+    },
+    {
+      "name": "🔹 🎨 Tim Kreatif, Media & Humas",
+      "roles": [
         {
           "title": "Creative Director",
           "names": [
@@ -123,19 +123,19 @@
             "Taufik Trilaksono"
           ],
           "description": "Membuat materi informasi, mengelola penyebaran konten sebelum, saat, dan setelah acara di media sosial, grup WA, serta kanal lain. Menjadwalkan posting, membuat caption, dan menjaga komunikasi dua arah dengan warga secara daring."
-        }
-      ]
-    },
-    {
-      "name": "🔹 🧭 Tim Eksekutif",
-      "roles": [
+        },
         {
           "title": "Public Relations Coordinator",
           "names": [
             "Muhammad Taqi Ardabilli"
           ],
           "description": "Menjadi penghubung langsung antara panitia dan warga. Menjawab pertanyaan warga seputar acara, menyampaikan undangan secara lisan atau tertulis, serta menyambut dan mendampingi tamu undangan selama acara. ---"
-        },
+        }
+      ]
+    },
+    {
+      "name": "🔹 🧭 Tim Eksekutif",
+      "roles": [
         {
           "title": "Advisor",
           "names": [

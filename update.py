@@ -7,7 +7,6 @@ filename = sys.argv[1]
 with open(filename, encoding="utf-8") as f:
     lines = f.readlines()
 
-
 data = {"title": "", "description": "", "teams": []}
 
 current_team = None
@@ -15,6 +14,7 @@ current_role = None
 
 for line in lines:
     line = line.strip()
+
     # Judul utama
     if line.startswith("# "):
         data["title"] = line[2:].strip()
@@ -25,26 +25,41 @@ for line in lines:
 
     # Header tim
     elif line.startswith("## "):
+        # Save previous role to team before switching team
+        if current_role:
+            current_team["roles"].append(current_role)
+            current_role = None
+
+        # Save current team before starting a new one
         if current_team:
             data["teams"].append(current_team)
+
         current_team = {"name": line.replace("## ", "").strip(), "roles": []}
 
     # Sub-header role
     elif line.startswith("### "):
+        # Save previous role before starting new one
         if current_role:
             current_team["roles"].append(current_role)
+
         current_role = {"title": "", "names": [], "description": ""}
+
         role_header = line.replace("### ", "").strip()
         match = re.match(r"(.+?) – (.+)", role_header)
         if match:
-            current_role["title"] = (
-                match.group(1).strip().split("(")[1].replace(")", "")
-            )
+            # title (e.g., Ketua Panitia (Event Director))
+            role_title_part = match.group(1).strip()
+            title_match = re.search(r"\((.*?)\)", role_title_part)
+            if title_match:
+                current_role["title"] = title_match.group(1).strip()
             current_role["names"] = [
                 name.strip() for name in match.group(2).split("&")
             ]
         else:
-            current_role["title"] = role_header.split("(")[1].replace(")", "")
+            # fallback if no "–"
+            title_match = re.search(r"\((.*?)\)", role_header)
+            if title_match:
+                current_role["title"] = title_match.group(1).strip()
 
     # Paragraf deskripsi
     elif line and current_role:
@@ -53,7 +68,7 @@ for line in lines:
         else:
             current_role["description"] = line
 
-# Push the last role and team
+# Final flush of last role and team
 if current_role:
     current_team["roles"].append(current_role)
 if current_team:
