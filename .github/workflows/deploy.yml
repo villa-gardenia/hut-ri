@@ -45,7 +45,7 @@ jobs:
         env:
           WEBHOOK_URL: ${{ secrets.FINANCE_WEBHOOK }}
         run: |
-          cat "$WEBHOOK_URL"
+          echo "$WEBHOOK_URL"
           curl
           #curl -s "$WEBHOOK_URL" > ./src/public/data/donation.json
 
