@@ -45,9 +45,7 @@ jobs:
         env:
           WEBHOOK_URL: ${{ secrets.FINANCE_WEBHOOK }}
         run: |
-          echo "$WEBHOOK_URL"
-          curl
-          #curl -s "$WEBHOOK_URL" > ./src/public/data/donation.json
+          curl -S "$WEBHOOK_URL" > ./src/public/data/donation.json
 
       - name: Build with Next.js
         working-directory: ./src
