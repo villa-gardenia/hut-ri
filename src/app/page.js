@@ -22,6 +22,7 @@ export default function HomePage() {
 
 			// Display the countdown in the DOM
 			document.getElementById("days").textContent = String(days);
+			document.getElementById("days-paragraph").textContent = String(days);
 
 			// Stop the countdown when the target date is reached
 			if (timeRemaining < 0) {
@@ -103,7 +104,7 @@ export default function HomePage() {
 						viewport={{ once: true }}
 						className="section-title"
 					>
-						Sejarah Kemerdekaan
+						Semangat Kemerdekaan
 					</motion.h2>
 					<motion.p
 						initial={{ opacity: 0, y: 20 }}
@@ -112,9 +113,35 @@ export default function HomePage() {
 						transition={{ delay: 0.2 }}
 						className="section-text"
 					>
-						Pada tanggal 17 Agustus 1945, Soekarno-Hatta memproklamasikan
-						kemerdekaan Indonesia. Setelah sekian lama dijajah oleh bangsa
-						asing, akhirnya Indonesia berdiri sebagai negara merdeka.
+						Dalam rangka memperingati{" "}
+						<span className="text-red-500">
+							Hari Ulang Kemerdekaan Republik Indonesia
+						</span>
+						, Paguyuban Villa Gardenia kembali menunjukkan semangat kebangsaan
+						dengan meriahkan HUT RI sejak tahun 2023 lalu. Berbagai kegiatan
+						seperti lomba tradisional, hingga pementasan seni telah sukses
+						menciptakan rasa kebersamaan dan kekompakan antar warga. Semarak
+						kemerdekaan tidak hanya menjadi ajang hiburan, tetapi juga sarana
+						memupuk rasa cinta tanah air di tengah lingkungan perumahan kami.
+					</motion.p>
+					<motion.p
+						initial={{ opacity: 0, y: 20 }}
+						whileInView={{ opacity: 1, y: 0 }}
+						viewport={{ once: true }}
+						transition={{ delay: 0.2 }}
+						className="section-text mt-2"
+					>
+						Menjelang HUT RI tahun ini yang tinggal{" "}
+						<span id="days-paragraph" className="text-red-500"></span> hari
+						lagi, kami berkomitmen untuk menggelar perayaan yang lebih meriah
+						dan berkesan. Untuk mewujudkan hal tersebut, kami mengajak seluruh
+						warga Villa Gardenia dan donatur lainnya untuk turut serta dalam
+						bentuk dukungan dan donasi. Dengan gotong royong dan semangat
+						persatuan, kami yakin bahwa perayaan
+						<span className="text-red-500"> HUT RI ke-80</span> di Villa
+						Gardenia akan menjadi momen yang tak terlupakan dan memperkuat
+						ikatan bermasyarakat. Mari bersama kita tunjukkan semangat 45 yang
+						masih menyala!
 					</motion.p>
 				</div>
 			</section>
