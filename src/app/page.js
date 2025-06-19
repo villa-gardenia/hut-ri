@@ -165,9 +165,7 @@ export default function HomePage() {
 						transition={{ delay: 0.2 }}
 						className="section-text"
 					>
-						Di seluruh penjuru nusantara, masyarakat memperingati HUT RI dengan
-						upacara bendera, pawai, hingga berbagai perlombaan tradisional
-						seperti panjat pinang dan tarik tambang.
+						Comming Soon
 					</motion.p>
 				</div>
 			</section>
@@ -190,7 +188,8 @@ export default function HomePage() {
 						className="section-text"
 					>
 						Ingin ikut serta dalam perayaan atau memiliki pertanyaan? Silakan
-						hubungi kami melalui email atau media sosial resmi.
+						hubungi kami melalui Panitia Humas Paguyuban (M.Taqi Arda, Bu Diana)
+						atau langsung mention ke Panitia di WhatsApp Group Paguyuban.
 					</motion.p>
 				</div>
 			</section>
