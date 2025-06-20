@@ -205,7 +205,7 @@ export default function HomePage() {
 							Contoh: <span className="font-bold text-red-500">100.178</span>
 							<br />
 							Setelah transfer, harap konfirmasi langsung ke Finance Director
-							(Helmy) atau Event Director (Deden).
+							(Helmy Wibowo).
 						</div>
 					</motion.div>
 					<motion.div
