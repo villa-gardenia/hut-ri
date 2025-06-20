@@ -1,6 +1,6 @@
 * Draft Timeline Panitia HUT RI ke-80 Villa Gardenia
 
-** 22 Juni (Minggu) – Kickoff
+** 🟢 22 Juni (Minggu) – Kickoff
 *** Agenda
 - Kickoff: finalisasi struktur panitia
 - Pembagian tugas awal kepada setiap tim
@@ -13,7 +13,7 @@
 - Fundraising & Sponsorship Coordinator
 - Public Relations Coordinator
 
-** 29–30 Juni
+** 🟡 29–30 Juni
 *** Agenda
 - Finalisasi proposal kegiatan dan surat undangan
 - Distribusi undangan partisipasi digital ke warga
@@ -25,7 +25,7 @@
 - Finance Director
 - Fundraising & Sponsorship Coordinator
 
-** 5–6 Juli
+** 🟡 5–6 Juli
 *** Agenda
 - Penyebaran undangan cetak dan Google Form lomba
 - Peluncuran QR donasi
@@ -35,7 +35,7 @@
 - Games, Competitions, Prize & Giveaway Lead
 - F&B Coordinator
 
-** 12–13 Juli
+** 🟡 12–13 Juli
 *** Agenda
 - Booking vendor: panggung, sound system, kursi, tenda
 - Pemetaan lokasi lomba berdasarkan blok
@@ -46,7 +46,7 @@
 - Creative Director
 - Games, Competitions, Prize & Giveaway Lead
 
-** 19–20 Juli
+** 🟠 19–20 Juli
 *** Agenda
 - Pembelian hadiah lomba
 - Publikasi materi lomba ke warga
@@ -57,7 +57,7 @@
 - Promotion Lead
 - Master of Ceremony
 
-** 26–27 Juli
+** 🟠 26–27 Juli
 *** Agenda
 - Pemasangan dekorasi awal: gapura, bendera, papan nama
 - Reminder daftar lomba dan kontribusi donasi
@@ -68,7 +68,7 @@
 - Documentation Team
 - Public Relations Coordinator
 
-** 2–3 Agustus
+** 🔴 2–3 Agustus
 *** Agenda
 - Pelaksanaan lomba anak-anak dan lomba ringan
 - Penutupan Google Form pendaftaran
@@ -80,7 +80,7 @@
 - Safety & Crowd Control Officer
 - Volunteer Coordinator
 
-** 9–10 Agustus
+** 🔴 9–10 Agustus
 *** Agenda
 - Sabtu: Lomba dewasa dan keluarga (panjat pinang, tarik tambang, dll)
 - Minggu: Jalan sehat pagi hari, bungkus hadiah, gladi tasyakuran
@@ -90,14 +90,14 @@
 - Safety & Crowd Control Officer
 - Program Director
 
-** 16 Agustus (Sabtu – H-1)
+** 🔴 16 Agustus (Sabtu – H-1)
 *** Agenda
 - Pemasangan dekorasi penuh di seluruh titik acara
 - Distribusi snack kering dan persiapan konsumsi
 - Malam: Tasyakuran & Pentas Seni
 *** TIC: @all
 
-** 17 Agustus (Minggu – Hari Kemerdekaan)
+** ⚪ 17 Agustus (Minggu – Hari Kemerdekaan)
 *** Agenda
 - *Tidak ada acara publik*
 - Upload dokumentasi, evaluasi internal, dan refleksi
@@ -105,3 +105,32 @@
 - Documentation Team
 - Promotion Lead
 - Secretary
+
+
+* Helper
+
+** Search PIC Name
+
+#+name: PIC Name
+#+begin_src bash :results output :wrap example
+grep -A3 "Deden" ./README.md | sed s/\#\#\#/*/g
+#+end_src
+
+#+RESULTS: PIC Name
+#+begin_example
+,* 👤 Ketua Panitia (Event Director) – Deden Bangkit
+
+Memimpin seluruh panitia, menyusun struktur organisasi, menentukan jadwal rapat, memantau progres masing-masing seksi, serta mengambil keputusan strategis yang mendukung kelancaran acara.
+
+#+end_example
+
+** Search Message
+
+#+name: Search Message
+#+begin_src bash :results output :wrap example
+grep "ZZZ" ~/Documents/VG/WhatsappChat/180625-last-clean-chat.csv
+#+end_src
+
+#+RESULTS: Search Message
+#+begin_example
+#+end_example
