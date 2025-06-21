@@ -4,6 +4,16 @@
     <meta charset="UTF-8" />
     <title>Donation Trend</title>
     <script src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Donation Trend Over Time" />
+    <meta name="keywords" content="donation, trend, chart, echarts" />
+    <meta name="author" content="Deden Bangkit" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+    />
     <style>
       html,
       body {
@@ -23,21 +33,32 @@
     <script>
       var chart = echarts.init(document.getElementById("chart"));
       var lineWidth = 8;
+      var fontFamily = "Roboto, sans-serif";
 
       var symbolSize = 15;
       var option = {
         title: {
           text: "Donation Trend Over Time",
+          left: "center",
+          top: "top",
+          textStyle: {
+            fontSize: 30,
+            fontWeight: "bold",
+            color: "#333",
+            fontFamily: fontFamily,
+          },
         },
         tooltip: {
           trigger: "axis",
         },
         legend: {
+          top: 50,
           itemHeight: 20,
           left: "center",
           textStyle: {
             fontSize: 19,
             fontWeight: "bold",
+            fontFamily: fontFamily,
           },
           data: ["2022", "2023", "2024"],
         },
@@ -45,11 +66,20 @@
           left: "3%",
           right: "4%",
           bottom: "3%",
+          top: 100,
           containLabel: true,
         },
         toolbox: {
           feature: {
             saveAsImage: {},
+          },
+        },
+        tooltip: {
+          show: true,
+          trigger: "axis",
+          textStyle: {
+            fontSize: 30,
+            fontFamily: fontFamily,
           },
         },
         xAxis: {
@@ -65,6 +95,7 @@
           },
           axisLabel: {
             fontSize: 19,
+            fontFamily: fontFamily,
           },
           data: [
             "07-17",
@@ -111,6 +142,7 @@
               return value / 1000000 + " Juta";
             },
             fontSize: 19,
+            fontFamily: fontFamily,
           },
         },
         series: [
