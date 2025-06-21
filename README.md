@@ -1,4 +1,7 @@
 # 🇮🇩 Website HUT RI ke-80
+
+![Workflow](https://github.com/villa-gardenia/hut-ri/actions/workflows/deploy.yml/badge.svg) https://github.com/rag-web-ui/rag-web-ui/actions/workflows/test.yml/badge.svg[![Languages](https://img.shields.io/github/languages/count/villa-gardenia/hut-ri)](https://img.shields.io/github/languages/count/villa-gardenia/hut-ri) [Last Commit](https://img.shields.io/github/last-commit/villa-gardenia/hut-ri/main)](https://img.shields.io/github/last-commit/akvo/wai-sdg-portal/main) 
+
 ## Warga Villa Gardenia, Bangunjiwo, Bantul, Yogyakarta
 
 Website ini dibuat sebagai bagian dari perayaan **Hari Ulang Tahun Republik Indonesia ke-80** oleh warga **Villa Gardenia**, Bangunjiwo, Bantul, Yogyakarta.
