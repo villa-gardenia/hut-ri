@@ -120,8 +120,32 @@ Cara menggunakan:
   ]
 }
 ```
-5. Commit dan push perubahan ke repository untuk memperbarui data di frontend.
+5. Script ini juga di trigger oleh CI/CD ketika ada commit ke main branch
 
+## 🔁 Deploy Otomatis (CI/CD)
+
+Website ini menggunakan **GitHub Actions** untuk deployment otomatis ke **GitHub Pages** setiap kali ada perubahan di branch `main`.
+
+### 📦 Workflow CI/CD
+
+CI akan berjalan secara otomatis saat:
+- Ada push ke branch `main`
+- Atau ketika dijalankan manual lewat `workflow_dispatch`
+
+### 🔧 Tahapan yang Dilakukan
+
+1. **Checkout kode** dari repository
+2. **Setup Node.js v20**
+3. **Cache `node_modules`** untuk mempercepat build
+4. **Install dependencies** dengan `npm ci`
+5. **Update data internal**:
+   - Menjalankan `update.sh` untuk mengonversi file Markdown panitia menjadi `committee.json`
+   - Mengambil data donasi dari webhook (`FINANCE_WEBHOOK_URL`) dan menyimpannya ke `src/public/data/donation.json`
+6. **Build website** dengan `npm run build`
+7. **Upload hasil build** sebagai artifact
+8. **Deploy ke GitHub Pages**
+
+> 🔐 CI ini menggunakan **secret `FINANCE_WEBHOOK_URL`** untuk menarik data dari sistem internal yang hanya bisa ditarik dari whitelist tertentu.
 
 ## 🛠 Teknologi yang Digunakan
 
