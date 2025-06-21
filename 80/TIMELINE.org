@@ -6,6 +6,11 @@
 - Pembagian tugas awal kepada setiap tim
 - Penentuan timeline
 - Draft budget
+**** Knowledge Base:
+#+begin_src bash :results none
+firefox https://villa-gardenia.github.io/hut-ri/history/donation.html
+#+end_src
+
 *** TIC:
 - Event Director
 - Deputy Director
