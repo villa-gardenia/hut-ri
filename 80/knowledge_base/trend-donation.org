@@ -1,0 +1,73 @@
+* 📊 Donation Analysis by Weekday
+
+** 2022
+- Total active days: 4
+- 🥇 Highest donation: **Monday** – Rp6.500.000
+- Other active days:
+  - Sunday: Rp300.000
+  - Tuesday: Rp1.350.000
+  - Wednesday: Rp600.000
+
+** 2023
+- Total active days: 7
+- 🥇 Highest donation: **Monday–Wednesday** stable
+  - Monday: Rp1.800.000
+  - Tuesday: Rp2.500.000
+  - Wednesday: Rp2.000.000
+- 💤 Lowest activity:
+  - Sunday & Thursday – Rp0
+
+** 2024
+- Total active days: 30+
+- 🥇 Highest donation:
+  - Thursday: Rp21.565.000
+  - Wednesday: Rp20.002.000
+- 🧭 Strong contribution:
+  - Saturday: Rp15.403.000
+  - Monday–Tuesday: also consistent
+- 💤 Lowest activity:
+  - Sunday – very low compared to weekdays
+
+** 🔍 Insight Summary
+- Donasi cenderung meningkat **Senin–Kamis**, terutama **Rabu & Kamis**.
+- **Minggu** konsisten rendah, bisa diasumsikan karena tidak ada promosi aktif.
+- Untuk kampanye tahun depan:
+  - Fokuskan promosi pada **Senin hingga Kamis**
+  - Pertimbangkan aktivasi sosial di **Sabtu**
+  - Gunakan **Minggu** sebagai hari rekap atau storytelling, bukan kampanye utama.
+
+    * 💡 Donation Strategy Recommendations
+
+* 📊 Suggestion
+
+** 📅 Suggested Timeline for Donation Campaign
+
+- **Start Early:** Begin around **17–20 Juli**, seperti tren di 2024
+- **Build Momentum:** Gunakan minggu ke-2 kampanye (24–30 Juli) untuk mulai edukasi dan pendekatan komunitas
+- **Peak Phase:** Fokus utama antara **1–14 Agustus**, terbukti sebagai periode donasi tertinggi
+- **Final Push:** Maksimalkan **14–16 Agustus** sebagai puncak donasi (gunakan countdown, update progress, publikasi grafis menarik)
+- **17 Agustus:** Hanya tampilkan total akhir dan sisa anggaran (bukan hari penggalangan)
+
+** 📈 Hari-Hari Efektif Berdasarkan Data
+
+| Hari      | Potensi       | Saran Aksi                                               |
+|-----------+---------------+----------------------------------------------------------|
+| Monday    | Tinggi        | Update laporan awal minggu, publikasi story relawan      |
+| Tuesday   | Stabil        | Reminder donasi, ajakan donasi kecil-kecilan             |
+| Wednesday | Sangat tinggi | Kampanye masif, testimoni video/foto                     |
+| Thursday  | Sangat tinggi | Update milestone donasi, leaderboard donatur             |
+| Friday    | Menurun       | Laporan ringan + teaser konten Sabtu                     |
+| Saturday  | Potensi besar | Aktivasi offline (bazar, komunitas, QR code di lapangan) |
+| Sunday    | Rendah        | Cerita reflektif, evaluasi ringan, bukan ajakan donasi   |
+
+** 📌 Donasi via Event
+- Tambahkan elemen donasi pada lomba, bazar, atau kerja bakti (misalnya QR code scan di backdrop)
+- Hadiah lomba bisa disponsori oleh donatur sebagai bentuk pengakuan
+
+** 🧠 Psikologi Donatur
+- Hari kerja: orang cenderung responsif pada visualisasi progress & urgensi
+- Akhir pekan: orang lebih santai, cocok untuk konten inspiratif atau kegiatan langsung
+
+** 🔁 Follow-up
+- Berikan ucapan terima kasih & publikasi hasil donasi maksimal H+2 setelah 17 Agustus
+- Tampilkan transparansi: total masuk, total keluar, dan sisa anggaran
