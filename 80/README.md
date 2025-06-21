@@ -94,6 +94,6 @@ Membantu tugas ketua, memediasi antar tim jika terjadi kendala, menyusun agenda 
 
 Mencatat dan mengelola semua transaksi keuangan acara. Menyusun laporan anggaran, menyimpan bukti pengeluaran, memastikan semua transaksi transparan, dan menyampaikan laporan akhir ke semua pihak.
 
-### 📝 Sekretaris (Secretary) – Nanang Makfi Mubarok
+### 📝 Sekretaris (Excecutive Secretary) – Nanang Makfi Mubarok
 
 Menyusun notulen rapat, menyimpan dokumen penting, membuat surat-menyurat, menyebarkan informasi resmi kepada panitia, serta mengelola seluruh kebutuhan administratif secara tertib dan akurat.
