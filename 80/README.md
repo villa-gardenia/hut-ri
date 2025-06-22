@@ -14,11 +14,11 @@ Bertanggung jawab menyusun alur dan susunan acara malam refleksi dari awal hingg
 
 Menentukan, merekrut pengisi acara malam refleksi seperti penampil seni dan grup musik. Bertanggung jawab memastikan kesiapan mereka sebelum tampil, termasuk gladi resik jika diperlukan.
 
-### 🎚️ Penanggung Jawab Panggung (Stage Manager) – Helena Bella
+### 🎚️ Penanggung Jawab Panggung (Stage Manager) – Helena Bella, Sheila Sitarani
 
 Mengatur urutan tampil, memberi aba-aba waktu, menjaga ketepatan jadwal acara di panggung, memastikan ketersediaan mic/speaker, serta menjadi penghubung antara panggung dan tim teknis lainnya. Menjamin suasana panggung tertib dan terkontrol.
 
-### 🏃 Koordinator Lomba, Permainan, Hadiah & Doorprize (Games, Competitions, Prize & Giveaway Lead) – Diana, Dian Wulandari
+### 🏃 Koordinator Lomba, Permainan, Hadiah & Doorprize (Games, Competitions, Prize & Giveaway Lead) – Diana, Dian Wulandari, Sheila Sitarani
 
 Menyusun konsep lomba yang kreatif, aman, dan menyenangkan untuk semua kalangan. Menerima masukan dari warga, menyusun jadwal lomba, menentukan lokasi tiap lomba, mengatur juri, dan mengoordinasi pelaksanaan lomba di lapangan dan PIC setiap lomba. Mengelola daftar hadiah dan doorprize, melakukan pengadaan, mendata nilai hadiah, menyusun penataan hadiah di lokasi, dan memastikan pembagian hadiah berlangsung tertib sesuai hasil perlombaan dan sistem undian.
 
