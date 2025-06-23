@@ -58,7 +58,7 @@ Membawakan acara secara komunikatif, menjaga suasana tetap hidup, memberi transi
 
 ## 🔹 🎨 Tim Kreatif, Media & Humas
 
-### 🖌️ Direktur Kreatif (Creative Director) – Breni Putra
+### 🖌️ Direktur Kreatif (Creative Director) – Breni Putra, N. Amir Fauzi
 
 Merancang identitas visual acara (tema warna, font, grafis, layout). Menyusun desain untuk banner, backdrop, undangan, dan konten publikasi. Berkoordinasi dengan tim dekorasi dan publikasi, umbul-umbul, serta mengawasi output desain.
 
