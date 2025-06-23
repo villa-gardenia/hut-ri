@@ -1,41 +1,70 @@
 * Draft Timeline Panitia HUT RI ke-80 Villa Gardenia
 
-** 🟢 22 Juni (Minggu) – Kickoff
+** 🟢 Minggu, 22 Juni – Kickoff
 *** Agenda
-- Kickoff: finalisasi struktur panitia
-- Pembagian tugas awal kepada setiap tim
+- Kickoff: Perkenalan [DONE]
+- Finalisasi struktur panitia [DONE]
+- Draft List Lomba
 - Penentuan timeline
-- Draft budget
 **** Knowledge Base:
 #+begin_src bash :results none
 firefox https://villa-gardenia.github.io/hut-ri/history/donation.html
 #+end_src
 
-*** TIC:
+*** PIC:
 - Event Director
 - Deputy Director
 - Secretary
-- Fundraising & Sponsorship Coordinator
 - Public Relations Coordinator
 
-** 🟡 29–30 Juni
+
+** 🟡 Rabu, 25 Juni (7.30 Malam)
 *** Agenda
-- Finalisasi proposal kegiatan dan surat undangan
-- Distribusi undangan partisipasi digital ke warga
-- Sponsorship
-- Penugasan awal ke setiap tim
-*** TIC:
-- Promotion Lead
-- Secretary
-- Finance Director
+Rapat Penyusunan Anggaran
+*** PIC:
+- Program Director
+- Talent Coordinator
+- F&B Coordinator
+- Logistics & Equipment Coordinator
 - Fundraising & Sponsorship Coordinator
+- Games, Competitions, Prize & Giveaway Lead
+
+** 🟡 Jumat, 28 Juni (8 Pagi)
+*** Agenda
+- Pembahasan dan Penetapan Proposal
+*** PIC:
+- Fundraising & Sponsorship Coordinator
+
+
+** 🟡 Sabtu, 28 Juni
+*** Agenda
+- Design dan Cetak Proposal
+- Pembuatan Google Form Lomba
+- Draft Google Form Lomba
+- Ide untuk Teaser
+- Pembuatan IG Paguyuban Villa Gardenia
+*** PIC:
+- Creative Director
+- Documentation Team
+- Promotion Lead
+
+** 🟡 Minggu, 29 Juni
+*** Agenda
+- Deadline Design Awal
+- Cetak Proposal dan Desain Kreatif lainnya
+
+** 🟡 Senin, 30 Juni
+*** Target
+- Mulai Distribusi Proposal
+- Mulai Distribusi Google Form Lomba
+
+-----DRAFT----
 
 ** 🟡 5–6 Juli
 *** Agenda
 - Penyebaran undangan cetak dan Google Form lomba
-- Peluncuran QR donasi
 - Pembelian properti awal lomba (tali, kerupuk, bambu, dll)
-*** TIC:
+*** PIC:
 - Program Director
 - Games, Competitions, Prize & Giveaway Lead
 - F&B Coordinator
@@ -47,7 +76,7 @@ firefox https://villa-gardenia.github.io/hut-ri/history/donation.html
 - Cetak kupon, sertifikat, banner
 - Logistics & Equipment Coordinator
 - Venue & Decoration Coordinator
-*** TIC:
+*** PIC:
 - Creative Director
 - Games, Competitions, Prize & Giveaway Lead
 
@@ -56,7 +85,7 @@ firefox https://villa-gardenia.github.io/hut-ri/history/donation.html
 - Pembelian hadiah lomba
 - Publikasi materi lomba ke warga
 - Finalisasi konsumsi (vendor atau gotong royong)
-*** TIC:
+*** PIC:
 - Program Director
 - F&B Coordinator
 - Promotion Lead
@@ -67,7 +96,7 @@ firefox https://villa-gardenia.github.io/hut-ri/history/donation.html
 - Pemasangan dekorasi awal: gapura, bendera, papan nama
 - Reminder daftar lomba dan kontribusi donasi
 - Latihan pentas seni dimulai
-*** TIC:
+*** PIC:
 - Venue & Decoration Coordinator
 - Talent Coordinator
 - Documentation Team
@@ -80,7 +109,7 @@ firefox https://villa-gardenia.github.io/hut-ri/history/donation.html
 - Finalisasi pembagian shift konsumsi
 - Games, Competitions, Prize & Giveaway Lead
 - F&B Coordinator
-*** TIC:
+*** PIC:
 - Documentation Team
 - Safety & Crowd Control Officer
 - Volunteer Coordinator
@@ -90,7 +119,7 @@ firefox https://villa-gardenia.github.io/hut-ri/history/donation.html
 - Sabtu: Lomba dewasa dan keluarga (panjat pinang, tarik tambang, dll)
 - Minggu: Jalan sehat pagi hari, bungkus hadiah, gladi tasyakuran
 - Games, Competitions, Prize & Giveaway Lead
-*** TIC:
+*** PIC:
 - Documentation Team
 - Safety & Crowd Control Officer
 - Program Director
@@ -100,13 +129,13 @@ firefox https://villa-gardenia.github.io/hut-ri/history/donation.html
 - Pemasangan dekorasi penuh di seluruh titik acara
 - Distribusi snack kering dan persiapan konsumsi
 - Malam: Tasyakuran & Pentas Seni
-*** TIC: @all
+*** PIC: @all
 
 ** ⚪ 17 Agustus (Minggu – Hari Kemerdekaan)
 *** Agenda
 - *Tidak ada acara publik*
 - Upload dokumentasi, evaluasi internal, dan refleksi
-*** TIC:
+*** PIC:
 - Documentation Team
 - Promotion Lead
 - Secretary
