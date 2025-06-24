@@ -23,13 +23,7 @@ firefox https://villa-gardenia.github.io/hut-ri/history/donation.html
 - Rapat Penyusunan Anggaran
 - Pembahasan dan Penetapan Proposal
 *** PIC:
-- Fundraising & Sponsorship Coordinator
-- Program Director
-- Talent Coordinator
-- F&B Coordinator
-- Logistics & Equipment Coordinator
-- Fundraising & Sponsorship Coordinator
-- Games, Competitions, Prize & Giveaway Lead
+- All Team
 
 
 ** 🟡 Sabtu, 28 Juni
@@ -43,6 +37,7 @@ firefox https://villa-gardenia.github.io/hut-ri/history/donation.html
 - Creative Director
 - Documentation Team
 - Promotion Lead
+- Secretary
 
 ** 🟡 Minggu, 29 Juni
 *** Agenda
