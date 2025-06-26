@@ -26,11 +26,11 @@ Menyusun konsep lomba yang kreatif, aman, dan menyenangkan untuk semua kalangan.
 
 ## 🔹 🔧 Tim Logistik
 
-### 🍱 Koordinator Konsumsi (F\&B Coordinator) – Irpan Sudrajat, Eka Sulistyowati
+### 🍱 Koordinator Konsumsi (F\&B Coordinator) – Eka Sulistyowati, Oliv, Laura Sinar Utami, Mita Hayuningtyas
 
 Menyiapkan konsumsi untuk panitia, peserta lomba, dan tamu undangan saat malam refleksi. Memastikan makanan/minuman cukup, bergizi, dan dibagikan tepat waktu. Berkoordinasi dengan vendor atau warga penyedia konsumsi dan membuat sistem distribusi.
 
-### 🛠️ Koordinator Logistik & Peralatan (Logistics & Equipment Coordinator) – Bayu Puasa Putra, Febrian Dwi Valentino
+### 🛠️ Koordinator Logistik & Peralatan (Logistics & Equipment Coordinator) – Bayu Puasa Putra, Febrian Dwi Valentino, Irpan Sudrajat
 
 Menyiapkan dan mengatur semua kebutuhan teknis acara seperti tenda, kursi, meja, sound system, alat lomba, alat tulis, dan listrik cadangan. Memastikan semua alat dalam kondisi baik sebelum, selama, dan setelah acara.
 
