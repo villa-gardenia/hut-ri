@@ -53,33 +53,36 @@ export default function YouthSection({ basepath }) {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ delay: 0.4 }}
-        className="mt-16 grid grid-cols-1 md:grid-cols-5 gap-8"
+        className="mt-16"
       >
-        {data.map((person, index) => (
-          <div
-            key={index}
-            className="bg-white shadow-lg overflow-hidden transform transition hover:scale-105 hover:shadow-xl duration-300 border border-gray-100"
-          >
-            <div className="h-48 overflow-hidden">
-              <Image
-                src={getImageSrc(basepath, person.name)}
-                alt={person.name}
-                width={300}
-                height={300}
-                className="w-full h-full object-cover"
-              />
+        <div className="flex flex-wrap justify-center gap-8 w-full max-w-6xl px-4">
+          {data.map((person, index) => (
+            <div
+              key={index}
+              className="bg-white shadow-lg overflow-hidden transform transition hover:scale-105 hover:shadow-xl duration-300 border border-gray-100 w-[300px]"
+            >
+              <div className="h-48 overflow-hidden">
+                <Image
+                  src={getImageSrc(basepath, person.name)}
+                  alt={person.name}
+                  width={300}
+                  height={300}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="p-6 text-center">
+                <a
+                  href={`https://www.instagram.com/ ${person.ig}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-700"
+                >
+                  <h3 className="section-subtitle">{person.name}</h3>
+                </a>
+              </div>
             </div>
-            <div className="p-6">
-              <a
-                href={`https://www.instagram.com/${person.ig}`}
-                target="_blank"
-                className="text-center text-gray-700 mb-1"
-              >
-                <h3 className="section-subtitle">{person.name}</h3>
-              </a>
-            </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </motion.div>
 
       {/* Closing Message */}
