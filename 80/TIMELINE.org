@@ -183,20 +183,20 @@ grep "ZZZ" ~/Documents/VG/WhatsappChat/180625-last-clean-chat.csv
 ** Program Director
 *** Pengukuran Venue -> Pak Dhany
 *** Layout Venue -> Pak Dhany
-*** Deadline Data List Penampil -> Pak Irul, kordinasi dengan Pak Puput dan Pak Ega
-*** Rundown Acara -> Pak Irul + Bu Helena
-*** Kordinasi dengan MC -> Pak Irul, Bu Diana, dan Bu Helena
+*** Deadline Data List Penampil -> Pak Irul, Pak Puput, Pak Ega
+*** Rundown Acara -> Pak Irul, Bu Helena
+*** Kordinasi dengan MC -> Pak Irul, Bu Diana, Bu Helena
 *** Layout Dekorasi -> Pak Phutut
 ** Talent Coodinator
 *** Google Form untuk disebar Group Warga -> Pak Puput
 *** Desain Poster untuk pendaftaran pengisi acara -> Pak Puput, Pak Breny
-*** Distribusi Form dan Poster -> Bu Helena dan Pak Valen Seniman
+*** Distribusi Form dan Poster -> Bu Helena, Pak Valen Seniman
 *** Final List Band Performer -> Pak Puput
 *** Final List Angklung Performer -> Pak Puput
 *** Final List Pengisi Acara Bebas -> Pak Puput
-*** Latihan Angklung Performance -> Pak Puput & Bu Helena
+*** Latihan Angklung Performance -> Pak Puput, Bu Helena
 ** Stage Manager
-*** Konfirmasi Rundown Acara -> Bu Helena & Pak Irul
+*** Konfirmasi Rundown Acara -> Bu Helena, Pak Irul
 ** Games, Competition and Doorprize
 *** Belanja Perlengkapan Lomba -> Bu Diana, Pak Bayu
 *** Belanja Hadiah -> Bu Diana
