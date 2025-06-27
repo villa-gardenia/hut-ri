@@ -32,6 +32,7 @@ firefox https://villa-gardenia.github.io/hut-ri/history/donation.html
 - Games, Competitions, Prize & Giveaway Lead
 - All Team
 
+
 ** 🟡 Sabtu, 28 Juni
 *** Agenda
 - Design dan Cetak Proposal
@@ -178,9 +179,10 @@ grep "ZZZ" ~/Documents/VG/WhatsappChat/180625-last-clean-chat.csv
 
 
 * List Kegiatan
+
 ** Program Director
-*** Pengukuran Venue -> Sudah
-*** Layout Venue -> TBC Pak Dhany
+*** Pengukuran Venue -> Pak Dhany
+*** Layout Venue -> Pak Dhany
 *** Deadline Data List Penampil -> Pak Irul, kordinasi dengan Pak Puput dan Pak Ega
 *** Rundown Acara -> Pak Irul + Bu Helena
 *** Kordinasi dengan MC -> Pak Irul, Bu Diana, dan Bu Helena
