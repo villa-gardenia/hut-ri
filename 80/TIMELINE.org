@@ -18,23 +18,18 @@ firefox https://villa-gardenia.github.io/hut-ri/history/donation.html
 - Public Relations Coordinator
 
 
-** 🟡 Rabu, 25 Juni (7.30 Malam)
+** 🟡 Jumat, 28 Juni (8 Pagi)
 *** Agenda
-Rapat Penyusunan Anggaran
+- Rapat Penyusunan Anggaran
+- Pembahasan dan Penetapan Proposal
+- Timeline dan Kesiapan Kegiatan setiap Tim
 *** PIC:
+- Fundraising & Sponsorship Coordinator
 - Program Director
 - Talent Coordinator
 - F&B Coordinator
 - Logistics & Equipment Coordinator
-- Fundraising & Sponsorship Coordinator
 - Games, Competitions, Prize & Giveaway Lead
-
-** 🟡 Jumat, 28 Juni (8 Pagi)
-*** Agenda
-- Pembahasan dan Penetapan Proposal
-*** PIC:
-- Fundraising & Sponsorship Coordinator
-
 
 ** 🟡 Sabtu, 28 Juni
 *** Agenda
@@ -48,10 +43,12 @@ Rapat Penyusunan Anggaran
 - Documentation Team
 - Promotion Lead
 
+
 ** 🟡 Minggu, 29 Juni
-*** Agenda
+*** Target
 - Deadline Design Awal
 - Cetak Proposal dan Desain Kreatif lainnya
+
 
 ** 🟡 Senin, 30 Juni
 *** Target
@@ -59,6 +56,7 @@ Rapat Penyusunan Anggaran
 - Mulai Distribusi Google Form Lomba
 
 -----DRAFT----
+
 
 ** 🟡 5–6 Juli
 *** Agenda
@@ -68,6 +66,7 @@ Rapat Penyusunan Anggaran
 - Program Director
 - Games, Competitions, Prize & Giveaway Lead
 - F&B Coordinator
+
 
 ** 🟡 12–13 Juli
 *** Agenda
@@ -80,6 +79,7 @@ Rapat Penyusunan Anggaran
 - Creative Director
 - Games, Competitions, Prize & Giveaway Lead
 
+
 ** 🟠 19–20 Juli
 *** Agenda
 - Pembelian hadiah lomba
@@ -91,6 +91,7 @@ Rapat Penyusunan Anggaran
 - Promotion Lead
 - Master of Ceremony
 
+
 ** 🟠 26–27 Juli
 *** Agenda
 - Pemasangan dekorasi awal: gapura, bendera, papan nama
@@ -101,6 +102,7 @@ Rapat Penyusunan Anggaran
 - Talent Coordinator
 - Documentation Team
 - Public Relations Coordinator
+
 
 ** 🔴 2–3 Agustus
 *** Agenda
@@ -114,6 +116,7 @@ Rapat Penyusunan Anggaran
 - Safety & Crowd Control Officer
 - Volunteer Coordinator
 
+
 ** 🔴 9–10 Agustus
 *** Agenda
 - Sabtu: Lomba dewasa dan keluarga (panjat pinang, tarik tambang, dll)
@@ -124,12 +127,14 @@ Rapat Penyusunan Anggaran
 - Safety & Crowd Control Officer
 - Program Director
 
+
 ** 🔴 16 Agustus (Sabtu – H-1)
 *** Agenda
 - Pemasangan dekorasi penuh di seluruh titik acara
 - Distribusi snack kering dan persiapan konsumsi
 - Malam: Tasyakuran & Pentas Seni
 *** PIC: @all
+
 
 ** ⚪ 17 Agustus (Minggu – Hari Kemerdekaan)
 *** Agenda
@@ -168,3 +173,92 @@ grep "ZZZ" ~/Documents/VG/WhatsappChat/180625-last-clean-chat.csv
 #+RESULTS: Search Message
 #+begin_example
 #+end_example
+
+
+* List Kegiatan
+** Program Director
+*** Pengukuran Venue -> Sudah
+*** Layout Venue -> TBC Pak Dhany
+*** Deadline Data List Penampil -> Pak Irul, kordinasi dengan Pak Puput dan Pak Ega
+*** Rundown Acara -> Pak Irul + Bu Helena
+*** Kordinasi dengan MC -> Pak Irul, Bu Diana, dan Bu Helena
+*** Layout Dekorasi -> Pak Phutut
+** Talent Coodinator
+*** Google Form untuk disebar Group Warga -> Pak Puput
+*** Desain Poster untuk pendaftaran pengisi acara -> Pak Puput, Pak Breny
+*** Distribusi Form dan Poster -> Bu Helena dan Pak Valen Seniman
+*** Final List Band Performer -> Pak Puput
+*** Final List Angklung Performer -> Pak Puput
+*** Final List Pengisi Acara Bebas -> Pak Puput
+*** Latihan Angklung Performance -> Pak Puput & Bu Helena
+** Stage Manager
+*** Konfirmasi Rundown Acara -> Bu Helena & Pak Irul
+** Games, Competition and Doorprize
+*** Belanja Perlengkapan Lomba -> Bu Diana, Pak Bayu
+*** Belanja Hadiah -> Bu Diana
+*** Google Form Pendaftaran Lomba -> Bu Diana, Pak Deden
+*** Membuat Rute Jalan Sehat -> Bu Rani, Pak Phutut
+*** Penutupan Pendaftaran -> Bu Diana
+*** Pembungkusan Hadiah -> Bu Diana
+** F&B
+*** Mencoba Produk Vendor (Makanan, Es) -> Bu Eka
+*** Finalisasi Pilihan Vendor
+*** Pelunasan Pembayaran ke Vendor
+*** Mempersiapkan Konsumsi Lomba Menghias Sepeda
+*** Mempersiapkan Konsumsi Lomba Jalan Sehat
+*** Mempersiapkan Konsumsi Tirakatan
+** Logistic
+*** Beli Bambu -> Bu Diana, Pak Bayu
+*** Set Venue Lomba Gebuk Bantal -> Bu Diana, Pak Bayu
+*** Set Venue Lomba Kerupuk -> Bu Diana, Pak Bayu
+*** Set Venue Lomba Pecah Air -> Bu Diana, Pak Bayu
+*** Mengambil Meja TPA -> Pak Bayu, Edel, Wildan
+*** Set Venue Tirakatan -> Pak Bayu, Wildan, Pak Dhany
+*** Gotong Royong Warga Potong Bambu -> Pak Deden
+** Venue & Dekorasi
+*** Pembelian Dekorasi -> Pak Phutut
+*** Pinjam Pot Warga -> Pak Phutut
+*** Pembuatan Dekorasi Pemuda/i Relawan -> Pak Phutut, Wildan
+*** Konfirmasi Photobooth -> Pak Phutut, Bu Putri
+*** Set Venue Tirakatan -> Pak Phutut, Wildan
+** Safety & Crowd Control
+*** Memastikan alat komunikasi (HT) -> Pak Aldy, Pak Dhany
+*** Memastikan tim sekuriti -> Pak Aldy
+*** Blokade Setiap Lomba -> Edel
+*** Blokade Venue Tirakatan -> Pak Aldy
+*** Menjaga Venue -> Pak Aldy, Edel, Wildan
+**
+** Finance & Sponsorship
+*** DP Tenda, Kursi, Sound System, Alat Band, Genset dan Lampu -> Pak Helmy, Bu Bulan, Pak Bayu, Pak Puput
+*** Rapat Executive -> Pak Ari, Pak Deden, Pak Helmy
+*** Analisis Pemasukan Sponsorship -> Pak Ari, Bu Bulan, Pak Deden, Pak Helmy
+*** Distribusi Proposal -> Pak Ari, Bu Bulan
+*** Laporan Distribusi -> Pak Ari, Bu Bulan
+** Volunteer
+*** Perkenalan -> Pak Deden, Wildan, Daffa
+*** Kordinasi -> Wildan, Daffa, @all
+** Tim Kreatif
+*** Pembuatan Teaser -> Pak Taufik
+*** List Desain -> Pak Breny, Pak Amir
+*** Pembuatan Desain Promosi -> Pak Breny
+*** Izin Pemasangan Baliho -> Pak Helmy
+*** Pembuatan Desain Baliho -> Pak Breny
+*** Pembuatan Akun Sosial Media Paguyuban -> Pak Taufik
+*** Pembuatain Desain Backdrop -> Pak Breny
+*** Dokumentasi Setiap Lomba -> Pak Amir
+*** Editing Dokumentasi Setiap Lomba -> Pak Amir
+** Public Relation
+*** Kordinasi Pejabat Lingkungan -> Pak Arda
+*** Mengirim Undangan -> Pak Arda, Wildan
+*** Menyiapkan Buku Tamu -> Bu Wardah
+*** Menyiapkan Tim Penerima Tamu -> Pak Arda, Wildan
+*** Menerima Tamu Undangan -> Bu Wardah, Wildan
+** Executive
+*** Pembuatan dan Perilisan Proposal -> Pak Nanang
+*** Rapat Anggota Panitia -> Pak Nanang
+*** Rapat Materi Website -> Pak Deden, Pak Hemly
+*** Update Website -> Pak Deden, Pak Nanang
+*** Penetapan Timeline -> Pak Deden, Pak Nanang
+*** Konfirmasi Donasi Masuk -> Pak Helmy
+*** Konfirmasi Kas Keluar -> Pak Helmy
+*** Pembukuan -> Pak Helmy, Pak Deden
