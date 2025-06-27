@@ -240,7 +240,7 @@ grep "ZZZ" ~/Documents/VG/WhatsappChat/180625-last-clean-chat.csv
 *** Laporan Distribusi -> Pak Ari, Bu Bulan
 ** Volunteer
 *** Perkenalan -> Pak Deden, Wildan, Daffa
-*** Kordinasi -> Wildan, Daffa, @all
+*** Kordinasi -> Wildan, Daffa
 ** Tim Kreatif
 *** Pembuatan Teaser -> Pak Taufik
 *** List Desain -> Pak Breny, Pak Amir
