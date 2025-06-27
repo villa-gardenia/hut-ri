@@ -1,6 +1,6 @@
 # 🇮🇩 Website HUT RI ke-80
 
-![Workflow](https://github.com/villa-gardenia/hut-ri/actions/workflows/deploy.yml/badge.svg) ![Languages](https://img.shields.io/github/languages/count/villa-gardenia/hut-ri) ![Last Commit](https://img.shields.io/github/last-commit/villa-gardenia/hut-ri/main) 
+![Workflow](https://github.com/villa-gardenia/hut-ri/actions/workflows/deploy.yml/badge.svg) ![Languages](https://img.shields.io/github/languages/count/villa-gardenia/hut-ri) ![Last Commit](https://img.shields.io/github/last-commit/villa-gardenia/hut-ri/main)
 
 ## Warga Villa Gardenia, Bangunjiwo, Bantul, Yogyakarta
 
@@ -27,7 +27,9 @@ Dibangun dengan:
 ├── src/                          ← Source code website (Next.js)
 │   ├── app/                      ← Isi halaman utama
 │   ├── components/               ← Komponen UI reusables
-│   ├── public/                   ← Assets statis (gambar, favicon, dll)
+│   ├── public                    ← Asset Statis
+│   │  ├── assets
+│   │  ├── data
 │   └── ...
 ├── 80/                           ← Dokumen internal panitia HUT RI ke-80
 │   ├── notulensi/                ← Notulensi rapat dan diskusi
@@ -49,10 +51,10 @@ docker-compose up -d --build
 
 > ⚠️ Kenapa harus --build? Karena ini memastikan bahwa container Docker dibangun ulang jika ada perubahan pada kode atau dependensi (npm install, dll).
 
-Akses website: 
+Akses website:
 
 - 👉 Dev: http://localhost:3000
-- 👉 Production: https://villa-gardenia.github.io/hut-ri   
+- 👉 Production: https://villa-gardenia.github.io/hut-ri
 
 ### 2. Hentikan Aplikasi
 
@@ -70,13 +72,13 @@ docker-compose down --rmi all
 
 Perintah ini akan menghentikan dan menghapus semua container, serta menghapus semua image yang dibuat oleh `docker-compose up`.
 
-## 📂 Konten Internal Panitia 
+## 📂 Konten Internal Panitia
 
-Seluruh dokumen terkait penyelenggaraan HUT RI ke-80 oleh warga Villa Gardenia  tersedia dalam folder: 
+Seluruh dokumen terkait penyelenggaraan HUT RI ke-80 oleh warga Villa Gardenia  tersedia dalam folder:
 
 - [80/README.md](/80) → Daftar nama dan divisi panitia HUT RI ke-80
 - [80/notulensi/](/80/notulensi) → Catatan hasil rapat dan koordinasi
-     
+
 > 📝 Dokumen-dokumen ini hanya untuk keperluan internal dan tidak termasuk dalam website production.
 
 ## 🛠️ Konversi Markdown ke JSON Struktur Panitia
@@ -159,9 +161,9 @@ CI akan berjalan secara otomatis saat:
 | Markdown | Format dokumentasi yang mudah dibaca |
 | Python | Script konversi Markdown ke JSON |
 
-## 🙌 Terima Kasih 
+## 🙌 Terima Kasih
 
-Website ini dirancang sebagai apresiasi atas semangat kemerdekaan dan gotong royong warga Villa Gardenia  dalam menyambut Hari Ulang Tahun Republik Indonesia ke-80. 
+Website ini dirancang sebagai apresiasi atas semangat kemerdekaan dan gotong royong warga Villa Gardenia  dalam menyambut Hari Ulang Tahun Republik Indonesia ke-80.
 
 🇮🇩 Merdeka!
-🇮🇩 Dirgahayu Negeriku! 
+🇮🇩 Dirgahayu Negeriku!

@@ -6,6 +6,7 @@ import Image from "next/image";
 import CommiteeSection from "../components/Commitee";
 import NavBar from "../components/NavBar";
 import Donation from "../components/Donation";
+import YouthSection from "../components/Youth";
 
 const basepath = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
@@ -80,7 +81,6 @@ export default function HomePage() {
 						initial={{ opacity: 0, y: 20 }}
 						animate={{ opacity: 1, y: 0 }}
 						transition={{ delay: 1.5 }}
-						id="countdown"
 						className="mt-4 text-lg md:text-xl max-w-2xl mx-auto"
 					>
 						Merdeka dan Maju Bersama di Bumi Pertiwi
@@ -145,6 +145,8 @@ export default function HomePage() {
 						masih menyala!
 					</motion.p>
 				</div>
+				{/* Youth Part */}
+				<YouthSection basepath={basepath} />
 			</section>
 			{/* Panitia Section */}
 			<CommiteeSection basepath={basepath} />

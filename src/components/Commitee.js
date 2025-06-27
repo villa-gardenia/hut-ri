@@ -54,16 +54,11 @@ export default function CommiteeSection({ basepath }) {
 						</h3>
 						<div className="space-y-4">
 							{team.roles.map((role, j) => (
-								<div
-									key={j}
-									className="border p-4 rounded-lg bg-gray-50 shadow-sm"
-								>
+								<div key={j} className="p-1">
 									<h4 className="section-subtitle">
 										{removeEmojis(role.title)}
 									</h4>
-									<p className="text-sm text-gray-700 mb-1">
-										{role.names.join(", ")}
-									</p>
+									<p className="text-gray-700 mb-1">{role.names.join(", ")}</p>
 								</div>
 							))}
 						</div>
