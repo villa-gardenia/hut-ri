@@ -97,7 +97,7 @@ export default function HomePage() {
 				</motion.div>
 			</section>
 			{/* Tentang Section */}
-			<section id="tentang" className="min-h-screen py-20 px-4 bg-gray-100">
+			<section id="tentang" className="min-h-screen py-20 px-4 bg-white-100">
 				<div className="container mx-auto">
 					<motion.h2
 						initial={{ opacity: 0, y: 20 }}
@@ -151,7 +151,7 @@ export default function HomePage() {
 			{/* Panitia Section */}
 			<CommiteeSection basepath={basepath} />
 			{/* Perayaan Section */}
-			<section id="event" className="min-h-screen py-20 px-4 bg-gray-100">
+			<section id="event" className="min-h-screen py-20 px-4 bg-white-100">
 				<div className="container mx-auto">
 					<motion.h2
 						initial={{ opacity: 0, y: 20 }}
@@ -173,7 +173,7 @@ export default function HomePage() {
 				</div>
 			</section>
 			{/* Total Donasi Section */}
-			<section id="donasi" className="min-h-screen py-20 px-4">
+			<section id="donasi" className="min-h-screen py-20 px-4 bg-gray-100">
 				<div className="container mx-auto">
 					<motion.h2
 						initial={{ opacity: 0, y: 20 }}
@@ -226,7 +226,7 @@ export default function HomePage() {
 				</div>
 			</section>
 			{/* Kontak Section */}
-			<section id="kontak" className="min-h-screen py-20 px-4 bg-gray-100">
+			<section id="kontak" className="min-h-screen py-20 px-4 bg-white-100">
 				<div className="container mx-auto">
 					<motion.h2
 						initial={{ opacity: 0, y: 20 }}

@@ -19,7 +19,7 @@ export default function CommiteeSection({ basepath }) {
 	if (!data) return <p>Loading...</p>;
 
 	return (
-		<section id="panitia" className="min-h-screen py-20 px-4 bg-white">
+		<section id="panitia" className="min-h-screen py-20 px-4 bg-gray-100">
 			<div className="container mx-auto">
 				<motion.h2
 					initial={{ opacity: 0, y: 20 }}

@@ -53,12 +53,12 @@ export default function YouthSection({ basepath }) {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ delay: 0.4 }}
-        className="mt-16 grid grid-cols-1 md:grid-cols-4 gap-8"
+        className="mt-16 grid grid-cols-1 md:grid-cols-5 gap-8"
       >
         {data.map((person, index) => (
           <div
             key={index}
-            className="bg-white rounded-xl shadow-lg overflow-hidden transform transition hover:scale-105 hover:shadow-xl duration-300 border border-gray-100"
+            className="bg-white shadow-lg overflow-hidden transform transition hover:scale-105 hover:shadow-xl duration-300 border border-gray-100"
           >
             <div className="h-48 overflow-hidden">
               <Image
