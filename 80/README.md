@@ -62,7 +62,7 @@ Membawakan acara secara komunikatif, menjaga suasana tetap hidup, memberi transi
 
 Merancang identitas visual acara (tema warna, font, grafis, layout). Menyusun desain untuk banner, backdrop, undangan, dan konten publikasi. Berkoordinasi dengan tim dekorasi dan publikasi, umbul-umbul, serta mengawasi output desain.
 
-### 📸 Tim Dokumentasi (Documentation Team) – Taufik Trilaksono, N. Amir Fauzi, Julius Phutut
+### 📸 Tim Dokumentasi (Documentation Team) – Taufik Trilaksono, N. Amir Fauzi, Julius Phutut, Susilo Tyas Sudi N
 
 Mendokumentasikan seluruh kegiatan dengan foto dan video. Membagi tim sesuai titik acara, memastikan kualitas hasil dokumentasi, serta menyiapkan album digital dan video highlight sebagai arsip kegiatan.
 
