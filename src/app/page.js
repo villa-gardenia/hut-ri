@@ -225,8 +225,9 @@ export default function HomePage() {
 						className="section-text"
 					>
 						Ingin ikut serta dalam perayaan atau memiliki pertanyaan? Silakan
-						hubungi kami melalui Panitia Humas Paguyuban (M.Taqi Arda, Bu Diana)
-						atau langsung mention ke Panitia di WhatsApp Group Paguyuban.
+						hubungi kami melalui Panitia Humas Paguyuban (Muhammad Taqi
+						Ardabilli, Wardah Makmun) atau langsung mention ke Panitia di
+						WhatsApp Group Paguyuban.
 					</motion.p>
 				</div>
 			</section>
