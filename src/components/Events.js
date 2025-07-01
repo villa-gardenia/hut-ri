@@ -93,7 +93,7 @@ function EventList({
             isCompletedGroup
               ? "bg-green-500 border-green-600"
               : isNextGroup
-                ? "bg-red-500 border-red-600"
+                ? "bg-emerald-500 border-emerald-600"
                 : "bg-gray-300 border-gray-400"
           }`}
         >
@@ -134,7 +134,7 @@ function EventList({
                 isCompleted
                   ? "bg-gray-100 border-gray-200 text-gray-500"
                   : isToday
-                    ? "bg-red-50 border-red-200 ring-2 ring-red-200"
+                    ? "bg-emerald-50 border-emerald-200 ring-2 ring-emerald-200"
                     : "bg-white border-gray-200"
               }`}
             >
