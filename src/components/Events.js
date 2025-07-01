@@ -165,7 +165,7 @@ function Events({ basepath }) {
     const now = toZonedTime(new Date(), "Asia/Jakarta");
     setNowJakarta(now);
 
-    fetch("/data/events.json")
+    fetch(`${basepath}/data/events.json`)
       .then((res) => res.json())
       .then((data) => {
         const processed = data.map((event) => {
