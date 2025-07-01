@@ -7,6 +7,7 @@ import CommiteeSection from "../components/Commitee";
 import NavBar from "../components/NavBar";
 import Donation from "../components/Donation";
 import YouthSection from "../components/Youth";
+import Events from "../components/Events";
 
 const basepath = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
@@ -148,30 +149,10 @@ export default function HomePage() {
 				{/* Youth Part */}
 				<YouthSection basepath={basepath} />
 			</section>
-			{/* Panitia Section */}
+			{/* Commitee Section */}
 			<CommiteeSection basepath={basepath} />
-			{/* Perayaan Section */}
-			<section id="event" className="min-h-screen py-20 px-4 bg-white-100">
-				<div className="container mx-auto">
-					<motion.h2
-						initial={{ opacity: 0, y: 20 }}
-						whileInView={{ opacity: 1, y: 0 }}
-						viewport={{ once: true }}
-						className="section-title"
-					>
-						Event Hari Ini
-					</motion.h2>
-					<motion.p
-						initial={{ opacity: 0, y: 20 }}
-						whileInView={{ opacity: 1, y: 0 }}
-						viewport={{ once: true }}
-						transition={{ delay: 0.2 }}
-						className="section-text"
-					>
-						Coming Soon
-					</motion.p>
-				</div>
-			</section>
+			{/* Events Section */}
+			<Events basepath={basepath} />
 			{/* Total Donasi Section */}
 			<section id="donasi" className="min-h-screen py-20 px-4 bg-gray-100">
 				<div className="container mx-auto">
