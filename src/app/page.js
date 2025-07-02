@@ -188,7 +188,7 @@ export default function HomePage() {
 							Contoh: <span className="font-bold text-red-500">100.178</span>
 							<br />
 							Setelah transfer, harap konfirmasi langsung ke Finance Director
-							(Helmy Wibowo), WhatsApp: <a href="https://wa.me/6281239176009?text=I'm%20interested%20in%20your%20car%20for%20sale">081239176009</a>
+							(Helmy Wibowo), <a href="https://wa.me/6281239176009?text=Halo%20Pak%20Helmy,%20saya%20ingin%20konfirmasi%20donasi%20HUT-RI%20ke-80%20Villa%20Gardenia" style={{color:'green', fontWeight:'bold'}}>Klik Untuk Konfirmasi via WhatsApp</a>
 						</div>
 					</motion.div>
 					<motion.div
