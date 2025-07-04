@@ -29,7 +29,7 @@ export default function YouthSection({ basepath }) {
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        className="section-subtitle text-center section-subtitle section-subtitle-black mb-2"
+        className="text-center section-subtitle-black mb-2"
       >
         Pemuda-Pemudi Villa Gardenia
       </motion.h3>
@@ -70,14 +70,14 @@ export default function YouthSection({ basepath }) {
                   className="w-full h-full object-cover"
                 />
               </div>
-              <div className="p-6 text-center">
+              <div className="p-3 text-center">
                 <a
                   href={`https://www.instagram.com/ ${person.ig}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-700"
                 >
-                  <h3 className="section-subtitle">{person.name}</h3>
+                  <h3 className="section-person">{person.name}</h3>
                 </a>
               </div>
             </div>

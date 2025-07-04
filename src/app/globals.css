@@ -61,9 +61,14 @@ html {
   background: linear-gradient(to right, #d9232e, #ff4b5c);
 }
 
+.section-person,
 .section-subtitle {
   @apply text-lg text-gray-500 text-center font-semibold mt-2;
   color: #4a5568;
+}
+.section-person {
+  @apply text-sm font-bold mt-0;
+  padding: 0;
 }
 
 .section-subtitle-black {
