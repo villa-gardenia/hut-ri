@@ -176,6 +176,10 @@ export default function HomePage() {
 						melalui:
 						<div className="donation-text">
 							<br />
+							<span className="text-bold text-red-500">Mandiri 1370023131812</span>
+							<br />
+							<span className="text-bold text-red-500">BRI 033501062740506</span>
+							<br />
 							<span className="text-bold text-red-500">BCA 1221282898</span>
 							<br />
 							a.n. <span className="text-red-500">Helmy Nurcahyo Wibowo</span>
