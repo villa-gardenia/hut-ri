@@ -23,7 +23,7 @@ export default function Donation({ basepath }) {
       <h2 className="total-donations">
         {data?.sum ? currencyFormat(data?.sum) : "Rp 0"}
       </h2>
-      <h3 className="text-center">Dari total Donatur: {data?.count || 0}</h3>
+      <h3 className="text-center">Dari total Donatur: {data?.count ? (data.count - 1) : 0}</h3>
     </div>
   );
 }
