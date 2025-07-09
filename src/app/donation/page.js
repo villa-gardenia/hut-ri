@@ -162,9 +162,9 @@ export default function Donation() {
             </p>
           </div>
           <div className="flex justify-between items-center mb-4">
-            <p className="text-sm">Kekurangan dana</p>
+            <p className="text-sm">Kebutuhan dana</p>
             <p className="text-sm font-bold text-red-600">
-              {formattedRemaining}
+              {currencyFormat(targetAmount)}
             </p>
           </div>
           {/* URL ke https://villa-gardenia.github.io/hut-ri */}
