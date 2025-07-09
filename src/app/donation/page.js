@@ -2,6 +2,12 @@
 
 import { useEffect, useState, useMemo } from "react";
 import styles from "./styles.css";
+import { Poppins } from "next/font/google";
+
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["400", "600", "700"],
+});
 
 const basepath = process.env.NEXT_PUBLIC_BASE_PATH || "";
 const targetAmount = 48772500; // Target dana total
@@ -27,6 +33,7 @@ export default function Donation() {
     sum: 0,
     count: 0,
   });
+  const [daysRemaining, setDaysRemaining] = useState(0);
   const [percent, setPercent] = useState(0);
 
   useEffect(() => {
@@ -47,6 +54,21 @@ export default function Donation() {
       .catch((err) => console.error("Error fetching donation data:", err));
   }, []);
 
+  useEffect(() => {
+    const targetDate = new Date("2025-08-17T00:00:00").getTime();
+    const countdownInterval = setInterval(() => {
+      const now = new Date().getTime();
+      const timeRemaining = targetDate - now;
+      const days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
+      setDaysRemaining(days);
+
+      if (timeRemaining < 0) {
+        setDaysRemaining(0);
+      }
+    }, 1000);
+    return () => clearInterval(countdownInterval);
+  }, []);
+
   const formattedSum = currencyFormat(data.sum);
   const formattedRemaining = currencyFormat(targetAmount - data.sum);
 
@@ -62,7 +84,7 @@ export default function Donation() {
   return (
     <main className="bg-white text-black min-h-screen">
       {/* Header */}
-      <header className="p-5 flex justify-between items-center">
+      <header className="pt-5 pl-5 pr-5 mb-0 flex justify-between items-center">
         <div>
           <img
             src={`${basepath}/assets/logo-hut-ri-80-unoficial.png`}
@@ -116,10 +138,19 @@ export default function Donation() {
           </div>
         </div>
         {/* Progress Dana */}
-        <div className="bg-white shadow-md p-4">
+        <div className="bg-white shadow-md p-4 pb-0 border-b border-gray">
+          <div className="flex justify-between items-center mb-4">
+            <p className="text-sm">Persentase pencapaian</p>
+            <p className="text-sm font-bold text-red-600">
+              {percent.toFixed(2)}%
+            </p>
+          </div>
           <div className="mb-6 mt-4 w-full bg-gray-200 rounded-full overflow-hidden">
             <div style={progressBarStyle} className="rounded-full"></div>
           </div>
+        </div>
+
+        <div className="bg-white shadow-md p-4">
           <div className="flex justify-between items-center mb-4">
             <p className="text-sm">Uang yang sudah masuk</p>
             <p className="text-sm font-bold text-red-600">{formattedSum}</p>
@@ -131,12 +162,6 @@ export default function Donation() {
             </p>
           </div>
           <div className="flex justify-between items-center mb-4">
-            <p className="text-sm">Persentase pencapaian</p>
-            <p className="text-sm font-bold text-red-600">
-              {percent.toFixed(2)}%
-            </p>
-          </div>
-          <div className="flex justify-between items-center mb-4">
             <p className="text-sm">Kekurangan dana</p>
             <p className="text-sm font-bold text-red-600">
               {formattedRemaining}
@@ -144,6 +169,13 @@ export default function Donation() {
           </div>
           {/* URL ke https://villa-gardenia.github.io/hut-ri */}
           {/* add line */}
+        </div>
+        <div className="bg-red-600 shadow-md p-4 text-center">
+          {/* Left: Update Dana Masuk Text, Right: Today Date*/}
+          <h2 className="text-xl text-white">
+            <span className="font-bold">{daysRemaining} Hari</span> Lagi Menuju
+            Kemerdekaan
+          </h2>
         </div>
 
         <div className="text-xs bg-white shadow-md p-4 text-center border-t border-gray">
