@@ -158,7 +158,7 @@ export default function Donation() {
           <div className="flex justify-between items-center mb-4">
             <p className="text-sm">Jumlah donatur</p>
             <p className="text-sm font-bold text-red-600">
-              {data?.count || 0} Donatur
+              {data?.count ? data.count - 1 : 0} Donatur
             </p>
           </div>
           <div className="flex justify-between items-center mb-4">
