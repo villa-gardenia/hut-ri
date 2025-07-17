@@ -62,12 +62,12 @@ export default function DonationDetail() {
         <p>Loading...</p>
       ) : (
         <div className="overflow-x-auto">
-          <table className="min-w-full bg-white shadow rounded-lg">
+          <table className="min-w-full bg-white shadow rounded-lg text-xs">
             <thead>
               <tr className="bg-gray-200 text-left text-gray-600">
                 <th className="px-4 py-2 text-center">No</th>
-                <th className="px-4 py-2">Keterangan</th>
-                <th className="px-4 py-2">Jumlah</th>
+                <th className="px-4 py-2">Donasi</th>
+                <th className="px-4 py-2">Nominal</th>
                 <th className="px-4 py-2 text-right">Tanggal</th>
               </tr>
             </thead>
@@ -86,7 +86,9 @@ export default function DonationDetail() {
                     ) : (
                       ""
                     )}
-                    {d.blok}
+                    {d.blok && d.blok.length > 0 && d.kategori === "WARGA"
+                      ? "BLOK " + d.blok.charAt(0).toUpperCase()
+                      : d.blok}
                   </td>
                   <td className="px-4 py-2">{currencyFormat(d.nominal)}</td>
                   <td className="px-4 py-2 text-right">
