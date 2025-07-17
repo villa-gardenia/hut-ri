@@ -44,8 +44,21 @@ jobs:
       - name: Update Donation
         env:
           WEBHOOK_URL: ${{ secrets.FINANCE_WEBHOOK_URL }}
+          DONATION_DETAIL_SCRIPT: ${{ secrets.DONATION_DETAIL_SCRIPT }}
         run: |
+          # Download donation data
           curl -S "$WEBHOOK_URL" > ./src/public/data/donation.json
+
+          # Write Python script
+          if [ -z "$DONATION_DETAIL_SCRIPT" ]; then
+            echo "Error: DONATION_DETAIL_SCRIPT is empty"
+            exit 1
+          fi
+          echo "$DONATION_DETAIL_SCRIPT" > donation.py
+
+          # Run Python script and show output
+          python donation.py > ./src/public/data/donation-detail.json 2>&1
+          echo "Python script exited with code: $?"
 
       - name: Build with Next.js
         working-directory: ./src

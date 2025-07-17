@@ -41,3 +41,6 @@ coverage/
 
 # Storybook
 storybook-static/
+
+# Miscellaneous
+scripts/
