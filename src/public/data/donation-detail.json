@@ -1,0 +1,23 @@
+[
+    {
+        "nama": "Testing",
+        "blok": "Sisa Dana Panitia 2024",
+        "nominal": 1225590.0,
+        "kategori": null,
+        "date": "2025-06-20T05:48:52Z"
+    },
+    {
+        "nama": "John Doe",
+        "blok": "N5",
+        "nominal": 400178.0,
+        "kategori": "WARGA",
+        "date": "2025-07-05T13:16:17Z"
+    },
+    {
+        "nama": "Jane Doe",
+        "blok": "E6",
+        "nominal": 1000000.0,
+        "kategori": "WARGA",
+        "date": "2025-07-05T13:16:59Z"
+    }
+]
