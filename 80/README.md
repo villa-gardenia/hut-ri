@@ -54,7 +54,7 @@ Mencari dana dari sponsor, donatur, atau warga. Menyusun proposal dukungan, mela
 
 Mengajak dan membagi tugas relawan dan pemuda. Menyusun daftar tugas dan jadwal shift, melakukan briefing pemuda-pemudi, memastikan kehadiran pemuda-pemudi disetiap lomba dan acara malam refleksi, membimbing relawan saat acara berlangsung, dan mengevaluasi kinerja mereka sebagai bagian dari dokumentasi.
 
-### ⛑️ (Health and Medical Support) - dr. Riana Marsella, dr. Taufik Trilaksono
+### ⛑️ Tim Kesehatan (Health and Medical Support) - dr. Riana Marsella, dr. Taufik Trilaksono
 
 bertanggung jawab memastikan keselamatan dan kesehatan seluruh peserta selama acara berlangsung. Tim ini menyediakan bantuan pertama pada kecelakaan, memantau kebutuhan medis, dan berkoordinasi jika terjadi keadaan darurat.
 
