@@ -25,7 +25,7 @@ export default function DonationDetail() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await fetch("/data/donation-detail.json");
+        const res = await fetch(`${basepath}/data/donation-detail.json`);
         const data = await res.json();
         setDonations(data);
       } catch (err) {
