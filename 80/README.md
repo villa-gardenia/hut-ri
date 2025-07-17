@@ -22,6 +22,10 @@ Mengatur urutan tampil, memberi aba-aba waktu, menjaga ketepatan jadwal acara di
 
 Menyusun konsep lomba yang kreatif, aman, dan menyenangkan untuk semua kalangan. Menerima masukan dari warga, menyusun jadwal lomba, menentukan lokasi tiap lomba, mengatur juri, dan mengoordinasi pelaksanaan lomba di lapangan dan PIC setiap lomba. Mengelola daftar hadiah dan doorprize, melakukan pengadaan, mendata nilai hadiah, menyusun penataan hadiah di lokasi, dan memastikan pembagian hadiah berlangsung tertib sesuai hasil perlombaan dan sistem undian.
 
+### 🎙️MC (Master of Ceremony) – Shinta S. Interpreter, Diana
+
+Membawakan acara secara komunikatif, menjaga suasana tetap hidup, memberi transisi antar segmen, menyampaikan informasi penting, serta mampu berimprovisasi jika terjadi perubahan rundown.
+
 ---
 
 ## 🔹 🔧 Tim Logistik
@@ -50,9 +54,9 @@ Mencari dana dari sponsor, donatur, atau warga. Menyusun proposal dukungan, mela
 
 Mengajak dan membagi tugas relawan dan pemuda. Menyusun daftar tugas dan jadwal shift, melakukan briefing pemuda-pemudi, memastikan kehadiran pemuda-pemudi disetiap lomba dan acara malam refleksi, membimbing relawan saat acara berlangsung, dan mengevaluasi kinerja mereka sebagai bagian dari dokumentasi.
 
-### 🎙️MC (Master of Ceremony) – Shinta S. Interpreter, Diana
+### ⛑️ (Health and Medical Support) - dr. Riana Marsella, dr. Taufik Trilaksono
 
-Membawakan acara secara komunikatif, menjaga suasana tetap hidup, memberi transisi antar segmen, menyampaikan informasi penting, serta mampu berimprovisasi jika terjadi perubahan rundown.
+bertanggung jawab memastikan keselamatan dan kesehatan seluruh peserta selama acara berlangsung. Tim ini menyediakan bantuan pertama pada kecelakaan, memantau kebutuhan medis, dan berkoordinasi jika terjadi keadaan darurat.
 
 ---
 
