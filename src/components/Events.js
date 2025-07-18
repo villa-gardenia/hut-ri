@@ -13,8 +13,7 @@ const timeMap = {
   Malam: "19:00",
 };
 
-function parseEventToJakartaTime(dateString, waktu) {
-  const approxTime = timeMap[waktu] || "08:00";
+function parseEventToJakartaTime(dateString, approxTime) {
   const [hours, minutes] = approxTime.split(":").map(Number);
 
   // Parse date string with Bahasa Indonesia locale
@@ -139,10 +138,11 @@ function EventList({
               }`}
             >
               <h4
-                className={`font-medium ${isCompleted ? "line-through" : ""}`}
+                className={`font-semibold ${isCompleted ? "line-through" : ""}`}
               >
                 {event.kegiatan}
               </h4>
+              <p className="text-sm mt-1">Waktu: {event.jam}</p>
               <p className="text-sm mt-1">Lokasi: {event.lokasi}</p>
               <p className="text-sm mt-1">
                 PJ:{" "}
@@ -169,15 +169,25 @@ function Events({ basepath }) {
       .then((res) => res.json())
       .then((data) => {
         const processed = data.map((event) => {
-          const eventDate = parseEventToJakartaTime(event.tanggal, event.waktu);
+          const eventTimeEnd = event.jam.split("-")[1];
+          const eventTimeStart = event.jam.split("-")[0];
+          const eventDate = parseEventToJakartaTime(
+            event.tanggal,
+            eventTimeStart,
+          );
+          const parsedEndTime = parseEventToJakartaTime(
+            event.tanggal,
+            eventTimeEnd,
+          );
+          const parsedStartTime = parseEventToJakartaTime(
+            event.tanggal,
+            eventTimeStart,
+          );
 
           let status = "upcoming";
-          if (eventDate < now) {
+          if (parsedEndTime < now) {
             status = "completed";
-          } else if (
-            formatInTimeZone(eventDate, "Asia/Jakarta", "yyyy-MM-dd") ===
-            formatInTimeZone(now, "Asia/Jakarta", "yyyy-MM-dd")
-          ) {
+          } else if (parsedStartTime <= now && now < parsedEndTime) {
             status = "today";
           }
 
@@ -196,7 +206,7 @@ function Events({ basepath }) {
         const groupKeys = Object.keys(grouped);
         const nextGroupKey = groupKeys.find((key) => {
           const [tanggal, waktu] = key.split("-");
-          const eventDate = parseEventToJakartaTime(tanggal, waktu);
+          const eventDate = parseEventToJakartaTime(tanggal, timeMap[waktu]);
           return eventDate >= now;
         });
         const nextGroupIndex = nextGroupKey
@@ -240,15 +250,26 @@ function Events({ basepath }) {
             <ul>
               {Object.entries(groupedEvents).map(([key, group], groupIndex) => {
                 const [tanggal, waktu] = key.split("-");
-                const eventDate = parseEventToJakartaTime(tanggal, waktu);
-                const formattedDate = formatInTimeZone(
-                  eventDate,
-                  "Asia/Jakarta",
-                  "EEEE, d MMMM yyyy • HH:mm",
-                  {
-                    locale: idLocale,
-                  },
+                const eventDate = parseEventToJakartaTime(
+                  tanggal,
+                  timeMap[waktu],
                 );
+                const firstEvent = group.length ? group[0] : null;
+                const firstEventTime = firstEvent
+                  ? firstEvent.jam.split("-")[0]
+                  : eventDate.toLocaleTimeString("id-ID", {
+                      hour: "2-digit",
+                      minute: "2-digit",
+                    });
+                const formattedDate =
+                  formatInTimeZone(
+                    eventDate,
+                    "Asia/Jakarta",
+                    "EEEE, d MMMM yyyy",
+                    {
+                      locale: idLocale,
+                    },
+                  ) + ` • ${firstEventTime}`;
 
                 const isCompletedGroup =
                   eventDate < nowJakarta ||
