@@ -10,6 +10,7 @@ export default function NavBar() {
 		{ name: "Panitia", href: "/#panitia" },
 		{ name: "Event", href: "/#event" },
 		{ name: "Donasi", href: "/#donasi" },
+		{ name: "Sponsor", href: "/#sponsor" },
 		{ name: "Kontak", href: "/#kontak" },
 	];
 

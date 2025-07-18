@@ -84,6 +84,15 @@ html {
   /* Gradient line gray to white */
   background: linear-gradient(to right, #a0aec0, #edf2f7);
 }
+.paragraph-with-line::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  margin: 2rem auto;
+  /* Gradient line gray to white */
+  background: linear-gradient(to right, #a0aec0, #edf2f7);
+}
 
 /* Paragraph styling */
 .section-text {

@@ -209,7 +209,8 @@ export default function HomePage() {
 							<div className="text-center p-3 mt-5 mb-10 text-sm">
 								<a
 									href="https://wa.me/6281239176009?text=Halo%20Pak%20Helmy,%20saya%20ingin%20konfirmasi%20donasi%20HUT-RI%20ke-80%20Villa%20Gardenia"
-									className="font-bold bg-green-300 p-3 rounded-lg hover:bg-green-400 transition-colors duration-300"
+									className="font-bold bg-green-200 p-3 rounded-lg hover:bg-green-400 transition-colors duration-300"
+									target="_blank"
 								>
 									📱Klik Untuk Konfirmasi via WhatsApp
 								</a>
@@ -231,8 +232,63 @@ export default function HomePage() {
 					</motion.div>
 				</div>
 			</section>
+			{/* Sponsor Section */}
+			<section id="sponsor" className="min-h-screen py-20 px-4 bg-white-100">
+				<div className="container mx-auto">
+					<motion.h2
+						initial={{ opacity: 0, y: 20 }}
+						whileInView={{ opacity: 1, y: 0 }}
+						viewport={{ once: true }}
+						className="section-title"
+					>
+						Sponsorship
+					</motion.h2>
+					<motion.p
+						initial={{ opacity: 0, y: 20 }}
+						whileInView={{ opacity: 1, y: 0 }}
+						viewport={{ once: true }}
+						transition={{ delay: 0.2 }}
+						className="section-text paragraph-with-line"
+					>
+						Kami membuka kesempatan bagi warga maupun pihak luar yang ingin
+						berpartisipasi sebagai sponsor dalam perayaan ini. Dukungan Anda
+						akan membantu menyukseskan acara HUT RI ke 80 di Villa Gardenia.
+					</motion.p>
+					<motion.p
+						initial={{ opacity: 0, y: 20 }}
+						whileInView={{ opacity: 1, y: 0 }}
+						viewport={{ once: true }}
+						transition={{ delay: 0.2 }}
+						className="section-text paragraph-with-line"
+					>
+						Untuk mengetahui detail paket sponsorship dan manfaat yang akan Anda
+						dapatkan, silakan unduh proposal mitra atau dengan menghubungi kami
+						melalui Kordinator Sponsorship (Arie Kustanto).
+					</motion.p>
+					<div className="text-center p-3 mt-5 mb-5 text-sm text-gray-600">
+						<a
+							href="https://drive.google.com/file/d/1HRl3EafVu7weW3dKiKOT-q0qXRkVKMb0/view?usp=sharing"
+							className="text-blue-400 font-semibold bg-blue-100 p-3 rounded-lg hover:bg-blue-200 transition-colors duration-300"
+							target="_blank"
+						>
+							📑 Unduh Proposal Mitra
+						</a>
+					</div>
+					{/* -OR- text on the middle with line */}
+					<div className="text-center">- atau -</div>
+					<div className="text-center p-3 mt-5 mb-10 text-sm text-gray-600">
+						<a
+							href="https://wa.me/628112643642?text=Halo%20Pak%20Arie,%20saya%20ingin%20bertanya%20tentang%20proposal%20mitra%20untuk%20HUT-RI%20ke-80%20Villa%20Gardenia"
+							className="font-bold bg-green-200 p-3 rounded-lg hover:bg-green-400 transition-colors duration-300"
+							target="_blank"
+						>
+							📱 Hubungi Pak Arie
+						</a>
+					</div>
+				</div>
+			</section>
 			{/* Kontak Section */}
-			<section id="kontak" className="min-h-screen py-20 px-4 bg-white-100">
+			<section id="kontak" className="min-h-screen py-20 px-4 bg-gray-100">
 				<div className="container mx-auto">
 					<motion.h2
 						initial={{ opacity: 0, y: 20 }}
@@ -247,13 +303,34 @@ export default function HomePage() {
 						whileInView={{ opacity: 1, y: 0 }}
 						viewport={{ once: true }}
 						transition={{ delay: 0.2 }}
-						className="section-text"
+						className="section-text paragraph-with-line"
 					>
 						Ingin ikut serta dalam perayaan atau memiliki pertanyaan? Silakan
 						hubungi kami melalui Panitia Humas Paguyuban (Muhammad Taqi
 						Ardabilli, Wardah Makmun) atau langsung mention ke Panitia di
 						WhatsApp Group Paguyuban.
 					</motion.p>
+
+					<div className="text-center p-3 mt-10 mb-5 text-sm text-gray-600">
+						<a
+							href="https://wa.me/628112891946?text=Halo%20Pak%20Arda,%20saya%20ingin%20bertanya%20tentang%20info%20HUT-RI%20ke-80%20Villa%20Gardenia"
+							className="font-bold bg-green-200 p-3 rounded-lg hover:bg-green-400 transition-colors duration-300"
+							target="_blank"
+						>
+							📱 Hubungi Pak Arda
+						</a>
+					</div>
+					{/* -OR- text on the middle with line */}
+					<div className="text-center">- atau -</div>
+					<div className="text-center p-3 mt-5 mb-10 text-sm text-gray-600">
+						<a
+							href="https://wa.me/6285642146214?text=Halo%20Bu%20Warda,%20saya%20ingin%20bertanya%20tentang%20info%20HUT-RI%20ke-80%20Villa%20Gardenia"
+							className="font-bold bg-green-200 p-3 rounded-lg hover:bg-green-400 transition-colors duration-300"
+							target="_blank"
+						>
+							📱 Hubungi Bu Wardah
+						</a>
+					</div>
 				</div>
 			</section>
 		</main>
