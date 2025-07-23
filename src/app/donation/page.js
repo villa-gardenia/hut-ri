@@ -87,9 +87,9 @@ export default function Donation() {
       <header className="pt-5 pl-5 pr-5 mb-0 flex justify-between items-center">
         <div>
           <img
-            src={`${basepath}/assets/logo-hut-ri-80-unoficial.png`}
+            src={`${basepath}/assets/hut-ri-80-logo-red.png`}
             alt="Logo HUT RI 80 Unoficial"
-            className="h-20"
+            className="h-24 w-96 object-contain"
             height={600}
           />
         </div>
@@ -97,6 +97,7 @@ export default function Donation() {
           <img
             src={`${basepath}/assets/logo.jpg`}
             alt="logo-villa-gardenia"
+            className="h-24 w-96 object-contain"
             height={600}
           />
         </div>
