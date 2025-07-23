@@ -97,15 +97,31 @@ export default function HomePage() {
 							height={400}
 						/>
 					</motion.div>
-					<motion.a
+					<motion.div
 						initial={{ opacity: 0 }}
 						animate={{ opacity: 1 }}
 						transition={{ delay: 2.5 }}
-						href="#tentang"
-						className="btn-primary mt-8"
+						className="mt-8 flex flex-col md:flex-row gap-4 justify-center md:invisible"
 					>
-						Mulai Jelajah
-					</motion.a>
+						<a className="btn-primary" href="#tentang">
+							Tentang
+						</a>
+						<a className="btn-primary" href="#panitia">
+							Panitia
+						</a>
+						<a href="#event" className="btn-primary">
+							Jadwal Acara
+						</a>
+						<a href="#donasi" className="btn-primary">
+							Update Donasi
+						</a>
+						<a href="#sponsor" className="btn-primary">
+							Sponsorship
+						</a>
+						<a href="#kontak" className="btn-primary">
+							Kontak
+						</a>
+					</motion.div>
 				</motion.div>
 			</section>
 			{/* Tentang Section */}
