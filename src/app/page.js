@@ -60,14 +60,6 @@ export default function HomePage() {
 					transition={{ delay: 0.5 }}
 					className="relative z-10 text-center text-white px-4"
 				>
-					<Image
-						src={`${basepath}/assets/logo.jpg`}
-						alt="logo-villa-gardenia"
-						priority
-						className="mx-auto rounded-full hero-logo"
-						width={400}
-						height={400}
-					/>
 					<motion.div
 						initial={{ opacity: 0, y: 20 }}
 						animate={{ opacity: 1, y: 0 }}
@@ -75,17 +67,36 @@ export default function HomePage() {
 						id="countdown"
 						className="mt-8 text-2xl md:text-3xl font-bold text-white-500"
 					>
-						<span id="days"></span> Hari Menuju Kemerdekaan
-						<br /> Republik Indonesia Ke-80
+						<span id="days"></span> Hari Menuju HUT RI ke
 					</motion.div>
-					<motion.p
+					<motion.div
 						initial={{ opacity: 0, y: 20 }}
 						animate={{ opacity: 1, y: 0 }}
 						transition={{ delay: 1.5 }}
-						className="mt-4 text-lg md:text-xl max-w-2xl mx-auto"
 					>
-						Merdeka dan Maju Bersama di Bumi Pertiwi
-					</motion.p>
+						<Image
+							src={`${basepath}/assets/hut-ri-80-logo-white.png`}
+							alt="logo-villa-gardenia"
+							priority
+							className="mx-auto rounded-full hero-logo"
+							width={400}
+							height={400}
+						/>
+					</motion.div>
+					<motion.div
+						initial={{ opacity: 0, y: 20 }}
+						animate={{ opacity: 1, y: 0 }}
+						transition={{ delay: 2 }}
+					>
+						<Image
+							src={`${basepath}/assets/logo.jpg`}
+							alt="logo-villa-gardenia"
+							priority
+							className="mx-auto rounded-full hero-logo"
+							width={400}
+							height={400}
+						/>
+					</motion.div>
 					<motion.a
 						initial={{ opacity: 0 }}
 						animate={{ opacity: 1 }}
