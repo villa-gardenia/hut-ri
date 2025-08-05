@@ -18,11 +18,11 @@ Menentukan, merekrut pengisi acara malam refleksi seperti penampil seni dan grup
 
 Mengatur urutan tampil, memberi aba-aba waktu, menjaga ketepatan jadwal acara di panggung, memastikan ketersediaan mic/speaker, serta menjadi penghubung antara panggung dan tim teknis lainnya. Menjamin suasana panggung tertib dan terkontrol.
 
-### 🏃 Koordinator Lomba, Permainan, Hadiah & Doorprize (Games, Competitions, Prize & Giveaway Lead) – Diana, Dian Wulandari, Sheila Sitarani, Anggy Aricya
+### 🏃 Koordinator Lomba, Permainan, Hadiah & Doorprize (Games, Competitions, Prize & Giveaway Lead) – Sheila Sitarani, Dian Wulandari, Anggy Aricya, Diana
 
 Menyusun konsep lomba yang kreatif, aman, dan menyenangkan untuk semua kalangan. Menerima masukan dari warga, menyusun jadwal lomba, menentukan lokasi tiap lomba, mengatur juri, dan mengoordinasi pelaksanaan lomba di lapangan dan PIC setiap lomba. Mengelola daftar hadiah dan doorprize, melakukan pengadaan, mendata nilai hadiah, menyusun penataan hadiah di lokasi, dan memastikan pembagian hadiah berlangsung tertib sesuai hasil perlombaan dan sistem undian.
 
-### 🎙️MC (Master of Ceremony) – Shinta S. Interpreter, Diana
+### 🎙️MC (Master of Ceremony) – Shinta S. Interpreter, Helena Bella
 
 Membawakan acara secara komunikatif, menjaga suasana tetap hidup, memberi transisi antar segmen, menyampaikan informasi penting, serta mampu berimprovisasi jika terjadi perubahan rundown.
 
@@ -46,7 +46,7 @@ Merancang layout tempat acara refleksi, membuat dan memasang dekorasi yang sesua
 
 Menjaga keamanan selama acara berlangsung, memblokade jalan, mengatur arus keluar-masuk pengunjung, menjaga lokasi tetap kondusif, dan berkoordinasi jika ada situasi darurat. Juga bertugas menjaga perlombaan agar berjalan adil dan aman.
 
-### 💰 Koordinator Dana & Sponsorship (Fundraising & Sponsorship Coordinator) – Adriansyah Wicaksono, Sri Bulan, Arie Kustanto
+### 💰 Koordinator Dana & Sponsorship (Fundraising & Sponsorship Coordinator) – Arie Kustanto, Sri Bulan
 
 Mencari dana dari sponsor, donatur, atau warga. Menyusun proposal dukungan, melakukan pendekatan ke mitra.
 
@@ -66,7 +66,7 @@ bertanggung jawab memastikan keselamatan dan kesehatan seluruh peserta selama ac
 
 Merancang identitas visual acara (tema warna, font, grafis, layout). Menyusun desain untuk banner, backdrop, undangan, dan konten publikasi. Berkoordinasi dengan tim dekorasi dan publikasi, umbul-umbul, serta mengawasi output desain.
 
-### 📸 Tim Dokumentasi (Documentation Team) – Taufik Trilaksono, N. Amir Fauzi, Julius Phutut, Susilo Tyas Sudi N
+### 📸 Tim Dokumentasi (Documentation Team) – Taufik Trilaksono, N. Amir Fauzi, Julius Phutut
 
 Mendokumentasikan seluruh kegiatan dengan foto dan video. Membagi tim sesuai titik acara, memastikan kualitas hasil dokumentasi, serta menyiapkan album digital dan video highlight sebagai arsip kegiatan.
 
