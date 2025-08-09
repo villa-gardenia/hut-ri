@@ -34,7 +34,6 @@
 **** PIC:
 ***** Valent Gede
 ***** Edel (Lanjut Bantu Helmy di Venue setelah selesai)
-***** Pak Bayu
 **** Toa
 **** HT
 *** Pengumpulan Kupon di Panggung
@@ -53,6 +52,7 @@
 *** 3. Foto Bareng
 *** 4. Start Bendera --- BERANGKAT
 *** 5. Pengumpulan Kupon di panggung -- SAMPAI
+**** Mengarahkan partrisipan ketika sampai
 *** 6. Pemberitahuan Silakan Makan2
 *** List Nama-nama Sponsor dari urutan sumbangan yang besar - kecil.
 **** List Urutannya (TBC Shinta ke Pak Helmy)
@@ -60,7 +60,11 @@
 *** 7. Pengundian Kupon: Bu Shinta & Bu Rani
 **** Penyiapan Hadiah: Bu Dian & Bu Helena
 *** 8. Lomba
-** Bazaar
+** Tenant & Bazaar
+*** Pak Bayu & Bu Laura:
+**** Mengatur Posisi Tenant baik Sponsor maupun Bazaar
+**** Cek Apakah setiap tenant bazaar punya trashbag
+**** Minimal setiap tenant ada 1 yang jaga kalau mau berpartisipasi jalan sehat
 ** Konsumsi
 *** Perlengkapan: Menata Meja (Helmy, Aldy, Edel)
 *** Display: Mbak Eka, Bu Olif, Bu Laura

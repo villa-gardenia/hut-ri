@@ -44,8 +44,14 @@
   - Sound + mic 2.
   - Midi Indonesia Raya.
 
-- **PIC Hadiah**:
-  - Bu Dian & Bu Helena
+- **Hadiah**:
+  - PIC: Bu Dian & Bu Helena
+
+- **Tenant & Bazaar**:
+  - PIC: Pak Bayu & Bu Laura:
+    - Mengatur Posisi Tenant baik Sponsor maupun Bazaar
+    - Cek Apakah setiap tenant bazaar punya trashbag
+    - Minimal setiap tenant ada 1 yang jaga kalau mau berpartisipasi jalan sehat
 
 - **MC & Susunan Acara**:
   - MC: Bu Shinta & Bu Rani.
