@@ -44,6 +44,9 @@
   - Sound + mic 2.
   - Midi Indonesia Raya.
 
+- **PIC Hadiah**:
+  - Bu Dian & Bu Helena
+
 - **MC & Susunan Acara**:
   - MC: Bu Shinta & Bu Rani.
   1. Pemberitahuan:
