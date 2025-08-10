@@ -2,54 +2,102 @@ AGENDA, RAPAT: MINGGU, 10 Agustus 2025
 
 
 * Persiapan Sebelum Acara
+
+** Resources (Pemuda-Pemudi)
+*** Alokasi Tasks ke Pemuda-pemudi @wildan
+
 ** Konsumsi
 *** Persiapan Kepastian List Konsumsi @eka @laura
-*** Konsumsi tambahan? @eka
-**** Air Mineral
-**** Teh
-**** Cemilan
-***
+**** Menu (350 Pack):
+***** Bakso Mie
+***** Nasi Rawon Daging
+***** Bakmie Kakap
+**** Minuman
+***** Wedang Angsle
+***** Air Mineral
+***** Teh
+***** Soft Drink
+**** Cemilan [Coffee-break]
+***** Dimsum Mentai
+***** Crepes
+***** Es Krim
+**** Rabu Jam 1 Mbak @eka & Pak @deden bertemu Bu Rengganis
 
+*** Konsumsi tambahan? @eka
+**** Kopi Jumbo
 
 ** Persiapan Venue
-*** Tenda @bayu @valent-gede
-*** Tenda Konsumsi @eka @bayu @laura
-*** Stage & Dekorasi @dhany @reza @deden
-*** Kursi @edel @bayu
+*** Tenda @bayu @valent-gede @reza
+**** Tenda Berdiri Hari Rabu tanggal 13 Jam 10 Pagi
+*** Tenda Konsumsi [13] @bayu @eka @valent-gede @deden
+**** Hari Selasa [12] Survey Venue @eka @bayu @perwakilan-catering
+**** Meja sudah dari catering
+**** Prasmanan & Gubuk | Lokasi - TBC
+**** Loading Catering [16] | Jam 1 Siang @reza
+*** Stage & Dekorasi [14-16]
+**** Print Backdrop 11 Sore @breni @ari @deden @anto
+**** Setup Dimulai tanggal 14 Pagi @dhany @bayu
+**** Dekorasi tanggal 15 Malam @reza @puthut @ega
+**** Sound Loading & Check 16 Pagi jam 10 @puput @valen @bayu
+**** Lampu: Konfirmasi | @amir
 *** Meja Registrasi:
-**** Dekorasi @warda @aulia
-**** Buku Tamu @warda @aulia
-**** Stretch Book @warda @aulia
+**** Setup [16 Pagi] @reza @edel
+**** Meja Mesjid @edel
+**** Dekorasi @warda @aulia @reza
+**** Checklist Kehadiran Warga @aulia @nanang
+**** Signboard | Konsep 70s @warda @aulia
 *** Photoboth:
-**** Transportasi Mobil Antik @valent-gede @bayu
-
+**** Design Backdrop 11 Malam [3x4] @helmy @breni
+**** Print 12 Pagi [3x4] @helmy -> @puthut @putri @rico
+**** Setup [14 pagi] @dhany @bayu
+**** Transportasi Mobil Antik [16 Siang] @valent-gede @bayu @puthut @reza
+**** Dekorasi Mobil
+***** Police Line [16 Siang] @bayu
+***** Karpet @putri
+**** Camera + Flash @amir | Tambahan logo @arie
+**** Setup Photobooth & Dokumentasi @amir @taufik
+**** Setup Barcode @amir @taufik
+*** Kebersihan Venue & Trashbag @aldy
 
 ** Hadiah + Doorprize
 *** Pembelian Hadiah dan Doorprize @dian
-*** List Pemenang Lomba @dian
+*** List Pemenang Lomba @dian @rani @helena
+*** Diskusi Doorprize @helmy @helena @rani @dian
+
 ** Distribusi Surat Undangan
 *** Draft 2 Surat Undangan:
-**** Padhukuhan
-**** Warga Villa Gardenia
-*** Print @nanang
-*** Distribusi @warda
+**** Padhukuhan A4 @nanang
+**** Warga Villa Gardenia A5 @nanang
+*** Print [12 | Selasa] @nanang
+*** Distribusi [13 | 14] @warda di Bagi ke Kordinator Blok | Panitia
 
 ** Persiapan Talent
-*** Gladiresik: @puput @ebta-valent
+*** Gladiresik Venue [16]: @puput @valen @bayu
 *** Pengecekan Peralatan Band: @puput
-*** List Talent (Nama Lengkap): @ega
+*** List Talent (Nama Lengkap | Nama Group Band): @valen -> @irul
+
+** MC
+*** Diskusi Detail MC | @irul @ega @helena @putri @shinta @wildan
+*** List Sponsor @arie
+
 ** Lainnya
 *** Print Rundown Acara: @ega
-*** MIDI Indonesia Raya @deden
-
+*** Video Indonesia Raya @irul
+*** Video Sambutan @irul
+*** HT @dhany
+*** Screen Projector @helmy -> @edel
+*** Setup Projector: @irul @edel
 
 * Rundown Acara
+** 18.00 - 18.45 [TAMU BERDATANGAN | MAKAN]
 *** Registrasi tamu undangan: @warda @arda
+*** Makan-makan
 ** 18.45 - 19.15 [PRA ACARA]
 **** Voice Over - MC BACKSTAGE
 *** Pentas Seni: ANGKLUNG @ibu-ibu [2 LAGU / 3 LAGU]
 *** Pentas Seni: DANCE GROUP JUNIOR KIDS @manis-manja | 3.5 MENIT
 *** Pentas Seni: TARI @cinta | 2 MENIT
+**** Break Adzan
 ** 19.15 - 19.40 [Pembukaan]
 **** Voice Over - MC BACKSTAGE
 *** Menyanyikan Lagu "Indonesia Raya"
@@ -67,6 +115,7 @@ AGENDA, RAPAT: MINGGU, 10 Agustus 2025
 *** Pentas Seni: Tari Nusantara @senior-kids
 ** 20.00 - 21.00 [Pembagian Hadiah Lomba]
 *** Pembagian Hadiah Lomba
+**** Pemberian Piala
 **** Per-kategori Lomba | Listnya ada di Bu @dian
 ** 21.00 - 21.30
 *** MC: pembagian doorprize medium hiburan
@@ -74,18 +123,28 @@ AGENDA, RAPAT: MINGGU, 10 Agustus 2025
 *** MC: pembagian doorprize medium hiburan
 *** Pentas Seni: Band @group2
 ** 21.30 - 21.45
-*** MC: Pembagian Doorprize Utama
-** 21.45 - 22.00
-*** Pembacaan Doa dan Penutup
-** 22.00 - SELESAI [ACARA BEBAS]
 *** Pentas Seni: Band @groupPemuda-i
-* Tugas Saat Acara Berlangsung
+*** Pembacaan Doa dan Penutup
+** 21.45 - 22.00
+*** MC: Pengumuman Kostum terbaik (1 Pria, 1 Wanita, Anak)
+**** Juri: @aan @tyo @cindy-valen
+*** MC: Pembagian Doorprize Utama
+** 22.00 - SELESAI [ACARA BEBAS]
+*** Pentas Seni BEBAS
+
+* Tugas Saat Acara Berlangsung [16]
+** Dokumentasi (Mobile)
+*** Dokumentasi Saat Acara Berlangsung @taufik @tyas @amir
 ** Penjagaan & Pengamanan
+*** Brief @aldy @edel @bayu
+*** Penanggung Jawab Keamanan @trie
 ** Pos Registrasi
 ** Pos Konsumsi
 ** Pos Photo Booth
+*** Photographer @amir
 ** Pos Stage
 *** MC @helena & @shinta
 *** Direct @irul
+*** Stage Manager @putri, @irul, @ega
 ** Pos Transit
 *** Tempat Menyimpan Hadiah
