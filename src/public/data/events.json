@@ -149,7 +149,7 @@
         "waktu": "Pagi",
         "kegiatan": "Lomba Joged Balon Pasangan",
         "penanggung_jawab": "Dian",
-        "jam": "09:30 - 10:30"
+        "jam": "09:30 - 10:00"
     },
     {
         "tanggal": "10 Agustus 2025",
@@ -157,23 +157,15 @@
         "waktu": "Pagi",
         "kegiatan": "Lomba Pakai Sarung dengan Balon",
         "penanggung_jawab": "Helena",
-        "jam": "10:30 - 11:15"
+        "jam": "10:00 - 10:30"
     },
     {
         "tanggal": "10 Agustus 2025",
         "lokasi": "Depan Masjid Cahyaning Ati",
-        "waktu": "Sore",
-        "kegiatan": "Jaga Lilin Kelompok Bapak & Ibu",
-        "penanggung_jawab": "Wildan & Putri",
-        "jam": "15:00 - 16:00"
-    },
-    {
-        "tanggal": "10 Agustus 2025",
-        "lokasi": "Depan Masjid Cahyaning Ati",
-        "waktu": "Sore",
+        "waktu": "Pagi",
         "kegiatan": "Estafet Air Kelompok Bapak & Ibu",
         "penanggung_jawab": "Daffa & Rani",
-        "jam": "16:00 - 17:00"
+        "jam": "10:30 - 11:00"
     },
     {
         "tanggal": "16 Agustus 2025",
