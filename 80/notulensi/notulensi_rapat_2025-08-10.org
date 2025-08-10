@@ -8,10 +8,12 @@ AGENDA, RAPAT: MINGGU, 10 Agustus 2025
 **** Air Mineral
 **** Teh
 **** Cemilan
-*** Konsumsi tambahan? @eka
+***
+
 
 ** Persiapan Venue
 *** Tenda @bayu @valent-gede
+*** Tenda Konsumsi @eka @bayu @laura
 *** Stage & Dekorasi @dhany @reza @deden
 *** Kursi @edel @bayu
 *** Meja Registrasi:
@@ -21,10 +23,10 @@ AGENDA, RAPAT: MINGGU, 10 Agustus 2025
 *** Photoboth:
 **** Transportasi Mobil Antik @valent-gede @bayu
 
-** Hadiah + Doorprize
-*** Pembelian Hadiah dan Doorprize
-*** List Pemenang Lomba @deden
 
+** Hadiah + Doorprize
+*** Pembelian Hadiah dan Doorprize @dian
+*** List Pemenang Lomba @dian
 ** Distribusi Surat Undangan
 *** Draft 2 Surat Undangan:
 **** Padhukuhan
@@ -35,41 +37,48 @@ AGENDA, RAPAT: MINGGU, 10 Agustus 2025
 ** Persiapan Talent
 *** Gladiresik: @puput @ebta-valent
 *** Pengecekan Peralatan Band: @puput
-
+*** List Talent (Nama Lengkap): @ega
 ** Lainnya
 *** Print Rundown Acara: @ega
 *** MIDI Indonesia Raya @deden
 
-* Rundown Acara
-** 18.45 - 19.15 [PRA ACARA]
-*** Registrasi tamu undangan: @warda @arda
-*** Pentas Seni: ANGKLUNG @ibu-ibu [2 LAGU]
-*** Pentas Seni: DANCE GROUP JUNIOR KIDS @manis-manja
-*** Pentas Seni: TARI @cinta 2 MENIT
-** 19.15 - 19.40 [Pembukaan]
-*** Sambutan Ketua Panitia HUT RI: @helmy
-*** Menyanyikan Lagu "Indonesia Raya"
-*** Menyanyikan Lagu Wajib Nasional
-*** Sambutan Ketua Paguyuban: @danang
-*** Sambutan Kepala Padhukuhan
-** 19.40 - 20.00 [Pentas Seni]
-**** Diselingi pembagian doorprize hiburan saat pergantian talent pentas seni
 
+* Rundown Acara
+*** Registrasi tamu undangan: @warda @arda
+** 18.45 - 19.15 [PRA ACARA]
+**** Voice Over - MC BACKSTAGE
+*** Pentas Seni: ANGKLUNG @ibu-ibu [2 LAGU / 3 LAGU]
+*** Pentas Seni: DANCE GROUP JUNIOR KIDS @manis-manja | 3.5 MENIT
+*** Pentas Seni: TARI @cinta | 2 MENIT
+** 19.15 - 19.40 [Pembukaan]
+**** Voice Over - MC BACKSTAGE
+*** Menyanyikan Lagu "Indonesia Raya"
+**** MC OPENING @STAGE
+*** Doa dipimpin oleh MC @shinta
+*** Sambutan Ketua Panitia HUT RI: @helmy
+*** Sambutan Kepala Padhukuhan: @wasiadi
+*** Sambutan Ketua Paguyuban: @danang
+*** Mengheningkan Cipta: @danang
+** 19.40 - 20.00 [Pentas Seni]
 *** Pentas Seni: Tari @nindya
+*** MC: pembagian doorprize kecil hiburan
 *** Pentas Seni: Solo Vocal @celine
+*** MC: pembagian doorprize kecil hiburan
 *** Pentas Seni: Tari Nusantara @senior-kids
 ** 20.00 - 21.00 [Pembagian Hadiah Lomba]
 *** Pembagian Hadiah Lomba
+**** Per-kategori Lomba | Listnya ada di Bu @dian
 ** 21.00 - 21.30
-**** Diselingi pembagian doorprize hiburan saat pergantian talent pentas seni
+*** MC: pembagian doorprize medium hiburan
 *** Pentas Seni: Band @group1
+*** MC: pembagian doorprize medium hiburan
 *** Pentas Seni: Band @group2
-*** Pembagian Doorprize Utama
-** 21.30 - 21.40
+** 21.30 - 21.45
+*** MC: Pembagian Doorprize Utama
+** 21.45 - 22.00
 *** Pembacaan Doa dan Penutup
-** 21.40 - Selesai
-*** Ramah Tamah dan Pentas Seni
-
+** 22.00 - SELESAI [ACARA BEBAS]
+*** Pentas Seni: Band @groupPemuda-i
 * Tugas Saat Acara Berlangsung
 ** Penjagaan & Pengamanan
 ** Pos Registrasi
