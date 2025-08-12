@@ -77,7 +77,7 @@ AGENDA, RAPAT: MINGGU, 10 Agustus 2025
 *** List Talent (Nama Lengkap | Nama Group Band): @valen -> @irul
 
 ** MC
-*** Diskusi Detail MC | @irul @ega @helena @putri @shinta @wildan
+*** Diskusi Detail MC | @irul @ega @helena @putri @shinta @wterakhirildan
 *** List Sponsor @arie
 
 ** Lainnya
@@ -87,6 +87,7 @@ AGENDA, RAPAT: MINGGU, 10 Agustus 2025
 *** HT @dhany
 *** Screen Projector @helmy -> @edel
 *** Setup Projector: @irul @edel
+
 
 * Rundown Acara
 ** 18.00 - 18.45 [TAMU BERDATANGAN | MAKAN]
@@ -134,17 +135,67 @@ AGENDA, RAPAT: MINGGU, 10 Agustus 2025
 
 * Tugas Saat Acara Berlangsung [16]
 ** Dokumentasi (Mobile)
-*** Dokumentasi Saat Acara Berlangsung @taufik @tyas @amir
+*** Dokumentasi Saat Acara Berlangsung @taufik @tyas @amir @davina @jevony
 ** Penjagaan & Pengamanan
 *** Brief @aldy @edel @bayu
 *** Penanggung Jawab Keamanan @trie
 ** Pos Registrasi
+*** Menerima Tamu @arda @warda @xandra
+*** Hospitality Tamu dari Padukuhan @arda
 ** Pos Konsumsi
+*** Mengawasi Pos Konsumsi saat Diner @eka
 ** Pos Photo Booth
 *** Photographer @amir
+*** Mengarahkan QR di Photobooth @salfa
+*** Menjaga Photobooth dari Anak-anak @zahra
+*** Mengawasi Photo Booth @zahra, @salfa, @daffa, @ludy
 ** Pos Stage
-*** MC @helena & @shinta
+*** MC @helena, @shinta
+*** Backup MC (Pembagian Hadiah dan Doorprize) @davina @jevony
 *** Direct @irul
 *** Stage Manager @putri, @irul, @ega
 ** Pos Transit
 *** Tempat Menyimpan Hadiah
+
+* Pemuda-Pemudi
+
+** Interest
+*** Wildan: Perkap, Media Operator
+*** Davina: MC, Dokumentasi
+*** Jevony: MC, Dokumentasi
+*** Xandra: Receptionist Registrasi
+*** Salfa: Receptionist Photobooth
+*** Zahra: Receptionist Photobooth (Mengawasi Anak Kecil)
+*** Daffa: Security Photobooth
+*** Ludy: Security Photobooth, Media Operator
+** Availability
+*** Kamis, 14 Aug
+**** Wildan: 16.00
+**** Salfa: -
+**** Zahra: -
+**** Davina: 20.00
+**** Daffa: -
+**** Ludy: -
+**** Cinta: -
+**** Jevony: -
+**** Xandra: 16.00
+*** Jumat, 15 Aug
+**** Wildan: 16.00
+**** Salfa: 16.00
+**** Zahra: 16.00 (Tentative)
+**** Davina: 20.00
+**** Daffa: -
+**** Ludy: -
+**** Cinta: -
+**** Jevony: -
+**** Xandra: 16.00
+*** Sabtu, 16 Aug
+**** Wildan: 09.00
+**** Salfa: 13.00
+**** Zahra: 13.00
+**** Davina: 13.00 - 15.00, 17.30
+**** Daffa: 13.00
+**** Ludy: 13.00
+**** Cinta: 13.00
+**** Jevony: 13.00
+**** Xandra: 13.00
