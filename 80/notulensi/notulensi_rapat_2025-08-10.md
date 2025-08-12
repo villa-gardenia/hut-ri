@@ -41,16 +41,16 @@
 #### Stage & Dekorasi
 - [Senin, 11 Aug, Sore] Print Backdrop @breni @ari @deden @anto
 - [Kamis, 14 Aug, Pagi] Setup Dimulai @dhany @bayu
-- [Jumat, 15 Aug, Malam] Dekorasi @reza @puthut @ega
+- [Jumat, 15 Aug, Malam] Dekorasi @reza @puthut @ega @salfa
 - [Sabtu, 16 Aug, 10.00] Sound Loading & Check @puput @valen @bayu
 - Lampu: Konfirmasi | @amir
 
 #### Meja Registrasi
-- [Sabtu, 16 Aug, Pagi] Setup @reza @edel
+- [Sabtu, 16 Aug, Pagi] Setup @reza @edel @wildan
 - Meja Mesjid @edel
-- Dekorasi @warda @aulia @reza
-- Checklist Kehadiran Warga @aulia @nanang
-- Signboard | Konsep 70s @warda @aulia
+- Dekorasi @warda @aulia @reza @salfa
+- Checklist Kehadiran Warga @aulia @nanang @xandra
+- [Sabtu, 16 Aug, Pagi] Signboard Konsep 70s @warda @aulia @xandra
 
 #### Photobooth
 - [Senin, 11 Aug, Malam] Design Backdrop (3x4) @helmy @breni
@@ -85,7 +85,7 @@
 - List Talent (Nama Lengkap | Nama Group Band): @valen → @irul
 
 ### MC
-- Diskusi Detail MC | @irul @ega @helena @putri @shinta @wildan
+- Diskusi Detail MC | @irul @ega @helena @putri @shinta @wildan @davina @jevony
 - List Sponsor @arie
 
 ### Lainnya
@@ -157,20 +157,74 @@
 
 ### Dokumentasi (Mobile)
 - Dokumentasi Saat Acara Berlangsung @taufik @tyas @amir
+- Dokumentasi Saat Acara [Stage] @davina @jevony
 
 ### Penjagaan & Pengamanan
 - Brief @aldy @edel @bayu
 - Penanggung Jawab Keamanan @trie
 
 ### Pos Registrasi
+- Menerima Tamu @arda @warda @xandra
+- Hospitality Tamu dari Padukuhan @arda
+
 ### Pos Konsumsi
+- Mengawasi Pos Konsumsi saat Diner @eka
+
 ### Pos Photo Booth
 - Photographer @amir
+- Mengarahkan QR di Photobooth @salfa
+- Menjaga Photobooth dari Anak-anak @zahra
+- Mengawasi Photo Booth @zahra, @salfa, @daffa, @ludy
 
 ### Pos Stage
 - MC: @helena & @shinta
+- Backup MC (Pembagian Hadiah dan Doorprize) @davina @jevony
 - Direct: @irul
 - Stage Manager: @putri, @irul, @ega
 
 ### Pos Transit
 - Tempat Menyimpan Hadiah
+
+### Pemuda Pemudi
+
+#### Tasks
+- Wildan: Perkap, Media Operator
+- Davina: MC, Dokumentasi
+- Jevony: MC, Dokumentasi
+- Xandra: Receptionist Registrasi
+- Salfa: Receptionist Photobooth
+- Zahra: Receptionist Photobooth (Mengawasi Anak Kecil)
+- Daffa: Security Photobooth
+- Ludy: Security Photobooth, Media Operator
+
+#### Ketersediaan Bantuan
+- Kamis, 14 Aug
+  - Wildan: 16.00
+  - Salfa: -
+  - Zahra: -
+  - Davina: 20.00
+  - Daffa: -
+  - Ludy: -
+  - Cinta: -
+  - Jevony: -
+  - Xandra: 16.00
+- Jumat, 15 Aug
+  - Wildan: 16.00
+  - Salfa: 16.00
+  - Zahra: 16.00 (Tentative)
+  - Davina: 20.00
+  - Daffa: -
+  - Ludy: -
+  - Cinta: -
+  - Jevony: -
+  - Xandra: 16.00
+- Sabtu, 16 Aug
+  - Wildan: 09.00
+  - Salfa: 13.00
+  - Zahra: 13.00
+  - Davina: 13.00 - 15.00, 17.30
+  - Daffa: 13.00
+  - Ludy: 13.00
+  - Cinta: 13.00
+  - Jevony: 13.00
+  - Xandra: 13.00
