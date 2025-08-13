@@ -181,6 +181,7 @@
 - Backup MC (Pembagian Hadiah dan Doorprize) @davina @jevony
 - Direct: @irul
 - Stage Manager: @putri, @irul, @ega
+- Mencatat Pemenang Hadiah & Doorprize (catat blok dan hadiah yang dimenangkan): @rani @dian 
 
 ### Pos Transit
 - Tempat Menyimpan Hadiah
