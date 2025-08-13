@@ -80,6 +80,12 @@
 - [Rabu–Kamis, 13–14 Aug] Distribusi @warda dibagi ke Koordinator Blok | Panitia
 - [Rabu, 13 Aug] Distribusi Surat ke Padhukuhan @laura
 
+### Publikasi Digital
+- Video Iklan Malam Tirakatan - @deden
+- List Hadiah Doorprize - @dian -> @breni
+- Flyer Malam Tirakatan - @breni @helmy
+- Distribusi Flyer di Group WA Warga - @warda / @arda
+
 ### Persiapan Talent
 - [Sabtu, 16 Aug] Gladiresik Venue @puput @valen @bayu
 - Pengecekan Peralatan Band: @puput
