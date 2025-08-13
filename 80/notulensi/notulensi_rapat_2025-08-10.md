@@ -78,6 +78,7 @@
   - Warga Villa Gardenia A5 @nanang
 - [Selasa, 12 Aug] Print @nanang
 - [Rabu–Kamis, 13–14 Aug] Distribusi @warda dibagi ke Koordinator Blok | Panitia
+- [Rabu, 13 Aug] Distribusi Surat ke Padhukuhan @laura
 
 ### Persiapan Talent
 - [Sabtu, 16 Aug] Gladiresik Venue @puput @valen @bayu
