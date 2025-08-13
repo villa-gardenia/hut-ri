@@ -29,7 +29,8 @@
 
 #### Tenda
 - @bayu @valent-gede @reza
-  - [Rabu, 13 Aug, 10.00] Tenda Berdiri
+  - [Rabu, 13 Aug, 10.00] Tenda Berdiri @bayu @edel
+  - [Sabtu, 16 Aug, 09.00] Tenda Proyektor @bayu
 
 #### Tenda Konsumsi
 - @bayu @eka @valent-gede @deden
@@ -98,10 +99,12 @@
 ### Lainnya
 - Print Rundown Acara: @ega
 - Video Indonesia Raya @irul
+- Video Animasi @irul
 - Video Sambutan @irul
 - HT @dhany
-- Screen Projector @helmy → @edel
-- Setup Projector: @irul @edel
+- Screen Projector @dhany @irul
+- [Sabtu, 16 Aug, 14.00] Terima Projector @irul
+- [Sabtu, 16 Aug, 15.00] Setup Projector: @irul @edel
 
 ---
 
@@ -169,6 +172,9 @@
 ### Penjagaan & Pengamanan
 - Brief @aldy @edel @bayu
 - Penanggung Jawab Keamanan @trie
+
+### Pos Media
+- Operator Transisi Screen @irul, backup @wildan
 
 ### Pos Registrasi
 - Menerima Tamu @arda @warda @xandra
