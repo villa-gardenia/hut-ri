@@ -18,7 +18,7 @@ Menentukan, merekrut pengisi acara malam refleksi seperti penampil seni dan grup
 
 Mengatur urutan tampil, memberi aba-aba waktu, menjaga ketepatan jadwal acara di panggung, memastikan ketersediaan mic/speaker, serta menjadi penghubung antara panggung dan tim teknis lainnya. Menjamin suasana panggung tertib dan terkontrol.
 
-### 🏃 Koordinator Lomba, Permainan, Hadiah & Doorprize (Games, Competitions, Prize & Giveaway Lead) – Sheila Sitarani, Dian Wulandari, Anggy Aricya, Diana
+### 🏃 Koordinator Lomba, Permainan, Hadiah & Doorprize (Games, Competitions, Prize & Giveaway Lead) – Sheila Sitarani, Diana Wulandari, Anggy Aricya, Diana
 
 Menyusun konsep lomba yang kreatif, aman, dan menyenangkan untuk semua kalangan. Menerima masukan dari warga, menyusun jadwal lomba, menentukan lokasi tiap lomba, mengatur juri, dan mengoordinasi pelaksanaan lomba di lapangan dan PIC setiap lomba. Mengelola daftar hadiah dan doorprize, melakukan pengadaan, mendata nilai hadiah, menyusun penataan hadiah di lokasi, dan memastikan pembagian hadiah berlangsung tertib sesuai hasil perlombaan dan sistem undian.
 
