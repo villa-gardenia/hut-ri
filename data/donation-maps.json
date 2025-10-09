@@ -1,0 +1,751 @@
+[
+  {
+    "blok": "A",
+    "nbr": "A-10",
+    "cash": 300178,
+    "value": 300178,
+    "kategori": "WARGA"
+  },
+  {
+    "blok": "A",
+    "nbr": "A-4",
+    "cash": 500178,
+    "value": 500178,
+    "kategori": "WARGA"
+  },
+  {
+    "blok": "B",
+    "nbr": "B-1",
+    "cash": 500178,
+    "value": 500178,
+    "kategori": "WARGA"
+  },
+  {
+    "blok": "B",
+    "nbr": "B-16",
+    "cash": 2000178,
+    "value": 2000178,
+    "kategori": "WARGA"
+  },
+  {
+    "blok": "B",
+    "nbr": "B-17",
+    "cash": 500178,
+    "value": 500178,
+    "kategori": "WARGA"
+  },
+  {
+    "blok": "B",
+    "nbr": "B-3",
+    "cash": 1500178,
+    "value": 1500178,
+    "kategori": "SPONSOR&WARGA"
+  },
+  {
+    "blok": "B",
+    "nbr": "B-4",
+    "cash": 500000,
+    "value": 500000,
+    "kategori": "WARGA"
+  },
+  {
+    "blok": "C",
+    "nbr": "C-11",
+    "cash": 300178,
+    "value": 300178,
+    "kategori": "WARGA"
+  },
+  {
+    "blok": "C",
+    "nbr": "C-12",
+    "cash": 200178,
+    "value": 200178,
+    "kategori": "WARGA"
+  },
+  {
+    "blok": "C",
+    "nbr": "C-7",
+    "cash": 250178,
+    "value": 250178,
+    "kategori": "WARGA"
+  },
+  {
+    "blok": "C",
+    "nbr": "C-8",
+    "cash": 150178,
+    "value": 150178,
+    "kategori": "WARGA"
+  },
+  {
+    "blok": "D",
+    "nbr": "D-1",
+    "cash": 300178,
+    "value": 300178,
+    "kategori": "WARGA"
+  },
+  {
+    "blok": "D",
+    "nbr": "D-10",
+    "cash": 200178,
+    "value": 200178,
+    "kategori": "WARGA"
+  },
+  {
+    "blok": "D",
+    "nbr": "D-6",
+    "cash": 500178,
+    "value": 500178,
+    "kategori": "WARGA"
+  },
+  {
+    "blok": "D",
+    "nbr": "D-7",
+    "cash": 350000,
+    "value": 350000,
+    "kategori": "WARGA"
+  },
+  {
+    "blok": "D",
+    "nbr": "D-8",
+    "cash": 150178,
+    "value": 150178,
+    "kategori": "WARGA"
+  },
+  {
+    "blok": "D",
+    "nbr": "D-9",
+    "cash": 300178,
+    "value": 300178,
+    "kategori": "WARGA"
+  },
+  {
+    "blok": "E",
+    "nbr": "E-6",
+    "cash": 3424000,
+    "value": 3424000,
+    "kategori": "WARGA"
+  },
+  {
+    "blok": "E",
+    "nbr": "E-7",
+    "cash": 250178,
+    "value": 250178,
+    "kategori": "WARGA"
+  },
+  {
+    "blok": "E",
+    "nbr": "E-8",
+    "cash": 200178,
+    "value": 200178,
+    "kategori": "WARGA"
+  },
+  {
+    "blok": "E",
+    "nbr": "E-9",
+    "cash": 300178,
+    "value": 300178,
+    "kategori": "WARGA"
+  },
+  {
+    "blok": "F",
+    "nbr": "F-1",
+    "cash": 1000000,
+    "value": 1000000,
+    "kategori": "SPONSOR&WARGA"
+  },
+  {
+    "blok": "F",
+    "nbr": "F-3",
+    "cash": 150000,
+    "value": 150000,
+    "kategori": "WARGA"
+  },
+  {
+    "blok": "F",
+    "nbr": "F-4",
+    "cash": 200178,
+    "value": 200178,
+    "kategori": "WARGA"
+  },
+  {
+    "blok": "F",
+    "nbr": "F-5",
+    "cash": 500178,
+    "value": 500178,
+    "kategori": "WARGA"
+  },
+  {
+    "blok": "F",
+    "nbr": "F-6",
+    "cash": 250178,
+    "value": 250178,
+    "kategori": "WARGA"
+  },
+  {
+    "blok": "F",
+    "nbr": "F-7",
+    "cash": 200178,
+    "value": 200178,
+    "kategori": "WARGA"
+  },
+  {
+    "blok": "G",
+    "nbr": "G-1",
+    "cash": 500178,
+    "value": 500178,
+    "kategori": "WARGA"
+  },
+  {
+    "blok": "G",
+    "nbr": "G-12",
+    "cash": 300045,
+    "value": 300045,
+    "kategori": "WARGA"
+  },
+  {
+    "blok": "G",
+    "nbr": "G-17",
+    "cash": 100178,
+    "value": 100178,
+    "kategori": "WARGA"
+  },
+  {
+    "blok": "G",
+    "nbr": "G-18",
+    "cash": 200178,
+    "value": 200178,
+    "kategori": "WARGA"
+  },
+  {
+    "blok": "G",
+    "nbr": "G-2",
+    "cash": 275000,
+    "value": 275000,
+    "kategori": "WARGA"
+  },
+  {
+    "blok": "G",
+    "nbr": "G-21",
+    "cash": 100178,
+    "value": 100178,
+    "kategori": "WARGA"
+  },
+  {
+    "blok": "G",
+    "nbr": "G-23",
+    "cash": 300000,
+    "value": 300000,
+    "kategori": "WARGA"
+  },
+  {
+    "blok": "G",
+    "nbr": "G-26",
+    "cash": 100178,
+    "value": 100178,
+    "kategori": "WARGA"
+  },
+  {
+    "blok": "G",
+    "nbr": "G-28",
+    "cash": 500000,
+    "value": 500000,
+    "kategori": "SPONSOR&WARGA"
+  },
+  {
+    "blok": "G",
+    "nbr": "G-4",
+    "cash": 300178,
+    "value": 300178,
+    "kategori": "WARGA"
+  },
+  {
+    "blok": "G",
+    "nbr": "G-5",
+    "cash": 100178,
+    "value": 100178,
+    "kategori": "WARGA"
+  },
+  {
+    "blok": "G",
+    "nbr": "G-7",
+    "cash": 500178,
+    "value": 500178,
+    "kategori": "SPONSOR&WARGA"
+  },
+  {
+    "blok": "G",
+    "nbr": "G-9",
+    "cash": 300178,
+    "value": 300178,
+    "kategori": "WARGA"
+  },
+  {
+    "blok": "H",
+    "nbr": "H-1",
+    "cash": 1000178,
+    "value": 1000178,
+    "kategori": "WARGA"
+  },
+  {
+    "blok": "H",
+    "nbr": "H-12",
+    "cash": 300000,
+    "value": 300000,
+    "kategori": "WARGA"
+  },
+  {
+    "blok": "H",
+    "nbr": "H-23",
+    "cash": 300000,
+    "value": 300000,
+    "kategori": "WARGA"
+  },
+  {
+    "blok": "H",
+    "nbr": "H-26",
+    "cash": 500178,
+    "value": 500178,
+    "kategori": "WARGA"
+  },
+  {
+    "blok": "H",
+    "nbr": "H-28",
+    "cash": 300178,
+    "value": 300178,
+    "kategori": "WARGA"
+  },
+  {
+    "blok": "H",
+    "nbr": "H-4",
+    "cash": 500178,
+    "value": 500178,
+    "kategori": "SPONSOR&WARGA"
+  },
+  {
+    "blok": "H",
+    "nbr": "H-5",
+    "cash": 400178,
+    "value": 400178,
+    "kategori": "WARGA"
+  },
+  {
+    "blok": "H",
+    "nbr": "H-7",
+    "cash": 200178,
+    "value": 200178,
+    "kategori": "WARGA"
+  },
+  {
+    "blok": "I",
+    "nbr": "I-10",
+    "cash": 25000,
+    "value": 25000,
+    "kategori": "WARGA"
+  },
+  {
+    "blok": "I",
+    "nbr": "I-2",
+    "cash": 200178,
+    "value": 200178,
+    "kategori": "WARGA"
+  },
+  {
+    "blok": "I",
+    "nbr": "I-1",
+    "cash": 400356,
+    "value": 400356,
+    "kategori": "WARGA"
+  },
+  {
+    "blok": "J",
+    "nbr": "J-1",
+    "cash": 250178,
+    "value": 250178,
+    "kategori": "WARGA"
+  },
+  {
+    "blok": "J",
+    "nbr": "J-10",
+    "cash": 100178,
+    "value": 100178,
+    "kategori": "WARGA"
+  },
+  {
+    "blok": "J",
+    "nbr": "J-2",
+    "cash": 150178,
+    "value": 650178,
+    "kategori": "SPONSOR&WARGA"
+  },
+  {
+    "blok": "J",
+    "nbr": "J-3",
+    "cash": 300178,
+    "value": 300178,
+    "kategori": "WARGA"
+  },
+  {
+    "blok": "J",
+    "nbr": "J-8",
+    "cash": 100178,
+    "value": 100178,
+    "kategori": "WARGA"
+  },
+  {
+    "blok": "K",
+    "nbr": "K-10",
+    "cash": 100178,
+    "value": 100178,
+    "kategori": "WARGA"
+  },
+  {
+    "blok": "K",
+    "nbr": "K-11",
+    "cash": 300178,
+    "value": 300178,
+    "kategori": "WARGA"
+  },
+  {
+    "blok": "K",
+    "nbr": "K-12",
+    "cash": 200178,
+    "value": 200178,
+    "kategori": "WARGA"
+  },
+  {
+    "blok": "K",
+    "nbr": "K-3",
+    "cash": 100178,
+    "value": 100178,
+    "kategori": "WARGA"
+  },
+  {
+    "blok": "K",
+    "nbr": "K-4",
+    "cash": null,
+    "value": 17648880,
+    "kategori": "SPONSOR&WARGA"
+  },
+  {
+    "blok": "K",
+    "nbr": "K-7",
+    "cash": 300178,
+    "value": 300178,
+    "kategori": "WARGA"
+  },
+  {
+    "blok": "K",
+    "nbr": "K-9",
+    "cash": 150178,
+    "value": 150178,
+    "kategori": "WARGA"
+  },
+  {
+    "blok": "L",
+    "nbr": "L-11",
+    "cash": 200178,
+    "value": 200178,
+    "kategori": "WARGA"
+  },
+  {
+    "blok": "L",
+    "nbr": "L-3",
+    "cash": 200000,
+    "value": 200000,
+    "kategori": "WARGA"
+  },
+  {
+    "blok": "L",
+    "nbr": "L-6",
+    "cash": 500178,
+    "value": 1300178,
+    "kategori": "SPONSOR&WARGA"
+  },
+  {
+    "blok": "L",
+    "nbr": "L-8",
+    "cash": 300178,
+    "value": 300178,
+    "kategori": "WARGA"
+  },
+  {
+    "blok": "M",
+    "nbr": "M-10",
+    "cash": 1500356,
+    "value": 1500356,
+    "kategori": "WARGA"
+  },
+  {
+    "blok": "M",
+    "nbr": "M-11",
+    "cash": 300178,
+    "value": 300178,
+    "kategori": "WARGA"
+  },
+  {
+    "blok": "M",
+    "nbr": "M-12",
+    "cash": 100012,
+    "value": 100012,
+    "kategori": "WARGA"
+  },
+  {
+    "blok": "M",
+    "nbr": "M-14",
+    "cash": null,
+    "value": 35000000,
+    "kategori": "SPONSOR&WARGA"
+  },
+  {
+    "blok": "M",
+    "nbr": "M-15",
+    "cash": 325178,
+    "value": 325178,
+    "kategori": "WARGA"
+  },
+  {
+    "blok": "M",
+    "nbr": "M-16",
+    "cash": 250178,
+    "value": 250178,
+    "kategori": "WARGA"
+  },
+  {
+    "blok": "M",
+    "nbr": "M-17",
+    "cash": 300178,
+    "value": 300178,
+    "kategori": "WARGA"
+  },
+  {
+    "blok": "M",
+    "nbr": "M-5",
+    "cash": 300178,
+    "value": 300178,
+    "kategori": "WARGA"
+  },
+  {
+    "blok": "M",
+    "nbr": "M-9",
+    "cash": 200178,
+    "value": 200178,
+    "kategori": "WARGA"
+  },
+  {
+    "blok": "N",
+    "nbr": "N-1",
+    "cash": 150178,
+    "value": 150178,
+    "kategori": "WARGA"
+  },
+  {
+    "blok": "N",
+    "nbr": "N-2",
+    "cash": 1000178,
+    "value": 1000178,
+    "kategori": "WARGA"
+  },
+  {
+    "blok": "N",
+    "nbr": "N-3",
+    "cash": 300178,
+    "value": 300178,
+    "kategori": "WARGA"
+  },
+  {
+    "blok": "N",
+    "nbr": "N-4",
+    "cash": 300178,
+    "value": 300178,
+    "kategori": "WARGA"
+  },
+  {
+    "blok": "N",
+    "nbr": "N-5",
+    "cash": 400178,
+    "value": 400178,
+    "kategori": "WARGA"
+  },
+  {
+    "blok": "N",
+    "nbr": "N-8",
+    "cash": 300178,
+    "value": 300178,
+    "kategori": "WARGA"
+  },
+  {
+    "blok": "N",
+    "nbr": "N-9",
+    "cash": 275178,
+    "value": 275178,
+    "kategori": "WARGA"
+  },
+  {
+    "blok": "O",
+    "nbr": "O-1",
+    "cash": 400178,
+    "value": 400178,
+    "kategori": "WARGA"
+  },
+  {
+    "blok": "O",
+    "nbr": "O-4",
+    "cash": 100178,
+    "value": 100178,
+    "kategori": "WARGA"
+  },
+  {
+    "blok": "O",
+    "nbr": "O-5",
+    "cash": 300128,
+    "value": 300128,
+    "kategori": "WARGA"
+  },
+  {
+    "blok": "O",
+    "nbr": "O-6",
+    "cash": 150178,
+    "value": 150178,
+    "kategori": "WARGA"
+  },
+  {
+    "blok": "P",
+    "nbr": "P-2",
+    "cash": 200178,
+    "value": 200178,
+    "kategori": "WARGA"
+  },
+  {
+    "blok": "P",
+    "nbr": "P-5",
+    "cash": 3124178,
+    "value": 3124178,
+    "kategori": "SPONSOR&WARGA"
+  },
+  {
+    "blok": "P",
+    "nbr": "P-8",
+    "cash": 600178,
+    "value": 600178,
+    "kategori": "WARGA"
+  },
+  {
+    "blok": "Q",
+    "nbr": "Q-1",
+    "cash": 500178,
+    "value": 500178,
+    "kategori": "WARGA"
+  },
+  {
+    "blok": "Q",
+    "nbr": "Q-2",
+    "cash": 120000,
+    "value": 120000,
+    "kategori": "WARGA"
+  },
+  {
+    "blok": "Q",
+    "nbr": "Q-3",
+    "cash": 500178,
+    "value": 500178,
+    "kategori": "SPONSOR&WARGA"
+  },
+  {
+    "blok": "Q",
+    "nbr": "Q-5",
+    "cash": 275178,
+    "value": 275178,
+    "kategori": "WARGA"
+  },
+  {
+    "blok": "Q",
+    "nbr": "Q-6",
+    "cash": 500178,
+    "value": 500178,
+    "kategori": "WARGA"
+  },
+  {
+    "blok": "Q",
+    "nbr": "Q-7",
+    "cash": 300178,
+    "value": 300178,
+    "kategori": "WARGA"
+  },
+  {
+    "blok": "Q",
+    "nbr": "Q-8",
+    "cash": 200178,
+    "value": 200178,
+    "kategori": "WARGA"
+  },
+  {
+    "blok": "Q",
+    "nbr": "Q-9",
+    "cash": 500000,
+    "value": 500000,
+    "kategori": "SPONSOR&WARGA"
+  },
+  {
+    "blok": "R",
+    "nbr": "R-1",
+    "cash": 300178,
+    "value": 300178,
+    "kategori": "WARGA"
+  },
+  {
+    "blok": "R",
+    "nbr": "R-5",
+    "cash": 321123,
+    "value": 321123,
+    "kategori": "WARGA"
+  },
+  {
+    "blok": "R",
+    "nbr": "R-9",
+    "cash": 300178,
+    "value": 300178,
+    "kategori": "WARGA"
+  },
+  {
+    "blok": "S",
+    "nbr": "S-2",
+    "cash": 300178,
+    "value": 300178,
+    "kategori": "WARGA"
+  },
+  {
+    "blok": "S",
+    "nbr": "S-3",
+    "cash": 300178,
+    "value": 300178,
+    "kategori": "WARGA"
+  },
+  {
+    "blok": "S",
+    "nbr": "S-4",
+    "cash": 178178,
+    "value": 178178,
+    "kategori": "WARGA"
+  },
+  {
+    "blok": "S",
+    "nbr": "S-6",
+    "cash": 150178,
+    "value": 150178,
+    "kategori": "WARGA"
+  },
+  {
+    "blok": "T",
+    "nbr": "T-4",
+    "cash": 250178,
+    "value": 250178,
+    "kategori": "WARGA"
+  },
+  {
+    "blok": "T",
+    "nbr": "T-5",
+    "cash": 100178,
+    "value": 100178,
+    "kategori": "WARGA"
+  }
+]
