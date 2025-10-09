@@ -9,6 +9,9 @@ yarn-error.log*
 .next/
 out/
 
+# Generated contributions visualization
+public/contributions/
+
 # Environment variables
 .env.local
 .env.development.local
