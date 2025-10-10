@@ -1,441 +1,766 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Villa Gardenia - Donation Visualization</title>
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap"
+      rel="stylesheet"
+    />
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
 
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            overflow: hidden;
-        }
+      body {
+        font-family:
+          "Inter",
+          -apple-system,
+          BlinkMacSystemFont,
+          "Segoe UI",
+          sans-serif;
+        background: linear-gradient(
+          135deg,
+          #0f172a 0%,
+          #1e293b 50%,
+          #334155 100%
+        );
+        overflow: hidden;
+        position: relative;
+      }
 
+      body::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: radial-gradient(
+            circle at 20% 50%,
+            rgba(99, 102, 241, 0.1) 0%,
+            transparent 50%
+          ),
+          radial-gradient(
+            circle at 80% 80%,
+            rgba(168, 85, 247, 0.1) 0%,
+            transparent 50%
+          );
+        pointer-events: none;
+      }
+
+      #container {
+        display: flex;
+        height: 100vh;
+        position: relative;
+        z-index: 1;
+      }
+
+      #sidebar {
+        width: 380px;
+        background: rgba(255, 255, 255, 0.98);
+        backdrop-filter: blur(20px);
+        border-radius: 0;
+        box-shadow:
+          0 0 0 1px rgba(0, 0, 0, 0.08),
+          0 8px 0 0 rgba(99, 102, 241, 0.8),
+          0 20px 60px rgba(0, 0, 0, 0.15);
+        padding: 20px;
+        overflow-y: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        animation: slideInLeft 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+        position: relative;
+      }
+
+      #sidebar::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 4px;
+        height: 100%;
+        background: linear-gradient(180deg, #6366f1 0%, #8b5cf6 100%);
+      }
+
+      @keyframes slideInLeft {
+        from {
+          opacity: 0;
+          transform: translateX(-30px);
+        }
+        to {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+
+      #map-container {
+        flex: 1;
+        background: white;
+        border-radius: 0;
+        box-shadow:
+          0 0 0 1px rgba(0, 0, 0, 0.08),
+          0 8px 0 0 rgba(139, 92, 246, 0.8),
+          0 20px 60px rgba(0, 0, 0, 0.15);
+        overflow: hidden;
+        position: relative;
+        animation: fadeInScale 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+      }
+
+      @keyframes fadeInScale {
+        from {
+          opacity: 0;
+          transform: scale(0.98);
+        }
+        to {
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
+
+      #map {
+        width: 100%;
+        height: 100%;
+      }
+
+      .header-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+      }
+
+      .logo {
+        width: 100%;
+        max-width: 280px;
+        height: auto;
+        object-fit: contain;
+      }
+
+      .subtitle {
+        color: #64748b;
+        font-size: 12px;
+        font-weight: 500;
+        letter-spacing: 0.02em;
+        text-align: center;
+      }
+
+      .stats-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 14px;
+        margin-bottom: 0;
+      }
+
+      .stat-card {
+        background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+        padding: 20px;
+        border-radius: 0;
+        color: white;
+        position: relative;
+        overflow: hidden;
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        cursor: pointer;
+        border-left: 4px solid rgba(255, 255, 255, 0.3);
+      }
+
+      .stat-card::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(
+          135deg,
+          rgba(255, 255, 255, 0.1) 0%,
+          transparent 100%
+        );
+        opacity: 0;
+        transition: opacity 0.3s ease;
+      }
+
+      .stat-card::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 3px;
+        background: rgba(255, 255, 255, 0.3);
+        transform: scaleX(0);
+        transition: transform 0.3s ease;
+      }
+
+      .stat-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 12px 40px rgba(99, 102, 241, 0.4);
+        border-left-color: rgba(255, 255, 255, 0.8);
+      }
+
+      .stat-card:hover::before {
+        opacity: 1;
+      }
+
+      .stat-card:hover::after {
+        transform: scaleX(1);
+      }
+
+      .stat-label {
+        font-size: 11px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        opacity: 0.9;
+        margin-bottom: 8px;
+        font-weight: 600;
+      }
+
+      .stat-value {
+        font-size: 24px;
+        font-weight: 700;
+        letter-spacing: -0.02em;
+      }
+
+      .legend {
+        background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+        padding: 16px;
+        border-radius: 0;
+        border: 1px solid rgba(148, 163, 184, 0.2);
+        border-left: 3px solid #6366f1;
+        position: relative;
+      }
+
+      .legend::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 80px;
+        height: 2px;
+        background: linear-gradient(90deg, #6366f1, transparent);
+      }
+
+      .legend-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 12px;
+      }
+
+      .legend-title {
+        font-weight: 700;
+        color: #0f172a;
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        margin: 0;
+      }
+
+      .reset-btn {
+        width: 28px;
+        height: 28px;
+        border: none;
+        background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+        cursor: pointer;
+        transition: all 0.2s ease;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        pointer-events: none;
+        box-shadow: 0 2px 8px rgba(239, 68, 68, 0.3);
+      }
+
+      .reset-btn.active {
+        opacity: 1;
+        pointer-events: auto;
+      }
+
+      .reset-btn:hover {
+        transform: scale(1.1);
+        box-shadow: 0 4px 12px rgba(239, 68, 68, 0.5);
+      }
+
+      .reset-btn::before {
+        content: "✕";
+        color: white;
+        font-size: 16px;
+        font-weight: 700;
+      }
+
+      .legend-item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 6px;
+        font-size: 12px;
+        transition: all 0.2s ease;
+        padding: 4px;
+        border-radius: 0;
+        cursor: pointer;
+        border-left: 3px solid transparent;
+      }
+
+      .legend-item-left {
+        display: flex;
+        align-items: center;
+      }
+
+      .legend-item-count {
+        font-weight: 700;
+        color: #6366f1;
+        background: white;
+        padding: 4px 12px;
+        border-radius: 0;
+        font-size: 12px;
+        box-shadow: 0 2px 8px rgba(99, 102, 241, 0.15);
+        letter-spacing: -0.01em;
+        border: 1px solid rgba(99, 102, 241, 0.2);
+      }
+
+      .legend-item:hover {
+        transform: translateX(4px);
+        background: rgba(99, 102, 241, 0.05);
+      }
+
+      .legend-item.active {
+        background: rgba(99, 102, 241, 0.15);
+        border-left-color: #6366f1;
+        font-weight: 600;
+        transform: translateX(4px);
+      }
+
+      .legend-item.disabled {
+        opacity: 0.4;
+        pointer-events: none;
+      }
+
+      .legend-color {
+        width: 28px;
+        height: 20px;
+        border-radius: 0;
+        margin-right: 10px;
+        border: 2px solid rgba(0, 0, 0, 0.1);
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+      }
+
+      .filter-section-title {
+        font-weight: 600;
+        color: #64748b;
+        font-size: 10px;
+        text-transform: uppercase;
+        letter-spacing: 0.8px;
+        margin-bottom: 8px;
+        margin-top: 8px;
+        padding-left: 4px;
+      }
+
+      .category-filter-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 8px 4px;
+        border-bottom: 1px solid rgba(148, 163, 184, 0.15);
+        transition: all 0.2s ease;
+        cursor: pointer;
+        border-radius: 0;
+        border-left: 3px solid transparent;
+        font-size: 12px;
+      }
+
+      .category-filter-item:last-child {
+        border-bottom: none;
+      }
+
+      .category-filter-item:hover {
+        background: rgba(139, 92, 246, 0.05);
+        padding-left: 8px;
+      }
+
+      .category-filter-item.active {
+        background: rgba(139, 92, 246, 0.15);
+        border-left-color: #8b5cf6;
+        font-weight: 600;
+        padding-left: 8px;
+      }
+
+      .category-label {
+        font-size: 12px;
+        color: #475569;
+        font-weight: 500;
+      }
+
+      .category-count {
+        font-weight: 700;
+        color: #6366f1;
+        background: white;
+        padding: 4px 12px;
+        border-radius: 0;
+        font-size: 12px;
+        box-shadow: 0 2px 8px rgba(99, 102, 241, 0.15);
+        letter-spacing: -0.01em;
+        border: 1px solid rgba(99, 102, 241, 0.2);
+      }
+
+      .leaflet-popup-content-wrapper {
+        border-radius: 0;
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+        border: 2px solid rgba(99, 102, 241, 0.3);
+        border-top: 4px solid #6366f1;
+      }
+
+      .popup-content {
+        padding: 8px;
+        min-width: 220px;
+        font-family: "Inter", sans-serif;
+      }
+
+      .popup-header {
+        font-size: 20px;
+        font-weight: 700;
+        color: #0f172a;
+        margin-bottom: 12px;
+        padding-bottom: 10px;
+        border-bottom: 2px solid #6366f1;
+        letter-spacing: -0.01em;
+      }
+
+      .popup-row {
+        display: flex;
+        justify-content: space-between;
+        padding: 8px 0;
+        font-size: 13px;
+      }
+
+      .popup-label {
+        color: #64748b;
+        font-weight: 500;
+      }
+
+      .popup-value {
+        color: #0f172a;
+        font-weight: 600;
+      }
+
+      .popup-amount {
+        background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+        color: white;
+        padding: 16px;
+        border-radius: 0;
+        text-align: center;
+        margin-top: 12px;
+        box-shadow: 0 4px 16px rgba(99, 102, 241, 0.3);
+        border-left: 4px solid rgba(255, 255, 255, 0.5);
+      }
+
+      .popup-amount-label {
+        font-size: 11px;
+        opacity: 0.9;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: 600;
+      }
+
+      .popup-amount-value {
+        font-size: 22px;
+        font-weight: 700;
+        margin-top: 6px;
+        letter-spacing: -0.02em;
+      }
+
+      .badge {
+        display: inline-block;
+        padding: 5px 12px;
+        border-radius: 0;
+        font-size: 11px;
+        font-weight: 700;
+        background: #10b981;
+        color: white;
+        letter-spacing: 0.3px;
+        border: 1px solid rgba(16, 185, 129, 0.5);
+      }
+
+      .badge.sponsor {
+        background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+        border: 1px solid rgba(245, 158, 11, 0.5);
+      }
+
+      .analytics-section {
+        background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+        padding: 16px;
+        border-radius: 0;
+        border: 1px solid rgba(148, 163, 184, 0.2);
+        border-left: 3px solid #ec4899;
+        position: relative;
+      }
+
+      .analytics-section::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 80px;
+        height: 2px;
+        background: linear-gradient(90deg, #ec4899, transparent);
+      }
+
+      .analytics-title {
+        font-weight: 700;
+        color: #0f172a;
+        margin-bottom: 12px;
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+      }
+
+      .analytics-item {
+        display: flex;
+        justify-content: space-between;
+        padding: 8px 4px;
+        font-size: 12px;
+        border-bottom: 1px solid rgba(148, 163, 184, 0.15);
+        transition: all 0.2s ease;
+      }
+
+      .analytics-item:hover {
+        background: rgba(236, 72, 153, 0.05);
+        padding-left: 8px;
+      }
+
+      .analytics-item:last-child {
+        border-bottom: none;
+        padding-bottom: 0;
+      }
+
+      .analytics-label {
+        color: #475569;
+        font-weight: 500;
+      }
+
+      .analytics-value {
+        font-weight: 700;
+        color: #6366f1;
+        letter-spacing: -0.01em;
+      }
+
+      ::-webkit-scrollbar {
+        width: 10px;
+      }
+
+      ::-webkit-scrollbar-track {
+        background: rgba(241, 245, 249, 0.5);
+        border-radius: 0;
+      }
+
+      ::-webkit-scrollbar-thumb {
+        background: linear-gradient(180deg, #6366f1 0%, #8b5cf6 100%);
+        border-radius: 0;
+        border-left: 2px solid rgba(255, 255, 255, 0.3);
+      }
+
+      ::-webkit-scrollbar-thumb:hover {
+        background: linear-gradient(180deg, #4f46e5 0%, #7c3aed 100%);
+        border-left-color: rgba(255, 255, 255, 0.5);
+      }
+
+      @media (max-width: 768px) {
         #container {
-            display: flex;
-            height: 100vh;
-            padding: 20px;
-            gap: 20px;
+          flex-direction: column;
+          padding: 16px;
+          gap: 16px;
         }
 
         #sidebar {
-            width: 320px;
-            background: white;
-            border-radius: 16px;
-            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
-            padding: 24px;
-            overflow-y: auto;
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
+          width: 100%;
+          max-height: 50vh;
+          padding: 24px;
         }
 
-        #map-container {
-            flex: 1;
-            background: white;
-            border-radius: 16px;
-            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
-            overflow: hidden;
-            position: relative;
-        }
-
-        #map {
-            width: 100%;
-            height: 100%;
-            border-radius: 16px;
-        }
-
-        h1 {
-            font-size: 24px;
-            color: #2d3748;
-            margin-bottom: 8px;
-            font-weight: 700;
-        }
-
-        .subtitle {
-            color: #718096;
-            font-size: 14px;
-            margin-bottom: 16px;
+        #sidebar::before {
+          width: 100%;
+          height: 4px;
         }
 
         .stats-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 12px;
-            margin-bottom: 20px;
+          grid-template-columns: 1fr;
         }
 
-        .stat-card {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            padding: 16px;
-            border-radius: 12px;
-            color: white;
+        h1 {
+          font-size: 28px;
         }
+      }
 
-        .stat-label {
-            font-size: 11px;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-            opacity: 0.9;
-            margin-bottom: 4px;
+      .loading {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        z-index: 1000;
+        background: rgba(255, 255, 255, 0.95);
+        padding: 32px;
+        border-radius: 0;
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+        border: 2px solid rgba(99, 102, 241, 0.2);
+        border-top: 4px solid #6366f1;
+      }
+
+      .spinner {
+        border: 4px solid rgba(99, 102, 241, 0.1);
+        border-top: 4px solid #6366f1;
+        border-left: 4px solid #8b5cf6;
+        border-radius: 50%;
+        width: 56px;
+        height: 56px;
+        animation: spin 0.8s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+        margin: 0 auto 20px;
+      }
+
+      @keyframes spin {
+        0% {
+          transform: rotate(0deg);
         }
-
-        .stat-value {
-            font-size: 20px;
-            font-weight: 700;
+        100% {
+          transform: rotate(360deg);
         }
+      }
 
-        .legend {
-            background: #f7fafc;
-            padding: 16px;
-            border-radius: 12px;
-        }
-
-        .legend-title {
-            font-weight: 600;
-            color: #2d3748;
-            margin-bottom: 12px;
-            font-size: 14px;
-        }
-
-        .legend-item {
-            display: flex;
-            align-items: center;
-            margin-bottom: 8px;
-            font-size: 13px;
-        }
-
-        .legend-color {
-            width: 32px;
-            height: 20px;
-            border-radius: 4px;
-            margin-right: 10px;
-            border: 1px solid rgba(0,0,0,0.1);
-        }
-
-        .category-section {
-            background: #f7fafc;
-            padding: 16px;
-            border-radius: 12px;
-        }
-
-        .category-title {
-            font-weight: 600;
-            color: #2d3748;
-            margin-bottom: 12px;
-            font-size: 14px;
-        }
-
-        .category-item {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 8px 0;
-            border-bottom: 1px solid #e2e8f0;
-        }
-
-        .category-item:last-child {
-            border-bottom: none;
-        }
-
-        .category-label {
-            font-size: 13px;
-            color: #4a5568;
-        }
-
-        .category-count {
-            font-weight: 600;
-            color: #667eea;
-            background: white;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-        }
-
-        .leaflet-popup-content-wrapper {
-            border-radius: 12px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.15);
-        }
-
-        .popup-content {
-            padding: 4px;
-            min-width: 200px;
-        }
-
-        .popup-header {
-            font-size: 18px;
-            font-weight: 700;
-            color: #2d3748;
-            margin-bottom: 12px;
-            padding-bottom: 8px;
-            border-bottom: 2px solid #667eea;
-        }
-
-        .popup-row {
-            display: flex;
-            justify-content: space-between;
-            padding: 6px 0;
-            font-size: 13px;
-        }
-
-        .popup-label {
-            color: #718096;
-            font-weight: 500;
-        }
-
-        .popup-value {
-            color: #2d3748;
-            font-weight: 600;
-        }
-
-        .popup-amount {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 12px;
-            border-radius: 8px;
-            text-align: center;
-            margin-top: 8px;
-        }
-
-        .popup-amount-label {
-            font-size: 11px;
-            opacity: 0.9;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-        }
-
-        .popup-amount-value {
-            font-size: 20px;
-            font-weight: 700;
-            margin-top: 4px;
-        }
-
-        .badge {
-            display: inline-block;
-            padding: 4px 10px;
-            border-radius: 12px;
-            font-size: 11px;
-            font-weight: 600;
-            background: #48bb78;
-            color: white;
-        }
-
-        .badge.sponsor {
-            background: #ed8936;
-        }
-
-        .top-donors {
-            background: #f7fafc;
-            padding: 16px;
-            border-radius: 12px;
-        }
-
-        .top-donors-title {
-            font-weight: 600;
-            color: #2d3748;
-            margin-bottom: 12px;
-            font-size: 14px;
-        }
-
-        .donor-item {
-            display: flex;
-            align-items: center;
-            padding: 8px;
-            margin-bottom: 6px;
-            background: white;
-            border-radius: 8px;
-            transition: transform 0.2s;
-            cursor: pointer;
-        }
-
-        .donor-item:hover {
-            transform: translateX(4px);
-        }
-
-        .donor-rank {
-            width: 24px;
-            height: 24px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 11px;
-            font-weight: 700;
-            margin-right: 10px;
-            flex-shrink: 0;
-        }
-
-        .donor-info {
-            flex: 1;
-            min-width: 0;
-        }
-
-        .donor-nbr {
-            font-weight: 600;
-            color: #2d3748;
-            font-size: 13px;
-        }
-
-        .donor-amount {
-            color: #667eea;
-            font-size: 12px;
-            font-weight: 600;
-        }
-
-        ::-webkit-scrollbar {
-            width: 8px;
-        }
-
-        ::-webkit-scrollbar-track {
-            background: #f1f1f1;
-            border-radius: 10px;
-        }
-
-        ::-webkit-scrollbar-thumb {
-            background: #667eea;
-            border-radius: 10px;
-        }
-
-        ::-webkit-scrollbar-thumb:hover {
-            background: #764ba2;
-        }
-
-        @media (max-width: 768px) {
-            #container {
-                flex-direction: column;
-                padding: 10px;
-            }
-
-            #sidebar {
-                width: 100%;
-                max-height: 40vh;
-            }
-
-            .stats-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-
-        .loading {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            text-align: center;
-            z-index: 1000;
-        }
-
-        .spinner {
-            border: 4px solid #f3f3f3;
-            border-top: 4px solid #667eea;
-            border-radius: 50%;
-            width: 50px;
-            height: 50px;
-            animation: spin 1s linear infinite;
-            margin: 0 auto 16px;
-        }
-
-        @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
-        }
+      .loading div:last-child {
+        color: #475569;
+        font-weight: 500;
+        font-size: 14px;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div id="container">
-        <div id="sidebar">
-            <div>
-                <h1>Villa Gardenia</h1>
-                <div class="subtitle">Donation Visualization Dashboard</div>
-            </div>
-
-            <div class="stats-grid">
-                <div class="stat-card">
-                    <div class="stat-label">Total Donations</div>
-                    <div class="stat-value" id="total-amount">-</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-label">Contributors</div>
-                    <div class="stat-value" id="total-contributors">-</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-label">Avg Donation</div>
-                    <div class="stat-value" id="avg-donation">-</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-label">Total Parcels</div>
-                    <div class="stat-value" id="total-parcels">-</div>
-                </div>
-            </div>
-
-            <div class="legend">
-                <div class="legend-title">Donation Amount Legend</div>
-                <div class="legend-item">
-                    <div class="legend-color" style="background: #10b981;"></div>
-                    <span>> 3M IDR</span>
-                </div>
-                <div class="legend-item">
-                    <div class="legend-color" style="background: #3b82f6;"></div>
-                    <span>1M - 3M IDR</span>
-                </div>
-                <div class="legend-item">
-                    <div class="legend-color" style="background: #8b5cf6;"></div>
-                    <span>500K - 1M IDR</span>
-                </div>
-                <div class="legend-item">
-                    <div class="legend-color" style="background: #f59e0b;"></div>
-                    <span>200K - 500K IDR</span>
-                </div>
-                <div class="legend-item">
-                    <div class="legend-color" style="background: #ef4444;"></div>
-                    <span>< 200K IDR</span>
-                </div>
-                <div class="legend-item">
-                    <div class="legend-color" style="background: #d1d5db;"></div>
-                    <span>No Data</span>
-                </div>
-            </div>
-
-            <div class="category-section">
-                <div class="category-title">By Category</div>
-                <div class="category-item">
-                    <span class="category-label">Warga</span>
-                    <span class="category-count" id="warga-count">-</span>
-                </div>
-                <div class="category-item">
-                    <span class="category-label">Sponsor & Warga</span>
-                    <span class="category-count" id="sponsor-count">-</span>
-                </div>
-            </div>
-
-            <div class="top-donors">
-                <div class="top-donors-title">Top 10 Contributors</div>
-                <div id="top-donors-list"></div>
-            </div>
+      <div id="sidebar">
+        <div class="header-section">
+          <img src="https://villa-gardenia.github.io/hut-ri/assets/logo.jpg" alt="Villa Gardenia" class="logo">
+          <div class="subtitle">Donation Visualization Dashboard</div>
         </div>
 
-        <div id="map-container">
-            <div class="loading" id="loading">
-                <div class="spinner"></div>
-                <div>Loading map data...</div>
+        <div class="legend">
+          <div class="legend-header">
+            <div class="legend-title">Filters</div>
+            <button class="reset-btn" id="reset-filter" title="Reset filter"></button>
+          </div>
+
+          <div class="filter-section-title">By Amount</div>
+          <div class="legend-item" data-range="high">
+            <div class="legend-item-left">
+              <div class="legend-color" style="background: #10b981"></div>
+              <span>> 3M IDR</span>
             </div>
-            <div id="map"></div>
+            <span class="legend-item-count" id="range-high-count">-</span>
+          </div>
+          <div class="legend-item" data-range="medium-high">
+            <div class="legend-item-left">
+              <div class="legend-color" style="background: #3b82f6"></div>
+              <span>1M - 3M IDR</span>
+            </div>
+            <span class="legend-item-count" id="range-medium-high-count">-</span>
+          </div>
+          <div class="legend-item" data-range="medium">
+            <div class="legend-item-left">
+              <div class="legend-color" style="background: #8b5cf6"></div>
+              <span>500K - 1M IDR</span>
+            </div>
+            <span class="legend-item-count" id="range-medium-count">-</span>
+          </div>
+          <div class="legend-item" data-range="medium-low">
+            <div class="legend-item-left">
+              <div class="legend-color" style="background: #f59e0b"></div>
+              <span>200K - 500K IDR</span>
+            </div>
+            <span class="legend-item-count" id="range-medium-low-count">-</span>
+          </div>
+          <div class="legend-item" data-range="low">
+            <div class="legend-item-left">
+              <div class="legend-color" style="background: #ef4444"></div>
+              <span>< 200K IDR</span>
+            </div>
+            <span class="legend-item-count" id="range-low-count">-</span>
+          </div>
+          <div class="legend-item disabled" data-range="none">
+            <div class="legend-item-left">
+              <div class="legend-color" style="background: #d1d5db"></div>
+              <span>No Data</span>
+            </div>
+            <span class="legend-item-count" id="range-none-count">-</span>
+          </div>
+
+          <div class="filter-section-title">By Category</div>
+          <div class="category-filter-item" data-category="WARGA">
+            <span class="category-label">Warga</span>
+            <span class="category-count" id="warga-count">-</span>
+          </div>
+          <div class="category-filter-item" data-category="SPONSOR&WARGA">
+            <span class="category-label">Sponsor & Warga</span>
+            <span class="category-count" id="sponsor-count">-</span>
+          </div>
         </div>
+
+        <div class="analytics-section">
+          <div class="analytics-title">Statistics</div>
+          <div class="analytics-item">
+            <span class="analytics-label">Total Donations</span>
+            <span class="analytics-value" id="total-amount">-</span>
+          </div>
+          <div class="analytics-item">
+            <span class="analytics-label">Contributors</span>
+            <span class="analytics-value" id="total-contributors">-</span>
+          </div>
+          <div class="analytics-item">
+            <span class="analytics-label">Total Parcels</span>
+            <span class="analytics-value" id="total-parcels">-</span>
+          </div>
+          <div class="analytics-item">
+            <span class="analytics-label">Participation Rate</span>
+            <span class="analytics-value" id="participation-rate">-</span>
+          </div>
+          <div class="analytics-item">
+            <span class="analytics-label">Average Donation</span>
+            <span class="analytics-value" id="avg-donation">-</span>
+          </div>
+          <div class="analytics-item">
+            <span class="analytics-label">Median Donation</span>
+            <span class="analytics-value" id="median-donation">-</span>
+          </div>
+          <div class="analytics-item">
+            <span class="analytics-label">Highest Donation</span>
+            <span class="analytics-value" id="max-donation">-</span>
+          </div>
+          <div class="analytics-item">
+            <span class="analytics-label">Lowest Donation</span>
+            <span class="analytics-value" id="min-donation">-</span>
+          </div>
+        </div>
+      </div>
+
+      <div id="map-container">
+        <div class="loading" id="loading">
+          <div class="spinner"></div>
+          <div>Loading map data...</div>
+        </div>
+        <div id="map"></div>
+      </div>
     </div>
 
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script>
-        // Parse CSV data
-        const csvData = `BLOK,NBR,CASH,VALUE,KATEGORI
+      // Parse CSV data
+      const csvData = `BLOK,NBR,CASH,VALUE,KATEGORI
 A,A-10,300178,300178,WARGA
 A,A-4,500178,500178,WARGA
 B,B-1,500178,500178,WARGA
@@ -547,86 +872,104 @@ S,S-6,150178,150178,WARGA
 T,T-4,250178,250178,WARGA
 T,T-5,100178,100178,WARGA`;
 
-        // Parse CSV into donation map
-        const donationMap = new Map();
-        const lines = csvData.trim().split('\n');
+      // Parse CSV into donation map
+      const donationMap = new Map();
+      const lines = csvData.trim().split("\n");
 
-        for (let i = 1; i < lines.length; i++) {
-            const parts = lines[i].split(',');
-            if (parts.length >= 5) {
-                const nbr = parts[1];
-                const value = parseFloat(parts[3]) || 0;
-                const category = parts[4];
+      for (let i = 1; i < lines.length; i++) {
+        const parts = lines[i].split(",");
+        if (parts.length >= 5) {
+          const nbr = parts[1];
+          const value = parseFloat(parts[3]) || 0;
+          const category = parts[4];
 
-                // Aggregate donations for same NBR
-                if (donationMap.has(nbr)) {
-                    const existing = donationMap.get(nbr);
-                    existing.value += value;
-                    if (category.includes('SPONSOR')) {
-                        existing.category = 'SPONSOR&WARGA';
-                    }
-                } else {
-                    donationMap.set(nbr, {
-                        blok: parts[0],
-                        nbr: nbr,
-                        value: value,
-                        category: category
-                    });
-                }
+          // Aggregate donations for same NBR
+          if (donationMap.has(nbr)) {
+            const existing = donationMap.get(nbr);
+            existing.value += value;
+            if (category.includes("SPONSOR")) {
+              existing.category = "SPONSOR&WARGA";
             }
+          } else {
+            donationMap.set(nbr, {
+              blok: parts[0],
+              nbr: nbr,
+              value: value,
+              category: category,
+            });
+          }
         }
+      }
 
-        // Get color based on donation amount
-        function getColor(value) {
-            if (value > 3000000) return '#10b981'; // green
-            if (value > 1000000) return '#3b82f6'; // blue
-            if (value > 500000) return '#8b5cf6';  // purple
-            if (value > 200000) return '#f59e0b';  // amber
-            if (value > 0) return '#ef4444';       // red
-            return '#d1d5db';                      // gray
+      // Get color based on donation amount
+      function getColor(value) {
+        if (value > 3000000) return "#10b981"; // green
+        if (value > 1000000) return "#3b82f6"; // blue
+        if (value > 500000) return "#8b5cf6"; // purple
+        if (value > 200000) return "#f59e0b"; // amber
+        if (value > 0) return "#ef4444"; // red
+        return "#d1d5db"; // gray
+      }
+
+      // Format currency
+      function formatCurrency(value) {
+        if (value >= 1000000) {
+          return (value / 1000000).toFixed(2) + "M";
+        } else if (value >= 1000) {
+          return (value / 1000).toFixed(0) + "K";
         }
+        return value.toFixed(0);
+      }
 
-        // Format currency
-        function formatCurrency(value) {
-            if (value >= 1000000) {
-                return (value / 1000000).toFixed(2) + 'M';
-            } else if (value >= 1000) {
-                return (value / 1000).toFixed(0) + 'K';
-            }
-            return value.toFixed(0);
-        }
+      // Initialize map
+      const map = L.map("map").setView([-7.8359, 110.3313], 17);
 
-        // Initialize map
-        const map = L.map('map').setView([-7.8359, 110.3313], 17);
+      L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+        attribution:
+          '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+        maxZoom: 19,
+      }).addTo(map);
 
-        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-            maxZoom: 19
-        }).addTo(map);
+      // Filter state
+      let activeRangeFilters = new Set();
+      let activeCategoryFilters = new Set();
+      let parcelsLayer = null;
+      let geojsonData = null;
 
-        // Load GeoJSON and add to map
-        fetch('villa-gardenia.geojson')
-            .then(response => response.json())
-            .then(geojson => {
-                const parcelsLayer = L.geoJSON(geojson, {
-                    style: function(feature) {
-                        const nbr = feature.properties.NBR;
-                        const donation = donationMap.get(nbr);
-                        const color = donation ? getColor(donation.value) : '#d1d5db';
+      // Get range for a donation value
+      function getDonationRange(value) {
+        if (value > 3000000) return "high";
+        if (value > 1000000) return "medium-high";
+        if (value > 500000) return "medium";
+        if (value > 200000) return "medium-low";
+        if (value > 0) return "low";
+        return "none";
+      }
 
-                        return {
-                            fillColor: color,
-                            weight: 2,
-                            opacity: 1,
-                            color: 'white',
-                            fillOpacity: 0.7
-                        };
-                    },
-                    onEachFeature: function(feature, layer) {
-                        const nbr = feature.properties.NBR;
-                        const donation = donationMap.get(nbr);
+      // Load GeoJSON and add to map
+      fetch("villa-gardenia.geojson")
+        .then((response) => response.json())
+        .then((geojson) => {
+          geojsonData = geojson;
+          parcelsLayer = L.geoJSON(geojson, {
+            style: function (feature) {
+              const nbr = feature.properties.NBR;
+              const donation = donationMap.get(nbr);
+              const color = donation ? getColor(donation.value) : "#d1d5db";
 
-                        let popupContent = `
+              return {
+                fillColor: color,
+                weight: 2,
+                opacity: 1,
+                color: "white",
+                fillOpacity: 0.7,
+              };
+            },
+            onEachFeature: function (feature, layer) {
+              const nbr = feature.properties.NBR;
+              const donation = donationMap.get(nbr);
+
+              let popupContent = `
                             <div class="popup-content">
                                 <div class="popup-header">${nbr}</div>
                                 <div class="popup-row">
@@ -639,100 +982,415 @@ T,T-5,100178,100178,WARGA`;
                                 </div>
                         `;
 
-                        if (donation) {
-                            const categoryClass = donation.category.includes('SPONSOR') ? 'sponsor' : '';
-                            popupContent += `
+              if (donation) {
+                const categoryClass = donation.category.includes("SPONSOR")
+                  ? "sponsor"
+                  : "";
+                popupContent += `
                                 <div class="popup-row">
                                     <span class="popup-label">Category:</span>
                                     <span class="badge ${categoryClass}">${donation.category}</span>
                                 </div>
                                 <div class="popup-amount">
                                     <div class="popup-amount-label">Total Donation</div>
-                                    <div class="popup-amount-value">Rp ${donation.value.toLocaleString('id-ID')}</div>
+                                    <div class="popup-amount-value">Rp ${donation.value.toLocaleString("id-ID")}</div>
                                 </div>
                             `;
-                        } else {
-                            popupContent += `
+              } else {
+                popupContent += `
                                 <div class="popup-row">
                                     <span class="popup-value" style="color: #718096;">No donation data</span>
                                 </div>
                             `;
-                        }
+              }
 
-                        popupContent += '</div>';
+              popupContent += "</div>";
 
-                        layer.bindPopup(popupContent);
+              layer.bindPopup(popupContent);
 
-                        // Hover effect
-                        layer.on('mouseover', function() {
-                            this.setStyle({
-                                weight: 3,
-                                color: '#667eea',
-                                fillOpacity: 0.9
-                            });
-                        });
+              // Hover effect
+              layer.on("mouseover", function () {
+                const nbr = this.feature.properties.NBR;
+                const donation = donationMap.get(nbr);
+                const donationRange = donation
+                  ? getDonationRange(donation.value)
+                  : "none";
+                const category = donation ? donation.category : null;
+                const isFiltered = !matchesFilters(donationRange, category);
 
-                        layer.on('mouseout', function() {
-                            parcelsLayer.resetStyle(this);
-                        });
-                    }
-                }).addTo(map);
-
-                // Fit map to layer bounds
-                map.fitBounds(parcelsLayer.getBounds());
-
-                // Calculate statistics
-                const donations = Array.from(donationMap.values());
-                const totalAmount = donations.reduce((sum, d) => sum + d.value, 0);
-                const totalContributors = donations.length;
-                const avgDonation = totalAmount / totalContributors;
-                const wargaCount = donations.filter(d => d.category === 'WARGA').length;
-                const sponsorCount = donations.filter(d => d.category.includes('SPONSOR')).length;
-                const totalParcels = geojson.features.length;
-
-                // Update stats
-                document.getElementById('total-amount').textContent = 'Rp ' + formatCurrency(totalAmount);
-                document.getElementById('total-contributors').textContent = totalContributors;
-                document.getElementById('avg-donation').textContent = 'Rp ' + formatCurrency(avgDonation);
-                document.getElementById('total-parcels').textContent = totalParcels;
-                document.getElementById('warga-count').textContent = wargaCount;
-                document.getElementById('sponsor-count').textContent = sponsorCount;
-
-                // Top donors
-                const topDonors = donations.sort((a, b) => b.value - a.value).slice(0, 10);
-                const topDonorsList = document.getElementById('top-donors-list');
-
-                topDonors.forEach((donor, index) => {
-                    const donorItem = document.createElement('div');
-                    donorItem.className = 'donor-item';
-                    donorItem.innerHTML = `
-                        <div class="donor-rank">${index + 1}</div>
-                        <div class="donor-info">
-                            <div class="donor-nbr">${donor.nbr}</div>
-                            <div class="donor-amount">Rp ${donor.value.toLocaleString('id-ID')}</div>
-                        </div>
-                    `;
-
-                    // Click to zoom to parcel
-                    donorItem.addEventListener('click', function() {
-                        parcelsLayer.eachLayer(function(layer) {
-                            if (layer.feature.properties.NBR === donor.nbr) {
-                                map.fitBounds(layer.getBounds(), { maxZoom: 19 });
-                                layer.openPopup();
-                            }
-                        });
-                    });
-
-                    topDonorsList.appendChild(donorItem);
+                this.setStyle({
+                  weight: 3,
+                  color: "#667eea",
+                  fillOpacity: isFiltered ? 1 : 0.9,
                 });
+              });
 
-                // Hide loading
-                document.getElementById('loading').style.display = 'none';
-            })
-            .catch(error => {
-                console.error('Error loading GeoJSON:', error);
-                document.getElementById('loading').innerHTML = '<div style="color: #ef4444;">Error loading map data</div>';
+              layer.on("mouseout", function () {
+                const nbr = this.feature.properties.NBR;
+                const donation = donationMap.get(nbr);
+                const donationRange = donation
+                  ? getDonationRange(donation.value)
+                  : "none";
+                const category = donation ? donation.category : null;
+                const isFiltered = !matchesFilters(donationRange, category);
+                const color = donation ? getColor(donation.value) : "#d1d5db";
+
+                this.setStyle({
+                  fillColor: isFiltered ? "#d1d5db" : color,
+                  weight: 2,
+                  opacity: 1,
+                  color: "white",
+                  fillOpacity: 1,
+                });
+              });
+            },
+          }).addTo(map);
+
+          // Fit map to layer bounds
+          map.fitBounds(parcelsLayer.getBounds());
+
+          // Calculate statistics
+          const donations = Array.from(donationMap.values());
+          const totalAmount = donations.reduce((sum, d) => sum + d.value, 0);
+          const totalContributors = donations.length;
+          const avgDonation = totalAmount / totalContributors;
+          const wargaCount = donations.filter(
+            (d) => d.category === "WARGA",
+          ).length;
+          const sponsorCount = donations.filter((d) =>
+            d.category.includes("SPONSOR"),
+          ).length;
+          const totalParcels = geojson.features.length;
+
+          // Calculate median, min, max
+          const sortedDonations = donations
+            .map((d) => d.value)
+            .sort((a, b) => a - b);
+          const median =
+            sortedDonations[Math.floor(sortedDonations.length / 2)];
+          const maxDonation = Math.max(...sortedDonations);
+          const minDonation = Math.min(...sortedDonations);
+          const participationRate = (
+            (totalContributors / totalParcels) *
+            100
+          ).toFixed(1);
+
+          // Update stats
+          document.getElementById("total-amount").textContent =
+            "Rp " + formatCurrency(totalAmount);
+          document.getElementById("total-contributors").textContent =
+            totalContributors;
+          document.getElementById("avg-donation").textContent =
+            "Rp " + formatCurrency(avgDonation);
+          document.getElementById("total-parcels").textContent = totalParcels;
+          document.getElementById("warga-count").textContent = wargaCount;
+          document.getElementById("sponsor-count").textContent = sponsorCount;
+          document.getElementById("median-donation").textContent =
+            "Rp " + formatCurrency(median);
+          document.getElementById("participation-rate").textContent =
+            participationRate + "%";
+          document.getElementById("max-donation").textContent =
+            "Rp " + formatCurrency(maxDonation);
+          document.getElementById("min-donation").textContent =
+            "Rp " + formatCurrency(minDonation);
+
+          // Update range counts
+          const rangeCounts = {
+            high: 0,
+            "medium-high": 0,
+            medium: 0,
+            "medium-low": 0,
+            low: 0,
+          };
+
+          donations.forEach((d) => {
+            const range = getDonationRange(d.value);
+            rangeCounts[range]++;
+          });
+
+          const noneCount = totalParcels - donations.length;
+
+          document.getElementById("range-high-count").textContent =
+            rangeCounts.high;
+          document.getElementById("range-medium-high-count").textContent =
+            rangeCounts["medium-high"];
+          document.getElementById("range-medium-count").textContent =
+            rangeCounts.medium;
+          document.getElementById("range-medium-low-count").textContent =
+            rangeCounts["medium-low"];
+          document.getElementById("range-low-count").textContent =
+            rangeCounts.low;
+          document.getElementById("range-none-count").textContent = noneCount;
+
+          // Function to update statistics based on filter
+          function updateStatistics(filteredDonations) {
+            const totalAmount = filteredDonations.reduce(
+              (sum, d) => sum + d.value,
+              0,
+            );
+            const totalContributors = filteredDonations.length;
+            const avgDonation =
+              totalContributors > 0 ? totalAmount / totalContributors : 0;
+            const wargaCount = filteredDonations.filter(
+              (d) => d.category === "WARGA",
+            ).length;
+            const sponsorCount = filteredDonations.filter((d) =>
+              d.category.includes("SPONSOR"),
+            ).length;
+            const participationRate =
+              totalParcels > 0
+                ? ((totalContributors / totalParcels) * 100).toFixed(1)
+                : "0.0";
+
+            // Calculate median, min, max
+            const sortedValues = filteredDonations
+              .map((d) => d.value)
+              .sort((a, b) => a - b);
+            const median =
+              sortedValues.length > 0
+                ? sortedValues[Math.floor(sortedValues.length / 2)]
+                : 0;
+            const maxDonation =
+              sortedValues.length > 0 ? Math.max(...sortedValues) : 0;
+            const minDonation =
+              sortedValues.length > 0 ? Math.min(...sortedValues) : 0;
+
+            // Update UI
+            document.getElementById("total-amount").textContent =
+              "Rp " + formatCurrency(totalAmount);
+            document.getElementById("total-contributors").textContent =
+              totalContributors;
+            document.getElementById("avg-donation").textContent =
+              "Rp " + formatCurrency(avgDonation);
+            document.getElementById("warga-count").textContent = wargaCount;
+            document.getElementById("sponsor-count").textContent = sponsorCount;
+            document.getElementById("median-donation").textContent =
+              "Rp " + formatCurrency(median);
+            document.getElementById("participation-rate").textContent =
+              participationRate + "%";
+            document.getElementById("max-donation").textContent =
+              "Rp " + formatCurrency(maxDonation);
+            document.getElementById("min-donation").textContent =
+              "Rp " + formatCurrency(minDonation);
+
+            // Update range counts
+            const rangeCounts = {
+              high: 0,
+              "medium-high": 0,
+              medium: 0,
+              "medium-low": 0,
+              low: 0,
+            };
+
+            filteredDonations.forEach((d) => {
+              const range = getDonationRange(d.value);
+              rangeCounts[range]++;
             });
+
+            // Calculate "none" count based on whether filters are active
+            let noneCount;
+            if (activeRangeFilters.size === 0 && activeCategoryFilters.size === 0) {
+              noneCount = totalParcels - filteredDonations.length;
+            } else {
+              noneCount = totalParcels - Array.from(donationMap.values()).length;
+            }
+
+            document.getElementById("range-high-count").textContent =
+              rangeCounts.high;
+            document.getElementById("range-medium-high-count").textContent =
+              rangeCounts["medium-high"];
+            document.getElementById("range-medium-count").textContent =
+              rangeCounts.medium;
+            document.getElementById("range-medium-low-count").textContent =
+              rangeCounts["medium-low"];
+            document.getElementById("range-low-count").textContent =
+              rangeCounts.low;
+            document.getElementById("range-none-count").textContent = noneCount;
+          }
+
+          // Check if a donation matches current filters
+          function matchesFilters(donationRange, category) {
+            const hasRangeFilter = activeRangeFilters.size > 0;
+            const hasCategoryFilter = activeCategoryFilters.size > 0;
+
+            // No filters active - everything matches
+            if (!hasRangeFilter && !hasCategoryFilter) {
+              return true;
+            }
+
+            // Both filters active - must match both
+            if (hasRangeFilter && hasCategoryFilter) {
+              return (
+                activeRangeFilters.has(donationRange) &&
+                activeCategoryFilters.has(category)
+              );
+            }
+
+            // Only range filter active
+            if (hasRangeFilter) {
+              return activeRangeFilters.has(donationRange);
+            }
+
+            // Only category filter active
+            if (hasCategoryFilter) {
+              return activeCategoryFilters.has(category);
+            }
+
+            return true;
+          }
+
+          // Function to toggle range filter
+          function toggleRangeFilter(range) {
+            if (activeRangeFilters.has(range)) {
+              activeRangeFilters.delete(range);
+            } else {
+              activeRangeFilters.add(range);
+            }
+
+            // Update legend items
+            document.querySelectorAll(".legend-item").forEach((item) => {
+              if (activeRangeFilters.has(item.dataset.range)) {
+                item.classList.add("active");
+              } else {
+                item.classList.remove("active");
+              }
+            });
+
+            updateFilterUI();
+          }
+
+          // Function to toggle category filter
+          function toggleCategoryFilter(category) {
+            if (activeCategoryFilters.has(category)) {
+              activeCategoryFilters.delete(category);
+            } else {
+              activeCategoryFilters.add(category);
+            }
+
+            // Update category items
+            document.querySelectorAll(".category-filter-item").forEach((item) => {
+              if (activeCategoryFilters.has(item.dataset.category)) {
+                item.classList.add("active");
+              } else {
+                item.classList.remove("active");
+              }
+            });
+
+            updateFilterUI();
+          }
+
+          // Update filter UI and data
+          function updateFilterUI() {
+            // Show/hide reset button
+            if (
+              activeRangeFilters.size > 0 ||
+              activeCategoryFilters.size > 0
+            ) {
+              document.getElementById("reset-filter").classList.add("active");
+            } else {
+              document.getElementById("reset-filter").classList.remove("active");
+            }
+
+            // Update view
+            updateFilteredView();
+          }
+
+          // Function to update the filtered view
+          function updateFilteredView() {
+            // Filter donations
+            const filteredDonations = Array.from(donationMap.values()).filter(
+              (d) => {
+                const donationRange = getDonationRange(d.value);
+                return matchesFilters(donationRange, d.category);
+              },
+            );
+
+            // Update map colors
+            parcelsLayer.eachLayer((layer) => {
+              const nbr = layer.feature.properties.NBR;
+              const donation = donationMap.get(nbr);
+              const donationRange = donation
+                ? getDonationRange(donation.value)
+                : "none";
+              const category = donation ? donation.category : null;
+              const color = donation ? getColor(donation.value) : "#d1d5db";
+
+              if (matchesFilters(donationRange, category)) {
+                layer.setStyle({
+                  fillColor: color,
+                  weight: 2,
+                  opacity: 1,
+                  color: "white",
+                  fillOpacity: 1,
+                });
+              } else {
+                layer.setStyle({
+                  fillColor: "#d1d5db",
+                  weight: 2,
+                  opacity: 1,
+                  color: "white",
+                  fillOpacity: 1,
+                });
+              }
+            });
+
+            // Update statistics
+            updateStatistics(filteredDonations);
+          }
+
+          // Function to reset filter
+          function resetFilter() {
+            activeRangeFilters.clear();
+            activeCategoryFilters.clear();
+
+            // Update legend items
+            document.querySelectorAll(".legend-item").forEach((item) => {
+              item.classList.remove("active");
+            });
+
+            // Update category items
+            document.querySelectorAll(".category-filter-item").forEach((item) => {
+              item.classList.remove("active");
+            });
+
+            // Hide reset button
+            document.getElementById("reset-filter").classList.remove("active");
+
+            // Update view
+            updateFilteredView();
+          }
+
+          // Add click handlers to legend items
+          document.querySelectorAll(".legend-item").forEach((item) => {
+            item.addEventListener("click", function () {
+              const range = this.dataset.range;
+              if (range === "none") return; // Skip "No Data" filter
+
+              toggleRangeFilter(range);
+            });
+          });
+
+          // Add click handlers to category items
+          document.querySelectorAll(".category-filter-item").forEach((item) => {
+            item.addEventListener("click", function () {
+              const category = this.dataset.category;
+              toggleCategoryFilter(category);
+            });
+          });
+
+          // Add click handler to reset button
+          document
+            .getElementById("reset-filter")
+            .addEventListener("click", resetFilter);
+
+          // Hide loading
+          document.getElementById("loading").style.display = "none";
+        })
+        .catch((error) => {
+          console.error("Error loading GeoJSON:", error);
+          document.getElementById("loading").innerHTML =
+            '<div style="color: #ef4444;">Error loading map data</div>';
+        });
     </script>
-</body>
+  </body>
 </html>
