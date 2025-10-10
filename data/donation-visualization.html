@@ -365,21 +365,30 @@
         padding-left: 4px;
       }
 
+      .filter-section-title:not(:first-child) {
+        border-top: 1px solid rgba(148, 163, 184, 0.2);
+        padding-top: 12px;
+        margin-top: 12px;
+      }
+
+      .filter-info {
+        font-size: 10px;
+        color: #64748b;
+        font-style: italic;
+        padding: 6px 4px 0 4px;
+        line-height: 1.4;
+      }
+
       .category-filter-item {
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 8px 4px;
-        border-bottom: 1px solid rgba(148, 163, 184, 0.15);
         transition: all 0.2s ease;
         cursor: pointer;
         border-radius: 0;
         border-left: 3px solid transparent;
         font-size: 12px;
-      }
-
-      .category-filter-item:last-child {
-        border-bottom: none;
       }
 
       .category-filter-item:hover {
@@ -526,10 +535,12 @@
       .analytics-item {
         display: flex;
         justify-content: space-between;
+        align-items: center;
         padding: 8px 4px;
         font-size: 12px;
         border-bottom: 1px solid rgba(148, 163, 184, 0.15);
         transition: all 0.2s ease;
+        position: relative;
       }
 
       .analytics-item:hover {
@@ -542,6 +553,13 @@
         padding-bottom: 0;
       }
 
+      .analytics-label-wrapper {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        position: relative;
+      }
+
       .analytics-label {
         color: #475569;
         font-weight: 500;
@@ -551,6 +569,64 @@
         font-weight: 700;
         color: #6366f1;
         letter-spacing: -0.01em;
+      }
+
+      .info-icon {
+        width: 14px;
+        height: 14px;
+        border-radius: 50%;
+        background: #94a3b8;
+        color: white;
+        font-size: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: help;
+        font-weight: 700;
+        transition: all 0.2s ease;
+        flex-shrink: 0;
+      }
+
+      .info-icon:hover {
+        background: #6366f1;
+        transform: scale(1.1);
+      }
+
+      .info-tooltip {
+        position: absolute;
+        left: 0;
+        bottom: 100%;
+        margin-bottom: 8px;
+        background: #1e293b;
+        color: white;
+        padding: 10px 12px;
+        border-radius: 6px;
+        font-size: 11px;
+        line-height: 1.5;
+        width: 280px;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.2s ease;
+        z-index: 1000;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      }
+
+      .info-tooltip::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 20px;
+        border: 6px solid transparent;
+        border-top-color: #1e293b;
+      }
+
+      .info-icon:hover + .info-tooltip {
+        opacity: 1;
+      }
+
+      .info-tooltip strong {
+        color: #a5b4fc;
+        font-weight: 600;
       }
 
       ::-webkit-scrollbar {
@@ -646,17 +722,25 @@
     <div id="container">
       <div id="sidebar">
         <div class="header-section">
-          <img src="https://villa-gardenia.github.io/hut-ri/assets/logo.jpg" alt="Villa Gardenia" class="logo">
-          <div class="subtitle">Donation Visualization Dashboard</div>
+          <img
+            src="https://villa-gardenia.github.io/hut-ri/assets/logo.jpg"
+            alt="Villa Gardenia"
+            class="logo"
+          />
+          <div class="subtitle">Dashboard Visualisasi Donasi</div>
         </div>
 
         <div class="legend">
           <div class="legend-header">
-            <div class="legend-title">Filters</div>
-            <button class="reset-btn" id="reset-filter" title="Reset filter"></button>
+            <div class="legend-title">Filter</div>
+            <button
+              class="reset-btn"
+              id="reset-filter"
+              title="Reset filter"
+            ></button>
           </div>
 
-          <div class="filter-section-title">By Amount</div>
+          <div class="filter-section-title">Berdasarkan Jumlah</div>
           <div class="legend-item" data-range="high">
             <div class="legend-item-left">
               <div class="legend-color" style="background: #10b981"></div>
@@ -669,7 +753,9 @@
               <div class="legend-color" style="background: #3b82f6"></div>
               <span>1M - 3M IDR</span>
             </div>
-            <span class="legend-item-count" id="range-medium-high-count">-</span>
+            <span class="legend-item-count" id="range-medium-high-count"
+              >-</span
+            >
           </div>
           <div class="legend-item" data-range="medium">
             <div class="legend-item-left">
@@ -695,12 +781,12 @@
           <div class="legend-item disabled" data-range="none">
             <div class="legend-item-left">
               <div class="legend-color" style="background: #d1d5db"></div>
-              <span>No Data</span>
+              <span>Tidak Ada Data</span>
             </div>
             <span class="legend-item-count" id="range-none-count">-</span>
           </div>
 
-          <div class="filter-section-title">By Category</div>
+          <div class="filter-section-title">Berdasarkan Kategori</div>
           <div class="category-filter-item" data-category="WARGA">
             <span class="category-label">Warga</span>
             <span class="category-count" id="warga-count">-</span>
@@ -709,40 +795,120 @@
             <span class="category-label">Sponsor & Warga</span>
             <span class="category-count" id="sponsor-count">-</span>
           </div>
+
+          <div class="filter-section-title">Berdasarkan Jenis Pembayaran</div>
+          <div class="category-filter-item" data-payment="cash">
+            <span class="category-label">Tunai</span>
+            <span class="category-count" id="cash-count">-</span>
+          </div>
+          <div class="category-filter-item" data-payment="non-cash">
+            <span class="category-label">Non-Tunai</span>
+            <span class="category-count" id="non-cash-count">-</span>
+          </div>
+          <div class="filter-info">
+            💡 Beberapa rumah berdonasi dengan tunai DAN non-tunai, sehingga muncul di kedua kategori.
+          </div>
         </div>
 
         <div class="analytics-section">
-          <div class="analytics-title">Statistics</div>
+          <div class="analytics-title">Statistik</div>
           <div class="analytics-item">
-            <span class="analytics-label">Total Donations</span>
+            <div class="analytics-label-wrapper">
+              <span class="analytics-label">Total Donasi</span>
+              <div class="info-icon">i</div>
+              <div class="info-tooltip">
+                <strong>Perhitungan:</strong> Jumlah dari semua nilai donasi.<br>
+                <strong>Efek Filter:</strong> Diperbarui untuk menampilkan hanya donasi yang sesuai dengan filter aktif.
+              </div>
+            </div>
             <span class="analytics-value" id="total-amount">-</span>
           </div>
           <div class="analytics-item">
-            <span class="analytics-label">Contributors</span>
+            <div class="analytics-label-wrapper">
+              <span class="analytics-label">Kontributor</span>
+              <div class="info-icon">i</div>
+              <div class="info-tooltip">
+                <strong>Perhitungan:</strong> Jumlah orang/rumah yang berdonasi.<br>
+                <strong>Efek Filter:</strong> Diperbarui untuk menghitung hanya kontributor dalam hasil yang difilter.
+              </div>
+            </div>
             <span class="analytics-value" id="total-contributors">-</span>
           </div>
           <div class="analytics-item">
-            <span class="analytics-label">Total Parcels</span>
+            <div class="analytics-label-wrapper">
+              <span class="analytics-label">Total Rumah</span>
+              <div class="info-icon">i</div>
+              <div class="info-tooltip">
+                <strong>Perhitungan:</strong> Jumlah total properti di peta.<br>
+                <strong>Efek Filter:</strong> Tidak terpengaruh oleh filter (selalu menampilkan total).
+              </div>
+            </div>
             <span class="analytics-value" id="total-parcels">-</span>
           </div>
           <div class="analytics-item">
-            <span class="analytics-label">Participation Rate</span>
+            <div class="analytics-label-wrapper">
+              <span class="analytics-label">Total Warga</span>
+              <div class="info-icon">i</div>
+              <div class="info-tooltip">
+                <strong>Perhitungan:</strong> Jumlah total warga (konstan: 178).<br>
+                <strong>Efek Filter:</strong> Tidak terpengaruh oleh filter (selalu 178).
+              </div>
+            </div>
+            <span class="analytics-value" id="total-residents">-</span>
+          </div>
+          <div class="analytics-item">
+            <div class="analytics-label-wrapper">
+              <span class="analytics-label">Tingkat Partisipasi</span>
+              <div class="info-icon">i</div>
+              <div class="info-tooltip">
+                <strong>Perhitungan:</strong> (Kontributor / Total Warga) × 100%.<br>
+                <strong>Efek Filter:</strong> Diperbarui berdasarkan jumlah kontributor yang difilter.
+              </div>
+            </div>
             <span class="analytics-value" id="participation-rate">-</span>
           </div>
           <div class="analytics-item">
-            <span class="analytics-label">Average Donation</span>
+            <div class="analytics-label-wrapper">
+              <span class="analytics-label">Rata-rata Donasi</span>
+              <div class="info-icon">i</div>
+              <div class="info-tooltip">
+                <strong>Perhitungan:</strong> Total Donasi / Kontributor.<br>
+                <strong>Efek Filter:</strong> Diperbarui untuk menampilkan rata-rata dari donasi yang difilter saja.
+              </div>
+            </div>
             <span class="analytics-value" id="avg-donation">-</span>
           </div>
           <div class="analytics-item">
-            <span class="analytics-label">Median Donation</span>
+            <div class="analytics-label-wrapper">
+              <span class="analytics-label">Median Donasi</span>
+              <div class="info-icon">i</div>
+              <div class="info-tooltip">
+                <strong>Perhitungan:</strong> Nilai tengah saat donasi diurutkan.<br>
+                <strong>Efek Filter:</strong> Diperbarui untuk menampilkan median dari donasi yang difilter saja.
+              </div>
+            </div>
             <span class="analytics-value" id="median-donation">-</span>
           </div>
           <div class="analytics-item">
-            <span class="analytics-label">Highest Donation</span>
+            <div class="analytics-label-wrapper">
+              <span class="analytics-label">Donasi Tertinggi</span>
+              <div class="info-icon">i</div>
+              <div class="info-tooltip">
+                <strong>Perhitungan:</strong> Jumlah donasi maksimum.<br>
+                <strong>Efek Filter:</strong> Diperbarui untuk menampilkan tertinggi dalam hasil yang difilter saja.
+              </div>
+            </div>
             <span class="analytics-value" id="max-donation">-</span>
           </div>
           <div class="analytics-item">
-            <span class="analytics-label">Lowest Donation</span>
+            <div class="analytics-label-wrapper">
+              <span class="analytics-label">Donasi Terendah</span>
+              <div class="info-icon">i</div>
+              <div class="info-tooltip">
+                <strong>Perhitungan:</strong> Jumlah donasi minimum.<br>
+                <strong>Efek Filter:</strong> Diperbarui untuk menampilkan terendah dalam hasil yang difilter saja.
+              </div>
+            </div>
             <span class="analytics-value" id="min-donation">-</span>
           </div>
         </div>
@@ -751,7 +917,7 @@
       <div id="map-container">
         <div class="loading" id="loading">
           <div class="spinner"></div>
-          <div>Loading map data...</div>
+          <div>Memuat data peta...</div>
         </div>
         <div id="map"></div>
       </div>
@@ -872,34 +1038,50 @@ S,S-6,150178,150178,WARGA
 T,T-4,250178,250178,WARGA
 T,T-5,100178,100178,WARGA`;
 
-      // Parse CSV into donation map
-      const donationMap = new Map();
+      // Parse CSV into donation entries (keep all entries, not aggregated)
+      const donationEntries = [];
       const lines = csvData.trim().split("\n");
 
       for (let i = 1; i < lines.length; i++) {
         const parts = lines[i].split(",");
         if (parts.length >= 5) {
-          const nbr = parts[1];
+          const cash = parseFloat(parts[2]) || 0;
           const value = parseFloat(parts[3]) || 0;
-          const category = parts[4];
+          const isCash = cash > 0;
 
-          // Aggregate donations for same NBR
-          if (donationMap.has(nbr)) {
-            const existing = donationMap.get(nbr);
-            existing.value += value;
-            if (category.includes("SPONSOR")) {
-              existing.category = "SPONSOR&WARGA";
-            }
-          } else {
-            donationMap.set(nbr, {
-              blok: parts[0],
-              nbr: nbr,
-              value: value,
-              category: category,
-            });
-          }
+          donationEntries.push({
+            blok: parts[0],
+            nbr: parts[1],
+            cash: cash,
+            value: value,
+            category: parts[4],
+            isCash: isCash,
+          });
         }
       }
+
+      // Create aggregated donation map for display
+      const donationMap = new Map();
+      donationEntries.forEach((entry) => {
+        if (donationMap.has(entry.nbr)) {
+          const existing = donationMap.get(entry.nbr);
+          existing.value += entry.value;
+          existing.hasCash = existing.hasCash || entry.isCash;
+          existing.hasNonCash = existing.hasNonCash || !entry.isCash;
+          if (entry.category.includes("SPONSOR")) {
+            existing.category = "SPONSOR&WARGA";
+          }
+        } else {
+          donationMap.set(entry.nbr, {
+            blok: entry.blok,
+            nbr: entry.nbr,
+            value: entry.value,
+            category: entry.category,
+            hasCash: entry.isCash,
+            hasNonCash: !entry.isCash,
+          });
+        }
+      });
 
       // Get color based on donation amount
       function getColor(value) {
@@ -930,9 +1112,13 @@ T,T-5,100178,100178,WARGA`;
         maxZoom: 19,
       }).addTo(map);
 
+      // Constants
+      const TOTAL_RESIDENTS = 178;
+
       // Filter state
       let activeRangeFilters = new Set();
       let activeCategoryFilters = new Set();
+      let activePaymentFilters = new Set();
       let parcelsLayer = null;
       let geojsonData = null;
 
@@ -973,11 +1159,11 @@ T,T-5,100178,100178,WARGA`;
                             <div class="popup-content">
                                 <div class="popup-header">${nbr}</div>
                                 <div class="popup-row">
-                                    <span class="popup-label">Block:</span>
+                                    <span class="popup-label">Blok:</span>
                                     <span class="popup-value">${feature.properties.BLOK}</span>
                                 </div>
                                 <div class="popup-row">
-                                    <span class="popup-label">Address:</span>
+                                    <span class="popup-label">Alamat:</span>
                                     <span class="popup-value">${feature.properties.ALAMAT}</span>
                                 </div>
                         `;
@@ -988,18 +1174,18 @@ T,T-5,100178,100178,WARGA`;
                   : "";
                 popupContent += `
                                 <div class="popup-row">
-                                    <span class="popup-label">Category:</span>
+                                    <span class="popup-label">Kategori:</span>
                                     <span class="badge ${categoryClass}">${donation.category}</span>
                                 </div>
                                 <div class="popup-amount">
-                                    <div class="popup-amount-label">Total Donation</div>
+                                    <div class="popup-amount-label">Total Donasi</div>
                                     <div class="popup-amount-value">Rp ${donation.value.toLocaleString("id-ID")}</div>
                                 </div>
                             `;
               } else {
                 popupContent += `
                                 <div class="popup-row">
-                                    <span class="popup-value" style="color: #718096;">No donation data</span>
+                                    <span class="popup-value" style="color: #718096;">Tidak ada data donasi</span>
                                 </div>
                             `;
               }
@@ -1016,7 +1202,14 @@ T,T-5,100178,100178,WARGA`;
                   ? getDonationRange(donation.value)
                   : "none";
                 const category = donation ? donation.category : null;
-                const isFiltered = !matchesFilters(donationRange, category);
+                const hasCash = donation ? donation.hasCash : false;
+                const hasNonCash = donation ? donation.hasNonCash : false;
+                const isFiltered = !matchesFilters(
+                  donationRange,
+                  category,
+                  hasCash,
+                  hasNonCash,
+                );
 
                 this.setStyle({
                   weight: 3,
@@ -1032,7 +1225,14 @@ T,T-5,100178,100178,WARGA`;
                   ? getDonationRange(donation.value)
                   : "none";
                 const category = donation ? donation.category : null;
-                const isFiltered = !matchesFilters(donationRange, category);
+                const hasCash = donation ? donation.hasCash : false;
+                const hasNonCash = donation ? donation.hasNonCash : false;
+                const isFiltered = !matchesFilters(
+                  donationRange,
+                  category,
+                  hasCash,
+                  hasNonCash,
+                );
                 const color = donation ? getColor(donation.value) : "#d1d5db";
 
                 this.setStyle({
@@ -1060,6 +1260,8 @@ T,T-5,100178,100178,WARGA`;
           const sponsorCount = donations.filter((d) =>
             d.category.includes("SPONSOR"),
           ).length;
+          const cashCount = donations.filter((d) => d.hasCash).length;
+          const nonCashCount = donations.filter((d) => d.hasNonCash).length;
           const totalParcels = geojson.features.length;
 
           // Calculate median, min, max
@@ -1071,7 +1273,7 @@ T,T-5,100178,100178,WARGA`;
           const maxDonation = Math.max(...sortedDonations);
           const minDonation = Math.min(...sortedDonations);
           const participationRate = (
-            (totalContributors / totalParcels) *
+            (totalContributors / TOTAL_RESIDENTS) *
             100
           ).toFixed(1);
 
@@ -1083,8 +1285,12 @@ T,T-5,100178,100178,WARGA`;
           document.getElementById("avg-donation").textContent =
             "Rp " + formatCurrency(avgDonation);
           document.getElementById("total-parcels").textContent = totalParcels;
+          document.getElementById("total-residents").textContent =
+            TOTAL_RESIDENTS;
           document.getElementById("warga-count").textContent = wargaCount;
           document.getElementById("sponsor-count").textContent = sponsorCount;
+          document.getElementById("cash-count").textContent = cashCount;
+          document.getElementById("non-cash-count").textContent = nonCashCount;
           document.getElementById("median-donation").textContent =
             "Rp " + formatCurrency(median);
           document.getElementById("participation-rate").textContent =
@@ -1137,9 +1343,13 @@ T,T-5,100178,100178,WARGA`;
             const sponsorCount = filteredDonations.filter((d) =>
               d.category.includes("SPONSOR"),
             ).length;
+            const cashCount = filteredDonations.filter((d) => d.hasCash).length;
+            const nonCashCount = filteredDonations.filter(
+              (d) => d.hasNonCash,
+            ).length;
             const participationRate =
-              totalParcels > 0
-                ? ((totalContributors / totalParcels) * 100).toFixed(1)
+              TOTAL_RESIDENTS > 0
+                ? ((totalContributors / TOTAL_RESIDENTS) * 100).toFixed(1)
                 : "0.0";
 
             // Calculate median, min, max
@@ -1162,8 +1372,13 @@ T,T-5,100178,100178,WARGA`;
               totalContributors;
             document.getElementById("avg-donation").textContent =
               "Rp " + formatCurrency(avgDonation);
+            document.getElementById("total-parcels").textContent = totalParcels;
+            document.getElementById("total-residents").textContent =
+              TOTAL_RESIDENTS;
             document.getElementById("warga-count").textContent = wargaCount;
             document.getElementById("sponsor-count").textContent = sponsorCount;
+            document.getElementById("cash-count").textContent = cashCount;
+            document.getElementById("non-cash-count").textContent = nonCashCount;
             document.getElementById("median-donation").textContent =
               "Rp " + formatCurrency(median);
             document.getElementById("participation-rate").textContent =
@@ -1189,10 +1404,14 @@ T,T-5,100178,100178,WARGA`;
 
             // Calculate "none" count based on whether filters are active
             let noneCount;
-            if (activeRangeFilters.size === 0 && activeCategoryFilters.size === 0) {
+            if (
+              activeRangeFilters.size === 0 &&
+              activeCategoryFilters.size === 0
+            ) {
               noneCount = totalParcels - filteredDonations.length;
             } else {
-              noneCount = totalParcels - Array.from(donationMap.values()).length;
+              noneCount =
+                totalParcels - Array.from(donationMap.values()).length;
             }
 
             document.getElementById("range-high-count").textContent =
@@ -1209,34 +1428,42 @@ T,T-5,100178,100178,WARGA`;
           }
 
           // Check if a donation matches current filters
-          function matchesFilters(donationRange, category) {
+          function matchesFilters(donationRange, category, hasCash, hasNonCash) {
             const hasRangeFilter = activeRangeFilters.size > 0;
             const hasCategoryFilter = activeCategoryFilters.size > 0;
+            const hasPaymentFilter = activePaymentFilters.size > 0;
 
             // No filters active - everything matches
-            if (!hasRangeFilter && !hasCategoryFilter) {
+            if (!hasRangeFilter && !hasCategoryFilter && !hasPaymentFilter) {
               return true;
             }
 
-            // Both filters active - must match both
-            if (hasRangeFilter && hasCategoryFilter) {
-              return (
-                activeRangeFilters.has(donationRange) &&
-                activeCategoryFilters.has(category)
-              );
-            }
-
-            // Only range filter active
+            // Check range filter
+            let rangeMatch = true;
             if (hasRangeFilter) {
-              return activeRangeFilters.has(donationRange);
+              rangeMatch = activeRangeFilters.has(donationRange);
             }
 
-            // Only category filter active
+            // Check category filter
+            let categoryMatch = true;
             if (hasCategoryFilter) {
-              return activeCategoryFilters.has(category);
+              categoryMatch = activeCategoryFilters.has(category);
             }
 
-            return true;
+            // Check payment filter
+            let paymentMatch = true;
+            if (hasPaymentFilter) {
+              paymentMatch = false;
+              if (activePaymentFilters.has("cash") && hasCash) {
+                paymentMatch = true;
+              }
+              if (activePaymentFilters.has("non-cash") && hasNonCash) {
+                paymentMatch = true;
+              }
+            }
+
+            // All active filters must match
+            return rangeMatch && categoryMatch && paymentMatch;
           }
 
           // Function to toggle range filter
@@ -1268,13 +1495,37 @@ T,T-5,100178,100178,WARGA`;
             }
 
             // Update category items
-            document.querySelectorAll(".category-filter-item").forEach((item) => {
-              if (activeCategoryFilters.has(item.dataset.category)) {
-                item.classList.add("active");
-              } else {
-                item.classList.remove("active");
-              }
-            });
+            document
+              .querySelectorAll('.category-filter-item[data-category]')
+              .forEach((item) => {
+                if (activeCategoryFilters.has(item.dataset.category)) {
+                  item.classList.add("active");
+                } else {
+                  item.classList.remove("active");
+                }
+              });
+
+            updateFilterUI();
+          }
+
+          // Function to toggle payment filter
+          function togglePaymentFilter(payment) {
+            if (activePaymentFilters.has(payment)) {
+              activePaymentFilters.delete(payment);
+            } else {
+              activePaymentFilters.add(payment);
+            }
+
+            // Update payment items
+            document
+              .querySelectorAll('.category-filter-item[data-payment]')
+              .forEach((item) => {
+                if (activePaymentFilters.has(item.dataset.payment)) {
+                  item.classList.add("active");
+                } else {
+                  item.classList.remove("active");
+                }
+              });
 
             updateFilterUI();
           }
@@ -1284,11 +1535,14 @@ T,T-5,100178,100178,WARGA`;
             // Show/hide reset button
             if (
               activeRangeFilters.size > 0 ||
-              activeCategoryFilters.size > 0
+              activeCategoryFilters.size > 0 ||
+              activePaymentFilters.size > 0
             ) {
               document.getElementById("reset-filter").classList.add("active");
             } else {
-              document.getElementById("reset-filter").classList.remove("active");
+              document
+                .getElementById("reset-filter")
+                .classList.remove("active");
             }
 
             // Update view
@@ -1301,7 +1555,12 @@ T,T-5,100178,100178,WARGA`;
             const filteredDonations = Array.from(donationMap.values()).filter(
               (d) => {
                 const donationRange = getDonationRange(d.value);
-                return matchesFilters(donationRange, d.category);
+                return matchesFilters(
+                  donationRange,
+                  d.category,
+                  d.hasCash,
+                  d.hasNonCash,
+                );
               },
             );
 
@@ -1313,9 +1572,13 @@ T,T-5,100178,100178,WARGA`;
                 ? getDonationRange(donation.value)
                 : "none";
               const category = donation ? donation.category : null;
+              const hasCash = donation ? donation.hasCash : false;
+              const hasNonCash = donation ? donation.hasNonCash : false;
               const color = donation ? getColor(donation.value) : "#d1d5db";
 
-              if (matchesFilters(donationRange, category)) {
+              if (
+                matchesFilters(donationRange, category, hasCash, hasNonCash)
+              ) {
                 layer.setStyle({
                   fillColor: color,
                   weight: 2,
@@ -1342,6 +1605,7 @@ T,T-5,100178,100178,WARGA`;
           function resetFilter() {
             activeRangeFilters.clear();
             activeCategoryFilters.clear();
+            activePaymentFilters.clear();
 
             // Update legend items
             document.querySelectorAll(".legend-item").forEach((item) => {
@@ -1349,9 +1613,11 @@ T,T-5,100178,100178,WARGA`;
             });
 
             // Update category items
-            document.querySelectorAll(".category-filter-item").forEach((item) => {
-              item.classList.remove("active");
-            });
+            document
+              .querySelectorAll(".category-filter-item")
+              .forEach((item) => {
+                item.classList.remove("active");
+              });
 
             // Hide reset button
             document.getElementById("reset-filter").classList.remove("active");
@@ -1371,12 +1637,24 @@ T,T-5,100178,100178,WARGA`;
           });
 
           // Add click handlers to category items
-          document.querySelectorAll(".category-filter-item").forEach((item) => {
-            item.addEventListener("click", function () {
-              const category = this.dataset.category;
-              toggleCategoryFilter(category);
+          document
+            .querySelectorAll('.category-filter-item[data-category]')
+            .forEach((item) => {
+              item.addEventListener("click", function () {
+                const category = this.dataset.category;
+                toggleCategoryFilter(category);
+              });
             });
-          });
+
+          // Add click handlers to payment items
+          document
+            .querySelectorAll('.category-filter-item[data-payment]')
+            .forEach((item) => {
+              item.addEventListener("click", function () {
+                const payment = this.dataset.payment;
+                togglePaymentFilter(payment);
+              });
+            });
 
           // Add click handler to reset button
           document
@@ -1389,7 +1667,7 @@ T,T-5,100178,100178,WARGA`;
         .catch((error) => {
           console.error("Error loading GeoJSON:", error);
           document.getElementById("loading").innerHTML =
-            '<div style="color: #ef4444;">Error loading map data</div>';
+            '<div style="color: #ef4444;">Gagal memuat data peta</div>';
         });
     </script>
   </body>
