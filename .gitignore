@@ -44,3 +44,6 @@ storybook-static/
 
 # Miscellaneous
 scripts/
+
+# Private resident data (contains phone numbers)
+src/public/contributions/villa-gardenia-private.geojson
